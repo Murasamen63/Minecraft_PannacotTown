@@ -11,6 +11,7 @@
 #> Storage
 # @public
     #define storage pctw:core
+    #define storage pctw:fishing_battle/ranking
 
 
 
@@ -18,8 +19,8 @@
 
 
 # scoreboard作成
-    ## Gamemode
-        scoreboard objectives add PCTW.GameMode dummy
+    ## Const
+        scoreboard objectives add PCTW.Const dummy
 
 # storage作成
     data modify storage pctw:core GameMode set value Empty

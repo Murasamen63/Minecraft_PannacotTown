@@ -23,7 +23,8 @@
         scoreboard objectives add PCTW.Const dummy
 
 # storage作成
-    data modify storage pctw:core GameMode set value Empty
+    ## core
+        data modify storage pctw:core GameMode set value null
 
 # 通知
     #tellraw @a 

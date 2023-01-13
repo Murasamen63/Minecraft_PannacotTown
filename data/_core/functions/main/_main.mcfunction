@@ -11,4 +11,4 @@
 
 # Gamemode変更
     ## 釣り大会
-        #execute if score PCTW.System PCTW.GameMode matches 1 run
+        execute if data storage pctw:core {GameMode:FishingBattle} run function fishing_battle:main/_main

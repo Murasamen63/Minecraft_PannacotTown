@@ -1,4 +1,4 @@
-# Minecraft-PannacottaTown
+# Minecraft-PannacottTown
 
 
 ## コーディング書式

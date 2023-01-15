@@ -6,11 +6,11 @@
 
 #> Score Holder
 # @within function fishing_battle:**
-    #define score_holder PCTW.FSBT.System
-    #define score_holder PCTW.FSBT.GameState.Ready
-    #define score_holder PCTW.FSBT.GameState.CountDown
-    #define score_holder PCTW.FSBT.GameState.Play
-    #define score_holder PCTW.FSBT.GameState.End
+    #define score_holder $PCTW.FSBT.System
+    #define score_holder $PCTW.FSBT.GameState.Ready
+    #define score_holder $PCTW.FSBT.GameState.CountDown
+    #define score_holder $PCTW.FSBT.GameState.Play
+    #define score_holder $PCTW.FSBT.GameState.End
 
 
 
@@ -36,24 +36,24 @@
 
 # scoreboard設定
     ## GameState
-        execute if score PCTW.FSBT.System PCTW.FSBT.GameState matches -2147483648.. run scoreboard players set PCTW.FSBT.System PCTW.FSBT.GameState 0
-        scoreboard players set PCTW.FSBT.GameState.Ready PCTW.FSBT.GameState 0
-        scoreboard players set PCTW.FSBT.GameState.CountDown PCTW.FSBT.GameState 1
-        scoreboard players set PCTW.FSBT.GameState.Play PCTW.FSBT.GameState 2
-        scoreboard players set PCTW.FSBT.GameState.End PCTW.FSBT.GameState 3
+        execute if score $PCTW.FSBT.System PCTW.FSBT.GameState matches -2147483648.. run scoreboard players set $PCTW.FSBT.System PCTW.FSBT.GameState 0
+        scoreboard players set $PCTW.FSBT.GameState.Ready PCTW.FSBT.GameState 0
+        scoreboard players set $PCTW.FSBT.GameState.CountDown PCTW.FSBT.GameState 1
+        scoreboard players set $PCTW.FSBT.GameState.Play PCTW.FSBT.GameState 2
+        scoreboard players set $PCTW.FSBT.GameState.End PCTW.FSBT.GameState 3
     ## Info
         scoreboard objectives modify PCTW.FSBT.Info displayname "今日の記録"
         scoreboard objectives setdisplay sidebar PCTW.FSBT.Info
         
 
-# Team作成
+# team作成
     ## プレイヤーチーム
         team add FSBTPlayerTeamRed
         team add FSBTPlayerTeamBlue
         team add FSBTPlayerTeamYellow
         team add FSBTPlayerTeamGreen
 
-# Team設定
+# team設定
     ## FSBTPlayerTeamRed
         team modify FSBTPlayerTeamRed color red
     ## FSBTPlayerTeamBlue
@@ -64,9 +64,20 @@
         team modify FSBTPlayerTeamGreen color green
 
 
+# bossbar作成
+    ## Timer
+        bossbar add pctw:fishing_battle/timer ""
+        
+# bossbar設定
+    ## timer
+        bossbar set pctw:fishing_battle/timer visible true
+        bossbar set pctw:fishing_battle/timer players @a
+        bossbar set pctw:fishing_battle/timer style notched_10
+
+
 # アイテム付与
     ## 歴代ランキング本
-        execute as @a[nbt=!{Inventory:[{id:"minecraft:written_book",tag:{FSBTRankingBook:1b}}]}] run give @s written_book{pages:['["","==== ",{"text":"ランキング","bold":true,"color":"gold"}," ====","\\n","\\n",{"text":"1位  ","bold":true,"color":"red"},{"nbt":"Ranking.1.Name","storage":"pctw:fishing_battle/ranking","bold":true,"hoverEvent":{"action":"show_text","contents":[{"nbt":"Ranking.1.Score","storage":"pctw:fishing_battle/ranking","bold":true},"pt"]}},"\\n","\\n",{"text":"2位  ","color":"gray"},{"nbt":"Ranking.2.Name","storage":"pctw:fishing_battle/ranking","hoverEvent":{"action":"show_text","contents":[{"nbt":"Ranking.2.Score","storage":"pctw:fishing_battle/ranking","color":"gray"},"pt"]}},"\\n","\\n",{"text":"3位  ","color":"gold"},{"nbt":"Ranking.3.Name","storage":"pctw:fishing_battle/ranking","hoverEvent":{"action":"show_text","contents":[{"nbt":"Ranking.3.Score","storage":"pctw:fishing_battle/ranking","color":"gold"},"pt"]}},"\\n","\\n","\\n","4位",{"nbt":"Ranking.4.Name","storage":"pctw:fishing_battle/ranking","hoverEvent":{"action":"show_text","contents":[{"nbt":"Ranking.4.Score","storage":"pctw:fishing_battle/ranking"},"pt"]}},"\\n","5位",{"nbt":"Ranking.5.Name","storage":"pctw:fishing_battle/ranking","hoverEvent":{"action":"show_text","contents":[{"nbt":"Ranking.5.Score","storage":"pctw:fishing_battle/ranking"},"pt"]}}]'],title:"歴代ランキング",author:"釣り大会",PCTWItems:1b,PCTWFSBTItems:1b,FSBTRankingBook:1b}
+        execute as @a[nbt=!{Inventory:[{id:"minecraft:written_book",tag:{FSBTRankingBook:1b}}]}] run give @s written_book{pages:['["","==== ",{"text":"ランキング","bold":true,"color":"gold"}," ====","\\n","\\n",{"text":"1位  ","bold":true,"color":"gold"},{"nbt":"Ranking.1.Name","storage":"pctw:fishing_battle/ranking","bold":true,"hoverEvent":{"action":"show_text","contents":[{"nbt":"Ranking.1.Score","storage":"pctw:fishing_battle/ranking","color":"gold","bold":true},"pt"]}},"\\n","\\n",{"text":"2位  ","color":"gray"},{"nbt":"Ranking.2.Name","storage":"pctw:fishing_battle/ranking","hoverEvent":{"action":"show_text","contents":[{"nbt":"Ranking.2.Score","storage":"pctw:fishing_battle/ranking","color":"gray"},"pt"]}},"\\n","\\n",{"text":"3位  ","color":"dark_red"},{"nbt":"Ranking.3.Name","storage":"pctw:fishing_battle/ranking","hoverEvent":{"action":"show_text","contents":[{"nbt":"Ranking.3.Score","storage":"pctw:fishing_battle/ranking","color":"dark_red"},"pt"]}},"\\n","\\n","\\n","4位  ",{"nbt":"Ranking.4.Name","storage":"pctw:fishing_battle/ranking","hoverEvent":{"action":"show_text","contents":[{"nbt":"Ranking.4.Score","storage":"pctw:fishing_battle/ranking"},"pt"]}},"\\n","5位  ",{"nbt":"Ranking.5.Name","storage":"pctw:fishing_battle/ranking","hoverEvent":{"action":"show_text","contents":[{"nbt":"Ranking.5.Score","storage":"pctw:fishing_battle/ranking"},"pt"]}}]'],title:"歴代ランキング",author:"釣り大会",PCTWItems:1b,PCTWFSBTItems:1b,FSBTRankingBook:1b}
     ## Setting
 
     

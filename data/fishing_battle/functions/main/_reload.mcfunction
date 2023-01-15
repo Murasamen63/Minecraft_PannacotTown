@@ -35,6 +35,21 @@
         
 
 # Team作成
+    ## プレイヤーチーム
+        team add FSBTPlayerTeamRed
+        team add FSBTPlayerTeamBlue
+        team add FSBTPlayerTeamYellow
+        team add FSBTPlayerTeamGreen
+
+# Team設定
+    ## FSBTPlayerTeamRed
+        team modify FSBTPlayerTeamRed color red
+    ## FSBTPlayerTeamBlue
+        team modify FSBTPlayerTeamBlue color blue
+    ## FSBTPlayerTeamYellow
+        team modify FSBTPlayerTeamYellow color yellow
+    ## FSBTPlayerTeamGreen
+        team modify FSBTPlayerTeamGreen color green
 
 
 # アイテム付与

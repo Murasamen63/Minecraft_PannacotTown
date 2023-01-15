@@ -1,0 +1,1 @@
+#> fishing_battle:main/game_state/1_ready

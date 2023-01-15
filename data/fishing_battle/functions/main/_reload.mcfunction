@@ -4,6 +4,14 @@
 #
 # @within function fishing_battle:init/install
 
+#> Score Holder
+# @within function fishing_battle:**
+    #define score_holder PCTW.FSBT.System
+    #define score_holder PCTW.FSBT.GameState.Ready
+    #define score_holder PCTW.FSBT.GameState.CountDown
+    #define score_holder PCTW.FSBT.GameState.Play
+    #define score_holder PCTW.FSBT.GameState.End
+
 
 
 #region 内容
@@ -28,7 +36,11 @@
 
 # scoreboard設定
     ## GameState
-        execute if score PCTW.System PCTW.FSBT.GameState matches -2147483648.. run scoreboard players set PCTW.System PCTW.FSBT.GameState 0
+        execute if score PCTW.FSBT.System PCTW.FSBT.GameState matches -2147483648.. run scoreboard players set PCTW.FSBT.System PCTW.FSBT.GameState 0
+        scoreboard players set PCTW.FSBT.GameState.Ready PCTW.FSBT.GameState 0
+        scoreboard players set PCTW.FSBT.GameState.CountDown PCTW.FSBT.GameState 1
+        scoreboard players set PCTW.FSBT.GameState.Play PCTW.FSBT.GameState 2
+        scoreboard players set PCTW.FSBT.GameState.End PCTW.FSBT.GameState 3
     ## Info
         scoreboard objectives modify PCTW.FSBT.Info displayname "今日の記録"
         scoreboard objectives setdisplay sidebar PCTW.FSBT.Info

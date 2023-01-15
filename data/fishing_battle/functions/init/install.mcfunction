@@ -8,8 +8,16 @@
 #region 内容
 
 
+# ゲームモード変更
+    data modify storage pctw:core GameMode set value FishingBattle
+
 # reload.mcfunctionを実行
     function fishing_battle:main/_reload
 
 
 #endregion
+
+
+# debug
+    ## 通知
+        say fishing_battle Installed

@@ -12,3 +12,6 @@
 # Gamemode変更
     ## 釣り大会
         execute if data storage pctw:core {GameMode:FishingBattle} run function fishing_battle:main/_main
+
+
+#endregion

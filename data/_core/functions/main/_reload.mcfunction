@@ -30,6 +30,12 @@
     ## WFoaS
         scoreboard objectives add PCTW.Use.WFoaS used:warped_fungus_on_a_stick
 
+# scoreboard設定
+    ## CoaS
+        scoreboard players reset @a PCTW.Use.Coas
+    ## WFoaS
+        scoreboard players reset @a PCTW.Use.WFoaS
+
 # storage作成
     ## core
         data modify storage pctw:core GameMode set value null

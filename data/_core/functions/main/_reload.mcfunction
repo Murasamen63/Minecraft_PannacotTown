@@ -23,8 +23,12 @@
     ## core
         data modify storage pctw:core GameMode set value null
     ## fishing_battle
-        data modify storage pctw:fishing_battle/ranking Ranking set value {1:{Name:null,Score:0},2:{Name:null,Score:0},3:{Name:null,Score:0},4:{Name:null,Score:0},5:{Name:null,Score:0}}
-        data modify storage pctw:fishing_battle/system Timer set value {Value:6000}
+        execute unless data storage pctw:fishing_battle/ranking Ranking run data modify storage pctw:fishing_battle/ranking Ranking set value {1:{Name:null,Score:0},2:{Name:null,Score:0},3:{Name:null,Score:0},4:{Name:null,Score:0},5:{Name:null,Score:0}}
+        data modify storage pctw:fishing_battle/system Timer set value 6000
+
+# アンインストール
+    ## 釣り大会
+        function fishing_battle:init/uninstall
 
 
 # 通知

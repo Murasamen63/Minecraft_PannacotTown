@@ -2,7 +2,7 @@
 #
 # core：定数を宣言するfunction 
 #
-# @private
+# @within function _core:main/_reload
 
 
 

@@ -44,7 +44,7 @@
 
 # scoreboard設定
     ## GameState
-        execute if score $PCTW.FSBT.System PCTW.FSBT.GameState matches -2147483648.. run scoreboard players set $PCTW.FSBT.System PCTW.FSBT.GameState 0
+        execute unless score $PCTW.FSBT.System PCTW.FSBT.GameState matches -2147483648.. run scoreboard players set $PCTW.FSBT.System PCTW.FSBT.GameState 0
         scoreboard players set $PCTW.FSBT.GameState.Ready PCTW.FSBT.GameState 0
         scoreboard players set $PCTW.FSBT.GameState.CountDown PCTW.FSBT.GameState 1
         scoreboard players set $PCTW.FSBT.GameState.Play PCTW.FSBT.GameState 2

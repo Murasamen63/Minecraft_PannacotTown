@@ -6,12 +6,15 @@
 
 #region 宣言
 
-
 #> Storage
 # @public
     #define storage pctw:core
     #define storage pctw:fishing_battle/system
     #define storage pctw:fishing_battle/ranking
+
+#> Entity Tag
+# @public
+    #define tag PCTW.AEC.AlwaysAlive
 
 
 #endregion
@@ -41,6 +44,5 @@
 
 # 通知
     #tellraw @a 
-
 
 #endregion

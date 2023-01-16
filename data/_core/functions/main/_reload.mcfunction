@@ -25,6 +25,10 @@
 # scoreboard作成
     ## Const
         scoreboard objectives add PCTW.Const dummy
+    ## CoaS
+        scoreboard objectives add PCTW.Use.Coas used:carrot_on_a_stick
+    ## WFoaS
+        scoreboard objectives add PCTW.Use.WFoaS used:warped_fungus_on_a_stick
 
 # storage作成
     ## core

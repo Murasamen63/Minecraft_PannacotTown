@@ -2,7 +2,7 @@
 #
 # fishing_battle：釣り大会の設定をアンインストールするfunction
 #
-# @private
+# @within function _core:main/_reload
 
 
 
@@ -20,6 +20,12 @@
     scoreboard objectives remove PCTW.FSBT.Score
     scoreboard objectives remove PCTW.FSBT.ShowTimer.Minute
     scoreboard objectives remove PCTW.FSBT.ShowTimer.Second
+
+# bossbar削除
+    bossbar remove pctw:fishing_battle/timer
+
+# アイテム削除
+    clear @a #fishing_battle:pctw_fsbt_items{PCTWFSBTItems:1b}
 
 
 #endregion

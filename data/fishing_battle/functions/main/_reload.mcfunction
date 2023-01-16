@@ -4,6 +4,9 @@
 #
 # @within function fishing_battle:init/install
 
+#region 宣言
+
+
 #> Score Holder
 # @within function fishing_battle:**
     #define score_holder $PCTW.FSBT.System
@@ -12,7 +15,12 @@
     #define score_holder $PCTW.FSBT.GameState.Play
     #define score_holder $PCTW.FSBT.GameState.End
 
+#> bossbar
+# @within function fishing_battle:**
+    #define bossbar pctw:fishing_battle/timer
 
+
+#endregion
 
 #region 内容
 
@@ -41,9 +49,6 @@
         scoreboard players set $PCTW.FSBT.GameState.CountDown PCTW.FSBT.GameState 1
         scoreboard players set $PCTW.FSBT.GameState.Play PCTW.FSBT.GameState 2
         scoreboard players set $PCTW.FSBT.GameState.End PCTW.FSBT.GameState 3
-    ## Info
-        scoreboard objectives modify PCTW.FSBT.Info displayname "今日の記録"
-        scoreboard objectives setdisplay sidebar PCTW.FSBT.Info
         
 
 # team作成
@@ -78,7 +83,6 @@
 # アイテム付与
     ## 歴代ランキング本
         execute as @a[nbt=!{Inventory:[{id:"minecraft:written_book",tag:{FSBTRankingBook:1b}}]}] run give @s written_book{pages:['["","==== ",{"text":"ランキング","bold":true,"color":"gold"}," ====","\\n","\\n",{"text":"1位  ","bold":true,"color":"gold"},{"nbt":"Ranking.1.Name","storage":"pctw:fishing_battle/ranking","bold":true,"hoverEvent":{"action":"show_text","contents":[{"nbt":"Ranking.1.Score","storage":"pctw:fishing_battle/ranking","color":"gold","bold":true},"pt"]}},"\\n","\\n",{"text":"2位  ","color":"gray"},{"nbt":"Ranking.2.Name","storage":"pctw:fishing_battle/ranking","hoverEvent":{"action":"show_text","contents":[{"nbt":"Ranking.2.Score","storage":"pctw:fishing_battle/ranking","color":"gray"},"pt"]}},"\\n","\\n",{"text":"3位  ","color":"dark_red"},{"nbt":"Ranking.3.Name","storage":"pctw:fishing_battle/ranking","hoverEvent":{"action":"show_text","contents":[{"nbt":"Ranking.3.Score","storage":"pctw:fishing_battle/ranking","color":"dark_red"},"pt"]}},"\\n","\\n","\\n","4位  ",{"nbt":"Ranking.4.Name","storage":"pctw:fishing_battle/ranking","hoverEvent":{"action":"show_text","contents":[{"nbt":"Ranking.4.Score","storage":"pctw:fishing_battle/ranking"},"pt"]}},"\\n","5位  ",{"nbt":"Ranking.5.Name","storage":"pctw:fishing_battle/ranking","hoverEvent":{"action":"show_text","contents":[{"nbt":"Ranking.5.Score","storage":"pctw:fishing_battle/ranking"},"pt"]}}]'],title:"歴代ランキング",author:"釣り大会",PCTWItems:1b,PCTWFSBTItems:1b,FSBTRankingBook:1b}
-    ## Setting
 
     
 #endregion

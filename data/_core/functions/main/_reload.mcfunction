@@ -4,6 +4,9 @@
 #
 # @within tag/function minecraft:load
 
+#region 宣言
+
+
 #> Storage
 # @public
     #define storage pctw:core
@@ -11,6 +14,7 @@
     #define storage pctw:fishing_battle/ranking
 
 
+#endregion
 
 #region 内容
 

@@ -54,7 +54,7 @@
 
 # アイテム削除
     ## temp_Setting
-        clear @a book{PCTWTempSettingBook:1b}
+        clear @a written_book{PCTWTempSettingBook:1b}
 
 # アイテム付与
     ## temp_Setting

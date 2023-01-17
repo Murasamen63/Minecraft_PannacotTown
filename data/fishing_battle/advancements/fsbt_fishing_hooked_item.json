@@ -1,0 +1,54 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:fishing_rod_hooked",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:alternative",
+						"terms": [
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"type": "minecraft:player",
+									"nbt": "{Tags:[\"PCTW.FSBT.Player\"]}",
+									"equipment": {
+										"mainhand": {
+											"items": [
+												"minecraft:fishing_rod"
+											],
+											"nbt": "{FSBTFishingRod:1b}"
+										}
+									}
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"type": "minecraft:player",
+									"nbt": "{Tags:[\"PCTW.FSBT.Player\"]}",
+									"equipment": {
+										"offhand": {
+											"items": [
+												"minecraft:fishing_rod"
+											],
+											"nbt": "{FSBTFishingRod:1b}"
+										}
+									}
+								}
+							}
+						]
+					}
+				],
+				"item": {
+					"tag": "fishing_battle:fsbt_hooked_item"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "fishing_battle:advancements/fsbt_fishing_hooked_item"
+	}
+}

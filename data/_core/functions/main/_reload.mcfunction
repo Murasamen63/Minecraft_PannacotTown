@@ -19,8 +19,8 @@
 
 #endregion
 
-#region 内容
 
+#region 内容
 
 # scoreboard作成
     ## Const
@@ -36,6 +36,7 @@
     ## WFoaS
         scoreboard players reset @a PCTW.Use.WFoaS
 
+
 # storage作成
     ## core
         data modify storage pctw:core GameMode set value null
@@ -50,6 +51,14 @@
     ## アンインストール
         ### 釣り大会
             function fishing_battle:init/uninstall
+
+# アイテム削除
+    ## temp_Setting
+        clear @a book{PCTWTempSettingBook:1b}
+
+# アイテム付与
+    ## temp_Setting
+        give @p written_book{pages:['["","===Setting===","\\n","\\n","・制限時間","\\n",{"text":"3分","bold":true,"underlined":true,"color":"red","clickEvent":{"action":"run_command","value":"/scoreboard players set $PCTW.FSBT.System PCTW.FSBT.GameTimer 3600"}},"  ",{"text":"5分","bold":true,"underlined":true,"color":"red","clickEvent":{"action":"run_command","value":"/scoreboard players set $PCTW.FSBT.System PCTW.FSBT.GameTimer 6000"}},"  ",{"text":"10分","bold":true,"underlined":true,"color":"red","clickEvent":{"action":"run_command","value":"/scoreboard players set $PCTW.FSBT.System PCTW.FSBT.GameTimer 12000"}},"  ",{"text":"15分","bold":true,"underlined":true,"color":"red","clickEvent":{"action":"run_command","value":"/scoreboard players set $PCTW.FSBT.System PCTW.FSBT.GameTimer 18000"}},"  ",{"text":"20分","bold":true,"underlined":true,"color":"red","clickEvent":{"action":"run_command","value":"/scoreboard players set $PCTW.FSBT.System PCTW.FSBT.GameTimer 24000"}},"\\n","\\n"]','["","===Setting===","\\n","\\n","・ゲーム開始","\\n",{"text":"スタート","bold":true,"underlined":true,"color":"red","clickEvent":{"action":"run_command","value":"/scoreboard players set $PCTW.FSBT.System PCTW.FSBT.GameState 1"}}]'],title:"Setting",author:Player,PCTWItems:1b,PCTWTempSettingBook:1b}
 
 
 # 通知

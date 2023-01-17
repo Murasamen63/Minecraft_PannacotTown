@@ -8,6 +8,13 @@
 
 #region 内容
 
+# Playerタグ管理
+    ## advantureにタグ付与
+        execute as @a[gamemode=adventure] at @s run tag @s add PCTW.FSBT.Player
+    ## それ以外にタグ剥奪
+        execute as @a[gamemode=!adventure] at @s run tag @s remove PCTW.FSBT.Player
+
+
 # Timer
     ## scoreboard計算
         ### アイテムからTimerに反映

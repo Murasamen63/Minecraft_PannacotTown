@@ -18,7 +18,12 @@
 # @within function fishing_battle:**
     #define bossbar pctw:fishing_battle/timer
 
+#> Entity Tag
+# @within function fishing_battle:**
+    #define tag PCTW.FSBT.Player
+
 #endregion
+
 
 #region 内容
 

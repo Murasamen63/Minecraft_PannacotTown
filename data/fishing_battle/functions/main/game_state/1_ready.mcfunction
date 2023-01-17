@@ -18,8 +18,8 @@
 # Timer
     ## scoreboard計算
         ### アイテムからTimerに反映
-        execute store result score $PCTW.FSBT.System PCTW.FSBT.GameTimer run clear @a clock{FSBTSettingTimeLimitClock:1b} 0
-        scoreboard players operation $PCTW.FSBT.System PCTW.FSBT.GameTimer *= #1200 PCTW.Const
+        #execute store result score $PCTW.FSBT.System PCTW.FSBT.GameTimer run clear @a clock{FSBTSettingTimeLimitClock:1b} 0
+        #scoreboard players operation $PCTW.FSBT.System PCTW.FSBT.GameTimer *= #1200 PCTW.Const
         execute store result storage pctw:fishing_battle/system Timer int 1 run scoreboard players get $PCTW.FSBT.System PCTW.FSBT.GameTimer
         ### 分を計算
         execute store result score $PCTW.FSBT.System PCTW.FSBT.ShowTimer.Minute run data get storage pctw:fishing_battle/system Timer
@@ -28,7 +28,6 @@
         execute store result score $PCTW.FSBT.System PCTW.FSBT.ShowTimer.Second run data get storage pctw:fishing_battle/system Timer
         scoreboard players operation $PCTW.FSBT.System PCTW.FSBT.ShowTimer.Second %= #1200 PCTW.Const
         scoreboard players operation $PCTW.FSBT.System PCTW.FSBT.ShowTimer.Second /= #20 PCTW.Const
-
     ## bossbar反映
         ### 名称
             #### 3分以上

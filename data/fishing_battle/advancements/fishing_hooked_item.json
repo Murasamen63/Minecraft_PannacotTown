@@ -43,12 +43,12 @@
 					}
 				],
 				"item": {
-					"tag": "fishing_battle:fsbt_hooked_item"
+					"tag": "fishing_battle:hooked_item"
 				}
 			}
 		}
 	},
 	"rewards": {
-		"function": "fishing_battle:advancements/fsbt_fishing_hooked_item"
+		"function": "fishing_battle:advancements/fishing_hooked_item"
 	}
 }

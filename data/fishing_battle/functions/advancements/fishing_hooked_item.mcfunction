@@ -1,4 +1,4 @@
-
+#> fishing_battle:advancements/fishing_hooked_item
 #
 # fishing_battle：専用の釣り竿でアイテムを釣った際のadvancementのリワードfunction
 #

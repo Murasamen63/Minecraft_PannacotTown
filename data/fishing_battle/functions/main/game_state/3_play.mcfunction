@@ -62,6 +62,8 @@
                 ##### 効果音
                     execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 20 as @a at @s run playsound entity.experience_orb.pickup voice @s ~ ~ ~ 1.0 1.0
         ### 終了
+            #### 通知
+                execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 0 run title @a title {"text":"Finish!!","bold":true,"underlined":true,"color":"gold"}
             #### GameState変更
                 execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 0 run scoreboard players set $PCTW.FSBT.System PCTW.FSBT.GameState 3
             #### 通知

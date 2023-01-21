@@ -1,0 +1,22 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:fishing_rod_hooked",
+			"conditions": {
+				"player": {
+					"nbt": "{Tags:[\"PCTW.FSBT.Player\"]}"
+				},
+				"item": {
+					"items": [
+						"minecraft:cod"
+					],
+					"tag": "fishing_battle:hooked_item",
+					"nbt": "{}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "minecraft:a"
+	}
+}

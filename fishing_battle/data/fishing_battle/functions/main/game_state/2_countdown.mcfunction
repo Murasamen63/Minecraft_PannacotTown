@@ -58,7 +58,7 @@
         ### タイトル表示
             execute if score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches 0 run title @a title {"text":"Start!!","bold":true,"underlined":true}
         ### tellraw表示
-            tellraw @s ["","\n","制限時間は ",{"score":{"name":"$PCTW.FSBT.System","objective":"PCTW.FSBT.ShowTimer.Minute"},"bold":true,"underlined":true,"color":"gold"},{"text":"分間","bold":true,"underlined":true,"color":"gold"}," です","\n","\n"]
+            tellraw @s ["","\n","制限時間は ",{"score":{"name":"$PCTW.FSBT.System","objective":"PCTW.FSBT.ShowTimer.Minute"},"bold":true,"underlined":true,"color":"gold"},{"text":"分間","bold":true,"underlined":true,"color":"gold"}," です","\n"]
         ### 効果音
             execute if score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches 0 as @a at @s run playsound entity.player.levelup voice @s ~ ~ ~ 1.0 0.5
     ## GameState移行

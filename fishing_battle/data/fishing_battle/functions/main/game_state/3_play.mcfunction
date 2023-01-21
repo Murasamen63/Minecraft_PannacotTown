@@ -17,6 +17,56 @@
             execute store result score $PCTW.FSBT.System PCTW.FSBT.ShowTimer.Second run scoreboard players get $PCTW.FSBT.System PCTW.FSBT.GameTimer
             scoreboard players operation $PCTW.FSBT.System PCTW.FSBT.ShowTimer.Second %= #1200 PCTW.Const
             scoreboard players operation $PCTW.FSBT.System PCTW.FSBT.ShowTimer.Second /= #20 PCTW.Const
+        ### 時間通知
+            #### 10分
+                execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 12000 run tellraw @a ["","\n","残り ",{"text":"10分","bold":true,"underlined":true,"color":"gold"},"\n"]
+            #### 5分
+                execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 6000 run tellraw @a ["","\n","残り ",{"text":"5分","bold":true,"underlined":true,"color":"gold"},"\n"]
+            #### 3分
+                execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 3600 run tellraw @a ["","\n","残り ",{"text":"3分","bold":true,"underlined":true,"color":"gold"},"\n"]
+            #### 1分
+                ##### tellraw
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 1200 run tellraw @a ["","\n","残り ",{"text":"1分","bold":true,"underlined":true,"color":"red"},"\n"]
+                ##### 効果音
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 1200 as @a at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 1.0 0.5
+            #### 30秒
+                execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 600 run tellraw @a ["","\n","残り ",{"text":"30秒","bold":true,"underlined":true,"color":"red"},"\n"]
+            #### 10秒
+                ##### tellraw
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 200 run tellraw @a ["","\n","残り ",{"text":"1分","bold":true,"underlined":true,"color":"red"},"\n"]
+                ##### 効果音
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 200 as @a at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 1.0 1.0
+            #### 5秒前
+                ##### 表示
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 100 run tellraw @s ["","\n",{"text":"5","bold":true,"underlined":true,"color":"red"}]
+                ##### 効果音
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 100 as @a at @s run playsound entity.experience_orb.pickup voice @s ~ ~ ~ 1.0 1.0
+            #### 4秒前
+                ##### 表示
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 80 run tellraw @s ["",{"text":"4","bold":true,"underlined":true,"color":"red"}]
+                ##### 効果音
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 80 as @a at @s run playsound entity.experience_orb.pickup voice @s ~ ~ ~ 1.0 1.0
+            #### 3秒前
+                ##### 表示
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 60 run tellraw @s ["",{"text":"3","bold":true,"underlined":true,"color":"red"}]
+                ##### 効果音
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 60 as @a at @s run playsound entity.experience_orb.pickup voice @s ~ ~ ~ 1.0 1.0
+            #### 2秒前
+                ##### 表示
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 40 run tellraw @s ["",{"text":"2","bold":true,"underlined":true,"color":"red"}]
+                ##### 効果音
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 40 as @a at @s run playsound entity.experience_orb.pickup voice @s ~ ~ ~ 1.0 1.0
+            #### 1秒前
+                ##### 表示
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 20 run tellraw @s ["",{"text":"1","bold":true,"underlined":true,"color":"red"}]
+                ##### 効果音
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 20 as @a at @s run playsound entity.experience_orb.pickup voice @s ~ ~ ~ 1.0 1.0
+        ### 終了
+            #### GameState変更
+                execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 0 run scoreboard players set $PCTW.FSBT.System PCTW.FSBT.GameState 3
+            #### 通知
+                execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 0 run title
+
     ## bossbar反映
         ### 現在値
             execute store result bossbar pctw:fishing_battle/timer value run scoreboard players get $PCTW.FSBT.System PCTW.FSBT.GameTimer

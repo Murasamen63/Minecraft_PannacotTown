@@ -22,9 +22,14 @@
 
 #region 内容
 
+# PCTW.Temporaryのリセット
+    scoreboard objectives remove PCTW.Temporary
+
 # scoreboard作成
     ## Const
         scoreboard objectives add PCTW.Const dummy
+    ## Temporary
+        scoreboard objectives add PCTW.Temporary dummy
     ## CoaS
         scoreboard objectives add PCTW.Use.Coas used:carrot_on_a_stick
     ## WFoaS
@@ -63,5 +68,9 @@
 
 # 通知
     #tellraw @a 
+
+
+# gamerule設定
+
 
 #endregion

@@ -16,4 +16,8 @@
     ## 永続生存
         execute as @e[type=area_effect_cloud,tag=PCTW.AEC.AlwaysAlive] at @s run data modify entity @s Age set value 0
 
+# Debug_item
+    ## debug_PTCW
+        #execute as @a[tag=PCTW.Player.Staff] at @s run 
+
 #endregion

@@ -61,6 +61,8 @@
 # アイテム削除
     ## temp_Setting
         clear @a written_book{PCTWTempSettingBook:1b}
+    ## debug_pctw
+        clear @a warped_fungus_on_a_stick{PCTWDebug_PCTW:1b}
 
 # アイテム付与
     ## temp_Setting

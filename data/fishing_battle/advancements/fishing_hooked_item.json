@@ -46,6 +46,25 @@
 					"tag": "fishing_battle:hooked_item"
 				}
 			}
+		},
+		"GameState": {
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:value_check",
+						"value": {
+							"type": "minecraft:score",
+							"target": {
+								"type": "minecraft:fixed",
+								"name": "$PCTW.FSBT.System"
+							},
+							"score": "PCTW.FSBT.GameState"
+						},
+						"range": 2
+					}
+				]
+			}
 		}
 	},
 	"rewards": {

@@ -15,7 +15,7 @@
 #> Entity Tag
 # @public
     #define tag PCTW.AEC.AlwaysAlive
-
+    #define tag PCTW.Player.Staff
 
 #endregion
 

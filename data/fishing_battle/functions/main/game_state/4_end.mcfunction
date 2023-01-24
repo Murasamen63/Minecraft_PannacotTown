@@ -88,6 +88,8 @@
             execute if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 620 as @a at @s run tag @s remove PCTW.FSBT.Temp.Score.3rd
     ## GameState変更
         execute if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 620 run scoreboard players set $PCTW.FSBT.System PCTW.FSBT.GameState 0
+    ### ResultTimer削除
+        execute if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 620 run scoreboard players reset $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer
 
 # リザルトタイマー増加
     execute if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches ..619 run scoreboard players add $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer 1

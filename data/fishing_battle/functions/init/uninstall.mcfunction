@@ -29,8 +29,3 @@
 
 
 #endregion
-
-
-# debug
-    ## 通知
-        say fishing_battle Uninstalled

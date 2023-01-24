@@ -36,7 +36,7 @@ Minecraft JavaEdition - ver1.19.3
 例)
 ```
 ・PCTW.AEC.AlwaysAlive  全体で使用するAreaEffectCloudを永続させるタグ
-・PCTW.FSBT.Player 釣り大会に参加するプレイヤーに付けるタグ
+・PCTW.FSBT.Player 釣り大会に参加するプレイヤーに付けるタグ      etc...
 ```
 
 ### Item:CustomTags
@@ -47,5 +47,5 @@ Minecraft JavaEdition - ver1.19.3
 例)
 ```
 ・PCTWItems  バニラアイテムと企画用アイテムを区別する為のCustomTag
-・FSBTHookedItem  釣り大会での釣果アイテムのCustomTag
+・FSBTHookedItem  釣り大会での釣果アイテムのCustomTag      etc...
 ```

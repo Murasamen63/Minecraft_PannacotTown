@@ -1,6 +1,6 @@
 #> fishing_battle:main/_main
 #
-# fishing_battle：初めに読み込むfunction
+# fishing_battle：常時起動するfunction
 #
 # @within function _core:main/_main
 

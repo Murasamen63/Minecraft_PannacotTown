@@ -2,7 +2,7 @@
 
 ## Version
 
-Minecraft - ver1.19.3
+Minecraft JavaEdition - ver1.19.3
 
 ## コーディング書式
 

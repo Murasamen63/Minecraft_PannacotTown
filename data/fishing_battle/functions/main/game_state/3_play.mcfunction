@@ -101,7 +101,7 @@
                 execute as @a[tag=PCTW.FSBT.Player] at @s run title @s actionbar ["","現在のスコア  ",{"score":{"name":"@s","objective":"PCTW.FSBT.Score"},"bold":true,"color":"green"},{"text":"pt","bold":true,"color":"green"}]
             ### それ以外は近づいたらそのプレイヤーのスコアが表示
                 #### 3マス以内にいる場合
-                    execute as @a[tag=!PCTW.FSBT.Player] at @s if entity @p[tag=PCTW.FSBT.Player,distance=..3] run title @s actionbar ["",{"selector":"@p[tag=PCTW.FSBT.Player,distance=..3]","italic":true},"のスコア  ",{"score":{"name":"@s","objective":"PCTW.FSBT.Score"},"bold":true,"color":"green"},{"text":"pt","bold":true,"color":"green"}]
+                    execute as @a[tag=!PCTW.FSBT.Player] at @s if entity @p[tag=PCTW.FSBT.Player,distance=..3] run title @s actionbar ["",{"selector":"@p[tag=PCTW.FSBT.Player,distance=..3]","italic":true},"のスコア  ",{"score":{"name":"@p[tag=PCTW.FSBT.Player,distance=..3]","objective":"PCTW.FSBT.Score"},"bold":true,"color":"green"},{"text":"pt","bold":true,"color":"green"}]
                 #### いない場合
                     execute as @a[tag=!PCTW.FSBT.Player] at @s unless entity @p[tag=PCTW.FSBT.Player,distance=..3] run title @s actionbar ""
 

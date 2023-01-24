@@ -23,6 +23,9 @@
             execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. run execute store result bossbar pctw:fishing_battle/timer value run data get storage pctw:fishing_battle/system Timer
     ## title
         execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. run title @a times 0 21 0
+    ## sidebar
+        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. as @a at @s run scoreboard objectives setdisplay sidebar
+        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. as @a at @s run scoreboard players reset @s PCTW.FSBT.Info
     ## scoreboard
         execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. run scoreboard players set $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer 120
 

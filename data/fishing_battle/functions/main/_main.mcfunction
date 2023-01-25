@@ -19,5 +19,9 @@
     ## GameState = 3
         execute if score $PCTW.FSBT.System PCTW.FSBT.GameState = $PCTW.FSBT.GameState.End PCTW.FSBT.GameState run function fishing_battle:main/game_state/4_end
 
+# 常時実行
+    ## 経験値オーブを消す
+        execute as @e[type=experience_orb] at @s run kill @s
+
 
 #endregion

@@ -55,6 +55,9 @@
 
 
 # 終了時処理
+    ## scoreboard設定
+        ### Score
+            execute if score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches 0 run scoreboard players set @a[tag=PCTW.FSBT.Player] PCTW.FSBT.Score 0
     ## 通知
         ### 表示時間変更
             execute if score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches 0 run title @a times 10 70 20

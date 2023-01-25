@@ -15,8 +15,6 @@
 #region 内容
 
 # 初期化
-    ## 釣竿の削除
-        execute unless score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches -2147483648.. run clear @a fishing_rod{FSBTFishingRod:1b}
     ## scoreboard初期化
         execute unless score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches -2147483648.. run scoreboard players set $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer 0
     

@@ -101,6 +101,8 @@
             #### scoreboard復元
                 scoreboard players add $PCTW.FSBT.System PCTW.FSBT.GameTimer 20
     ## 終了
+        ### 釣竿の削除
+            execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 20 run clear @a fishing_rod{FSBTFishingRod:1b}
         ### 通知
             execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 20 run title @a title {"text":"Finish!!","bold":true,"underlined":true,"color":"gold"}
         ### 効果音

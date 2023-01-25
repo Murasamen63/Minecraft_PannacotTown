@@ -57,6 +57,8 @@
         ### スコア表示
             execute if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 560 run tellraw @a ["",{"score":{"name":"@r[tag=PCTW.FSBT.Player,tag=PCTW.FSBT.Temp.Score.1st]","objective":"PCTW.FSBT.Score"},"bold":true,"color":"gold"},{"text":"pt","bold":true,"color":"gold"}]
         ### プレイヤー表示
+            #### 発行
+                execute if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 620 run execute as @a[tag=PCTW.FSBT.Player,tag=PCTW.FSBT.Temp.Score.1st] at @s run effect give @s glowing 10 0 true
             #### 時間設定
                 execute if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 620 run title @a reset
             #### title表示

@@ -91,10 +91,10 @@
         ### 表示
             title @a times 10 70 20
             title @a title ["",{"text":"・・・ ","bold":true,"italic":true},"『",{"text":"釣り大会","bold":true,"italic":true,"color":"aqua"},"』",{"text":" ・・・","bold":true,"italic":true}]
-            tellraw @a ["","\n","ゲームモードを 『",{"text":"釣り大会","bold":true,"italic":true,"underlined":true,"color":"aqua"},"』 に設定しました！","\n"]
+            tellraw @a ["","\n","  ゲームモードを 『",{"text":"釣り大会","bold":true,"italic":true,"underlined":true,"color":"aqua"},"』 に設定しました！","\n"]
         ### 効果音
             execute as @a at @s run playsound entity.player.levelup voice @s ~ ~ ~ 1.0 1.0
     ## スタッフ
-        tellraw @a[tag=PCTW.Player.Staff] ["","\n",{"text":"・スタッフ","color":"gold"},"\n",{"selector":"@a[tag=PCTW.Player.Staff]"},"\n"]
+        tellraw @a[tag=PCTW.Player.Staff] ["","\n",{"text":"  "},{"text":"・スタッフ","color":"gold"},"\n",{"text":"  "},{"selector":"@a[tag=PCTW.Player.Staff]"},"\n"]
 
 #endregion

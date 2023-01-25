@@ -56,46 +56,46 @@
             #### 通知用にscoreboard減算
                 scoreboard players remove $PCTW.FSBT.System PCTW.FSBT.GameTimer 20
             #### 10分
-                execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 12000 run tellraw @a ["","\n","残り ",{"text":"10分","bold":true,"underlined":true,"color":"gold"},"\n"]
+                execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 12000 run tellraw @a ["","\n","  残り ",{"text":"10分","bold":true,"underlined":true,"color":"gold"},"\n"]
             #### 5分
-                execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 6000 run tellraw @a ["","\n","残り ",{"text":"5分","bold":true,"underlined":true,"color":"gold"},"\n"]
+                execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 6000 run tellraw @a ["","\n","  残り ",{"text":"5分","bold":true,"underlined":true,"color":"gold"},"\n"]
             #### 3分
-                execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 3600 run tellraw @a ["","\n","残り ",{"text":"3分","bold":true,"underlined":true,"color":"gold"},"\n"]
+                execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 3600 run tellraw @a ["","\n","  残り ",{"text":"3分","bold":true,"underlined":true,"color":"gold"},"\n"]
             #### 1分
                 ##### tellraw
-                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 1200 run tellraw @a ["","\n","残り ",{"text":"1分","bold":true,"underlined":true,"color":"red"},"\n"]
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 1200 run tellraw @a ["","\n","  残り ",{"text":"1分","bold":true,"underlined":true,"color":"red"},"\n"]
                 ##### 効果音
                     execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 1200 as @a at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 1.0 0.5
             #### 30秒
-                execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 600 run tellraw @a ["","\n","残り ",{"text":"30秒","bold":true,"underlined":true,"color":"red"},"\n"]
+                execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 600 run tellraw @a ["","\n","  残り ",{"text":"30秒","bold":true,"underlined":true,"color":"red"},"\n"]
             #### 10秒
                 ##### tellraw
-                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 200 run tellraw @a ["","\n","残り ",{"text":"10秒","bold":true,"underlined":true,"color":"red"},"\n"]
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 200 run tellraw @a ["","\n","  残り ",{"text":"10秒","bold":true,"underlined":true,"color":"red"},"\n"]
                 ##### 効果音
                     execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 200 as @a at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 1.0 1.0
             #### 5秒前
                 ##### 表示
-                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 100 run tellraw @a ["","\n",{"text": "    "},{"text":"5","bold":true,"underlined":true,"color":"red"}]
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 100 run tellraw @a ["","\n",{"text": "  "},{"text":"5","bold":true,"underlined":true,"color":"red"}]
                 ##### 効果音
                     execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 100 as @a at @s run playsound entity.experience_orb.pickup voice @s ~ ~ ~ 1.0 1.0
             #### 4秒前
                 ##### 表示
-                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 80 run tellraw @a ["",{"text": "    "},{"text":"4","bold":true,"underlined":true,"color":"red"}]
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 80 run tellraw @a ["",{"text": "  "},{"text":"4","bold":true,"underlined":true,"color":"red"}]
                 ##### 効果音
                     execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 80 as @a at @s run playsound entity.experience_orb.pickup voice @s ~ ~ ~ 1.0 1.0
             #### 3秒前
                 ##### 表示
-                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 60 run tellraw @a ["",{"text": "    "},{"text":"3","bold":true,"underlined":true,"color":"red"}]
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 60 run tellraw @a ["",{"text": "  "},{"text":"3","bold":true,"underlined":true,"color":"red"}]
                 ##### 効果音
                     execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 60 as @a at @s run playsound entity.experience_orb.pickup voice @s ~ ~ ~ 1.0 1.0
             #### 2秒前
                 ##### 表示
-                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 40 run tellraw @a ["",{"text": "    "},{"text":"2","bold":true,"underlined":true,"color":"red"}]
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 40 run tellraw @a ["",{"text": "  "},{"text":"2","bold":true,"underlined":true,"color":"red"}]
                 ##### 効果音
                     execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 40 as @a at @s run playsound entity.experience_orb.pickup voice @s ~ ~ ~ 1.0 1.0
             #### 1秒前
                 ##### 表示
-                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 20 run tellraw @a ["",{"text": "    "},{"text":"1","bold":true,"underlined":true,"color":"red"}]
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 20 run tellraw @a ["",{"text": "  "},{"text":"1","bold":true,"underlined":true,"color":"red"}]
                 ##### 効果音
                     execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 20 as @a at @s run playsound entity.experience_orb.pickup voice @s ~ ~ ~ 1.0 1.0
             #### scoreboard復元

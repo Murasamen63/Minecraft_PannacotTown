@@ -1,8 +1,8 @@
 #> fishing_battle:give/fishing_rod/lure_rod
 #
-# fishing_rod：アイテムを付与『ボロのつりざお』
+# fishing_rod：アイテムを付与『入れ食い釣竿』
 #
-# @private
+# @within function fishing_battle:shop/trade_lure_rod
 
 
 

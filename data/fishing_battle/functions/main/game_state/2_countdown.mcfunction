@@ -70,6 +70,8 @@
             execute if score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches 0 run tellraw @a ["","\n","  制限時間は ",{"score":{"name":"$PCTW.FSBT.System","objective":"PCTW.FSBT.ShowTimer.Minute"},"bold":true,"underlined":true,"color":"gold"},{"text":"分間","bold":true,"underlined":true,"color":"gold"}," です","\n"]
         ### 効果音
             execute if score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches 0 as @a at @s run playsound entity.player.levelup voice @s ~ ~ ~ 1.0 0.5
+    ## アイテム付与
+        execute if score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches 0 as @a[tag=PCTW.FSBT.Player] at @s run function fishing_battle:give/fishing_rod/normal_rod
     ## GameState移行
         execute if score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches 0 run scoreboard players set $PCTW.FSBT.System PCTW.FSBT.GameState 2
     ## scoreboard削除

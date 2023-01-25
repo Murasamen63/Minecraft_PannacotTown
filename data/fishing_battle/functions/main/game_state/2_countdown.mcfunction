@@ -26,9 +26,12 @@
     ## sidebar
         execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. as @a at @s run scoreboard objectives setdisplay sidebar
         execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. as @a at @s run scoreboard players reset @s PCTW.FSBT.Info
+    ## xpbar
+        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. as @a[tag=PCTW.FSBT.Player] at @s run xp set @s 129 levels
+        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. as @a[tag=PCTW.FSBT.Player] at @s run xp set @s 1000 points
+        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. as @a[tag=PCTW.FSBT.Player] at @s run xp set @s 0 levels
     ## scoreboard
         execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. run scoreboard players set $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer 120
-
 
 # カウントダウン処理
     ## 5秒前

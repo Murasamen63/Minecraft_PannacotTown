@@ -46,8 +46,8 @@
                     execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches ..1200 run bossbar set pctw:fishing_battle/timer color red
         ### actionbar表示
             #### プレイヤー自身のスコア表示
-                execute as @a[tag=PCTW.FSBT.Player] at @s run title @s actionbar ["","現在のスコア  ",{"score":{"name":"@s","objective":"PCTW.FSBT.Score"},"bold":true,"color":"green"},{"text":"pt","bold":true,"color":"green"}]
-            ### それ以外は近づいたらそのプレイヤーのスコアが表示
+                execute as @a[tag=PCTW.FSBT.Player] at @s run function fishing_battle:score/ctrl_xpbar
+            ### プレイヤー以外は近づいたらそのプレイヤーのスコアが表示
                 #### 3マス以内にいる場合
                     execute as @a[tag=!PCTW.FSBT.Player] at @s if entity @p[tag=PCTW.FSBT.Player,distance=..3] run title @s actionbar ["",{"selector":"@p[tag=PCTW.FSBT.Player,distance=..3]","italic":true},"のスコア  ",{"score":{"name":"@p[tag=PCTW.FSBT.Player,distance=..3]","objective":"PCTW.FSBT.Score"},"bold":true,"color":"green"},{"text":"pt","bold":true,"color":"green"}]
                 #### いない場合

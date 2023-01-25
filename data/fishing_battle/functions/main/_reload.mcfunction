@@ -71,7 +71,6 @@
 # storage
     ## 設定
         data modify storage pctw:fishing_battle/system Timer set value 0
-        data modify storage pctw:fishing_battle/ranking Ranking merge value {Current:{1:{Name:[null],Score:0},2:{Name:[null],Score:0},3:{Name:[null],Score:0}}}
 
 # bossbar
     ## 作成

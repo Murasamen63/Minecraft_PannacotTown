@@ -6,11 +6,17 @@
 
 #region 宣言
 
-#> Storage
+#> Storage.core
 # @public
     #define storage pctw:core
+
+#> Storage.FishingBattle
+# @within
+#   function _core:main/_reload
+#   * fishing_battle:**
     #define storage pctw:fishing_battle/system
     #define storage pctw:fishing_battle/ranking
+    #define storage pctw:fishing_battle/shop_price
 
 #> Entity Tag
 # @public
@@ -48,8 +54,12 @@
     ## core
         data modify storage pctw:core GameMode set value null
     ## fishing_battle
-        execute unless data storage pctw:fishing_battle/ranking Ranking run data modify storage pctw:fishing_battle/ranking Ranking set value {1:{Name:[null],Score:0},2:{Name:[null],Score:0},3:{Name:[null],Score:0}}
-        data modify storage pctw:fishing_battle/system Timer set value 0
+        ### Ranking
+            execute unless data storage pctw:fishing_battle/ranking Ranking run data modify storage pctw:fishing_battle/ranking Ranking set value {1:{Name:[null],Score:0},2:{Name:[null],Score:0},3:{Name:[null],Score:0}}
+        ### System
+            data modify storage pctw:fishing_battle/system Timer set value 0
+        ### Shop_Price
+            execute unless data storage pctw:fishing_battle/shop_price Price run data modify storage pctw:fishing_battle/shop_price Price set value {FishingRod:{DoubleRod:0,LureRod:0,RichRod:0,GamblingRod:0,SlotRod:0}}
 
 # function読み込み
     ## 定数

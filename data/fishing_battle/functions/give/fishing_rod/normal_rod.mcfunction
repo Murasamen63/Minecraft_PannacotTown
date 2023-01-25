@@ -2,7 +2,7 @@
 #
 # fishing_rod：アイテムを付与『ボロのつりざお』
 #
-# @private
+# @within function fishing_battle:main/game_state/2_countdown
 
 
 

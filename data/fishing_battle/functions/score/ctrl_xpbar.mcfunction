@@ -54,7 +54,7 @@
             execute if score @s PCTW.Temporary matches 1.. run scoreboard players remove @s PCTW.Temporary 1
 
 # 音声ストップ
-    stopsound @s player entity.player.levelup
+    stopsound @a player entity.player.levelup
 
 # scoreboard削除
     scoreboard players reset @s PCTW.Temporary

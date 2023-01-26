@@ -14,6 +14,20 @@
     ## それ以外にタグ剥奪
         execute as @a[gamemode=!adventure] at @s run tag @s remove PCTW.FSBT.Player
 
+# Map
+    ## ショップ看板
+        ### ダブル釣竿
+            data merge block 5 0 22 {Text1:"{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute as @s[tag=PCTW.FSBT.Player] at @s run function fishing_battle:shop/trade/double_rod\"}}",Text2:"\"ダブル釣竿\"",Text3:"[\"\",{\"nbt\":\"Price.FishingRod.DoubleRod\",\"storage\":\"pctw:fishing_battle/shop_price\",\"bold\":true,\"color\":\"green\"},{\"text\":\"pt\",\"bold\":true,\"color\":\"green\"}]",GlowingText:1b}
+        ### リッチ釣竿
+            data merge block 5 0 19 {Text1:"{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute as @s[tag=PCTW.FSBT.Player] at @s run function fishing_battle:shop/trade/rich_rod\"}}",Text2:"\"リッチ釣竿\"",Text3:"[\"\",{\"nbt\":\"Price.FishingRod.RichRod\",\"storage\":\"pctw:fishing_battle/shop_price\",\"bold\":true,\"color\":\"green\"},{\"text\":\"pt\",\"bold\":true,\"color\":\"green\"}]",GlowingText:1b}
+        ### 入れ食い釣竿
+            data merge block 8 0 17 {Text1:"{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute as @s[tag=PCTW.FSBT.Player] at @s run function fishing_battle:shop/trade/lure_rod\"}}",Text2:"\"入れ食い釣竿\"",Text3:"[\"\",{\"nbt\":\"Price.FishingRod.LureRod\",\"storage\":\"pctw:fishing_battle/shop_price\",\"bold\":true,\"color\":\"green\"},{\"text\":\"pt\",\"bold\":true,\"color\":\"green\"}]",GlowingText:1b}
+        ### 博打釣竿
+            data merge block 10 0 17 {Text1:"{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute as @s[tag=PCTW.FSBT.Player] at @s run function fishing_battle:shop/trade/gambling_rod\"}}",Text2:"\"博打釣竿\"",Text3:"[\"\",{\"nbt\":\"Price.FishingRod.GamblingRod\",\"storage\":\"pctw:fishing_battle/shop_price\",\"bold\":true,\"color\":\"green\"},{\"text\":\"pt\",\"bold\":true,\"color\":\"green\"}]",GlowingText:1b}
+        ### おじガチャ釣竿
+            data merge block 10 0 17 {Text1:"{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute as @s[tag=PCTW.FSBT.Player] at @s run function fishing_battle:shop/trade/slot_rod\"}}",Text2:"\"おじガチャ釣竿\"",Text3:"[\"\",{\"nbt\":\"Price.FishingRod.SlotRod\",\"storage\":\"pctw:fishing_battle/shop_price\",\"bold\":true,\"color\":\"green\"},{\"text\":\"pt\",\"bold\":true,\"color\":\"green\"}]",GlowingText:1b}
+
+
 # Timer
     ## アイテムからTimerに反映
         #execute store result score $PCTW.FSBT.System PCTW.FSBT.GameTimer run clear @a clock{FSBTSettingTimeLimitClock:1b} 0

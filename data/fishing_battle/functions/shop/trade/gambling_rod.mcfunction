@@ -1,4 +1,4 @@
-#> fishing_battle:shop/trade_gambling_rod
+#> fishing_battle:shop/trade/gambling_rod
 #
 # fishing_rod：『博打釣竿』の取引用function
 #

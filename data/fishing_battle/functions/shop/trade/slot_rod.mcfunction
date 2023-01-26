@@ -1,4 +1,4 @@
-#> fishing_battle:shop/trade_slot_rod
+#> fishing_battle:shop/trade/slot_rod
 #
 # fishing_rod：『リッチ釣竿』の取引用function
 #

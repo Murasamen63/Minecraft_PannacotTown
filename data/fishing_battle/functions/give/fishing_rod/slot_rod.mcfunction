@@ -2,7 +2,7 @@
 #
 # fishing_rod：アイテムを付与『おじガチャ釣竿』
 #
-# @within function fishing_battle:shop/trade_slot_rod
+# @within function fishing_battle:shop/trade/slot_rod
 
 
 

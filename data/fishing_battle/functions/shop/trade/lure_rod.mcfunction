@@ -1,4 +1,4 @@
-#> fishing_battle:shop/trade_lure_rod
+#> fishing_battle:shop/trade/lure_rod
 #
 # fishing_rod：『入れ食い釣竿』の取引用function
 #

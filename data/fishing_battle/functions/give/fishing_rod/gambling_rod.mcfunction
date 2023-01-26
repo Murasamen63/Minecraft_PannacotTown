@@ -2,7 +2,7 @@
 #
 # fishing_rod：アイテムを付与『博打釣竿』
 #
-# @within function fishing_battle:shop/trade_gambling_rod
+# @within function fishing_battle:shop/trade/gambling_rod
 
 
 

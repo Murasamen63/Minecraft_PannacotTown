@@ -2,7 +2,7 @@
 #
 # fishing_rod：アイテムを付与『リッチ釣竿』
 #
-# @within function fishing_battle:shop/trade_rich_rod
+# @within function fishing_battle:shop/trade/rich_rod
 
 
 

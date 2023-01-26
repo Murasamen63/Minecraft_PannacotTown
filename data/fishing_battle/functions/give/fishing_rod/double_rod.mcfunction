@@ -2,7 +2,7 @@
 #
 # fishing_rod：アイテムを付与『ダブル釣竿』
 #
-# @within function fishing_battle:shop/trade_double_rod
+# @within function fishing_battle:shop/trade/double_rod
 
 
 

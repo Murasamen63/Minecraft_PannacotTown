@@ -2,7 +2,7 @@
 #
 # fishing_rod：アイテムを付与『入れ食い釣竿』
 #
-# @within function fishing_battle:shop/trade_lure_rod
+# @within function fishing_battle:shop/trade/lure_rod
 
 
 

@@ -1,4 +1,4 @@
-#> fishing_battle:shop/trade_double_rod
+#> fishing_battle:shop/trade/double_rod
 #
 # fishing_rod：『ダブル釣竿』の取引用function
 #

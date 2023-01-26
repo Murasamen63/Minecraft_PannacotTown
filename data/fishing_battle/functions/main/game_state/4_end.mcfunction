@@ -73,6 +73,8 @@
                 execute if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 620 as @a at @s run playsound ui.toast.challenge_complete voice @s ~ ~ ~ 1.0 1.0
 
 # 終了処理
+    ## 歴代ランキングと比較
+        execute if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 620 run function fishing_battle:ranking/compare_generation_ranking
     ## 情報表示
         ### スコア代入
             execute if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 620 as @a[tag=PCTW.FSBT.Player] at @s run scoreboard players operation @s PCTW.FSBT.Info = @s PCTW.FSBT.Score

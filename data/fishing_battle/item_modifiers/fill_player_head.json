@@ -1,0 +1,15 @@
+[
+	{
+		"function": "minecraft:fill_player_head",
+		"entity": "this",
+		"conditions": [
+			{
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"type": "minecraft:player"
+				}
+			}
+		]
+	}
+]

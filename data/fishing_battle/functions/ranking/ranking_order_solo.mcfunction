@@ -3,7 +3,7 @@
 # fishing_battle：順位を決めるfunction
 #
 # @within
-#   function fishing_battle:ranking/ranking_order_solo
+#   function fishing_battle:ranking/**
 #   function fishing_battle:main/game_state/4_end
 
 
@@ -18,7 +18,7 @@
 #> Tag
 # @within
 #   function fishing_battle:main/game_state/4_end
-#   function fishing_battle:ranking/ranking_order_solo
+#   function fishing_battle:ranking/**
     #define tag PCTW.FSBT.Temp.Score.1st
     #define tag PCTW.FSBT.Temp.Score.2nd
     #define tag PCTW.FSBT.Temp.Score.3rd

@@ -9,6 +9,9 @@
 #> Score Holder
 # @within function fishing_battle:**
     #define score_holder $PCTW.FSBT.System
+
+#> Score Holder
+# @within function fishing_battle:main/_main
     #define score_holder $PCTW.FSBT.GameState.Ready
     #define score_holder $PCTW.FSBT.GameState.CountDown
     #define score_holder $PCTW.FSBT.GameState.Play
@@ -84,6 +87,12 @@
             bossbar set pctw:fishing_battle/timer color green
             bossbar set pctw:fishing_battle/timer max 1
             bossbar set pctw:fishing_battle/timer value 1
+
+# xpbar
+        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. as @a[tag=PCTW.FSBT.Player] at @s run xp set @s 129 levels
+        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. as @a[tag=PCTW.FSBT.Player] at @s run xp set @s 1000 points
+        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. as @a[tag=PCTW.FSBT.Player] at @s run xp set @s 0 levels
+    
 
 # 通知
     ## 全体

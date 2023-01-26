@@ -175,9 +175,16 @@
         execute if score $PCTW.FSBT.Temp.Compare.Count PCTW.Temporary matches 1.. run scoreboard players add $PCTW.FSBT.Temp.Compare.Count PCTW.Temporary 1
         execute if score $PCTW.FSBT.Temp.Compare.Count PCTW.Temporary matches 1..3 run function fishing_battle:ranking/compare_generation_ranking
     ## 終了処理
+        ### ランキング反映
+            #### 1位
+                execute if score $PCTW.FSBT.Temp.Compare.Count PCTW.Temporary matches 4 run data merge block 1 2 28 {Text1:"{\"text\":\"1位\",\"bold\":true,\"underlined\":true,\"color\":\"gold\"}",Text2:"[\"\"]",Text3:"{\"nbt\":\"Ranking.1.Name\",\"storage\":\"pctw:fishing_battle/ranking\"}",Text4:"[\"\",{\"nbt\":\"Ranking.1.Score\",\"storage\":\"pctw:fishing_battle/ranking\",\"bold\":true},{\"text\":\"pt\",\"bold\":true}]",GlowingText:1b}
+            #### 2位
+                execute if score $PCTW.FSBT.Temp.Compare.Count PCTW.Temporary matches 4 run data merge block 2 2 28 {Text1:"{\"text\":\"2位\",\"bold\":true,\"underlined\":true,\"color\":\"gray\"}",Text2:"[\"\"]",Text3:"{\"nbt\":\"Ranking.2.Name\",\"storage\":\"pctw:fishing_battle/ranking\"}",Text4:"[\"\",{\"nbt\":\"Ranking.2.Score\",\"storage\":\"pctw:fishing_battle/ranking\",\"bold\":true},{\"text\":\"pt\",\"bold\":true}]",GlowingText:1b}
+            #### 3位
+                execute if score $PCTW.FSBT.Temp.Compare.Count PCTW.Temporary matches 4 run data merge block 3 2 28 {Text1:"{\"text\":\"3位\",\"bold\":true,\"underlined\":true,\"color\":\"dark_red\"}",Text2:"[\"\"]",Text3:"{\"nbt\":\"Ranking.3.Name\",\"storage\":\"pctw:fishing_battle/ranking\"}",Text4:"[\"\",{\"nbt\":\"Ranking.3.Score\",\"storage\":\"pctw:fishing_battle/ranking\",\"bold\":true},{\"text\":\"pt\",\"bold\":true}]",GlowingText:1b}
         ### player_head削除
             execute if score $PCTW.FSBT.Temp.Compare.Count PCTW.Temporary matches 4 run item replace entity @s enderchest.0 with air
-        ### storage
+        ### storage削除
             execute if score $PCTW.FSBT.Temp.Compare.Count PCTW.Temporary matches 4 run data remove storage pctw:temp/save Save
         ### scoreboard
             execute if score $PCTW.FSBT.Temp.Compare.Count PCTW.Temporary matches 4 run scoreboard players reset $PCTW.FSBT.Temp.GenRank.1st PCTW.FSBT.Score

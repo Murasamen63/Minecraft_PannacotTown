@@ -25,7 +25,7 @@
         ### 博打釣竿
             data merge block 10 0 17 {Text1:"{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute as @s[tag=PCTW.FSBT.Player] at @s run function fishing_battle:shop/trade/gambling_rod\"}}",Text2:"\"博打釣竿\"",Text3:"[\"\",{\"nbt\":\"Price.FishingRod.GamblingRod\",\"storage\":\"pctw:fishing_battle/shop_price\",\"bold\":true,\"color\":\"green\"},{\"text\":\"pt\",\"bold\":true,\"color\":\"green\"}]",GlowingText:1b}
         ### おじガチャ釣竿
-            data merge block 10 0 17 {Text1:"{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute as @s[tag=PCTW.FSBT.Player] at @s run function fishing_battle:shop/trade/slot_rod\"}}",Text2:"\"おじガチャ釣竿\"",Text3:"[\"\",{\"nbt\":\"Price.FishingRod.SlotRod\",\"storage\":\"pctw:fishing_battle/shop_price\",\"bold\":true,\"color\":\"green\"},{\"text\":\"pt\",\"bold\":true,\"color\":\"green\"}]",GlowingText:1b}
+            data merge block 12 0 19 {Text1:"{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute as @s[tag=PCTW.FSBT.Player] at @s run function fishing_battle:shop/trade/slot_rod\"}}",Text2:"\"おじガチャ釣竿\"",Text3:"[\"\",{\"nbt\":\"Price.FishingRod.SlotRod\",\"storage\":\"pctw:fishing_battle/shop_price\",\"bold\":true,\"color\":\"green\"},{\"text\":\"pt\",\"bold\":true,\"color\":\"green\"}]",GlowingText:1b}
 
 
 # Timer
@@ -66,7 +66,5 @@
                 execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 1201..3600 run bossbar set pctw:fishing_battle/timer color yellow
             #### 1分以下
                 execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches ..1200 run bossbar set pctw:fishing_battle/timer color red
-    ## actionbar反映
-        execute as @a at @s run title @a actionbar ["",{"text":"1位","bold":true,"underlined":true,"color":"gold"},"  ",{"nbt":"Ranking.1.Name","storage":"pctw:fishing_battle/ranking"}," ",{"nbt":"Ranking.1.Score","storage":"pctw:fishing_battle/ranking","bold":true},{"text":"pt","bold":true},"    ",{"text":"2位","bold":true,"underlined":true,"color":"gray"},"  ",{"nbt":"Ranking.2.Name","storage":"pctw:fishing_battle/ranking"}," ",{"nbt":"Ranking.2.Score","storage":"pctw:fishing_battle/ranking","bold":true},{"text":"pt","bold":true},"    ",{"text":"3位","bold":true,"underlined":true,"color":"dark_red"},"  ",{"nbt":"Ranking.3.Name","storage":"pctw:fishing_battle/ranking"}," ",{"nbt":"Ranking.3.Score","storage":"pctw:fishing_battle/ranking","bold":true},{"text":"pt","bold":true}]
 
 #endregion

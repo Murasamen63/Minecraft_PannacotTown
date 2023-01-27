@@ -183,7 +183,9 @@
             #### 3位
                 execute if score $PCTW.FSBT.Temp.Compare.Count PCTW.Temporary matches 4 run data merge block 3 2 28 {Text1:"{\"text\":\"3位\",\"bold\":true,\"underlined\":true,\"color\":\"dark_red\"}",Text2:"[\"\"]",Text3:"{\"nbt\":\"Ranking.3.Name\",\"storage\":\"pctw:fishing_battle/ranking\"}",Text4:"[\"\",{\"nbt\":\"Ranking.3.Score\",\"storage\":\"pctw:fishing_battle/ranking\",\"bold\":true},{\"text\":\"pt\",\"bold\":true}]",GlowingText:1b}
         ### player_head削除
-            execute if score $PCTW.FSBT.Temp.Compare.Count PCTW.Temporary matches 4 run item replace entity @s enderchest.0 with air
+            execute if score $PCTW.FSBT.Temp.Compare.Count PCTW.Temporary matches 4 as @a[tag=PCTW.FSBT.Player,tag=PCTW.FSBT.Temp.Score.1st] at @s run item replace entity @s enderchest.0 with air
+            execute if score $PCTW.FSBT.Temp.Compare.Count PCTW.Temporary matches 4 as @a[tag=PCTW.FSBT.Player,tag=PCTW.FSBT.Temp.Score.2nd] at @s run item replace entity @s enderchest.0 with air
+            execute if score $PCTW.FSBT.Temp.Compare.Count PCTW.Temporary matches 4 as @a[tag=PCTW.FSBT.Player,tag=PCTW.FSBT.Temp.Score.3rd] at @s run item replace entity @s enderchest.0 with air
         ### storage削除
             execute if score $PCTW.FSBT.Temp.Compare.Count PCTW.Temporary matches 4 run data remove storage pctw:temp/save Save
         ### scoreboard

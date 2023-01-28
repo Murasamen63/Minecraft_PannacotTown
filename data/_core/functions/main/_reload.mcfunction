@@ -29,24 +29,30 @@
 
 #region 内容
 
-# PCTW.Temporaryのリセット
-    scoreboard objectives remove PCTW.Temporary
+# PCTW.Core.Temporaryのリセット
+    scoreboard objectives remove PCTW.Core.Temporary
 
 # scoreboard作成
     ## Const
-        scoreboard objectives add PCTW.Const dummy
+        scoreboard objectives add PCTW.Core.Const dummy
     ## Temporary
-        scoreboard objectives add PCTW.Temporary dummy
+        scoreboard objectives add PCTW.Core.Temporary dummy
+    ## playerID
+        scoreboard objectives add PCTW.Core.Player_ID dummy
     ## CoaS
-        scoreboard objectives add PCTW.Use.Coas used:carrot_on_a_stick
+        scoreboard objectives add PCTW.Core.Use.Coas used:carrot_on_a_stick
     ## WFoaS
-        scoreboard objectives add PCTW.Use.WFoaS used:warped_fungus_on_a_stick
+        scoreboard objectives add PCTW.Core.Use.WFoaS used:warped_fungus_on_a_stick
+    ## Talk_Villager
+        scoreboard objectives add PCTW.Core.Talk_Villager custom:talked_to_villager
 
 # scoreboard設定
     ## CoaS
-        scoreboard players reset @a PCTW.Use.Coas
+        scoreboard players reset @a PCTW.Core.Use.Coas
     ## WFoaS
-        scoreboard players reset @a PCTW.Use.WFoaS
+        scoreboard players reset @a PCTW.Core.Use.WFoaS
+    ## Talk_Villager
+        scoreboard players reset @a PCTW.Core.Talk_Villager
 
 
 # storage作成
@@ -70,12 +76,6 @@
 # アイテム削除
     ## temp_Setting
         clear @a written_book{PCTWTempSettingBook:1b}
-    ## debug_pctw
-        clear @a warped_fungus_on_a_stick{PCTWDebug_PCTW:1b}
-
-# アイテム付与
-    ## temp_Setting
-
 
 # 通知
     ## 全体通知

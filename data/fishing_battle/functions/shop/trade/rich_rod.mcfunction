@@ -17,7 +17,7 @@
 #region 内容
 
 # 初期化
-    execute store result score $PCTW.FSBT.Temp.RichRod.Price PCTW.Temporary run data get storage pctw:fishing_battle/shop_price Price.FishingRod.RichRod
+    execute store result score $PCTW.FSBT.Temp.RichRod.Price PCTW.Core.Temporary run data get storage pctw:fishing_battle/shop_price Price.FishingRod.RichRod
 
 # GameState = 0
     ## 説明
@@ -28,21 +28,21 @@
         ### 失敗
             #### 通知
                 ##### 表示
-                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameState matches 2 if score @s PCTW.FSBT.Score < $PCTW.FSBT.Temp.RichRod.Price PCTW.Temporary run tellraw @s ["","\n",{"text":"  スコアが足りません!","color":"red"},"    ","必須スコア ",{"nbt":"Price.FishingRod.RichRod","storage":"pctw:fishing_battle/shop_price","bold":true,"color":"green"},{"text":"pt","bold":true,"color":"green"},"\n"]
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameState matches 2 if score @s PCTW.FSBT.Score < $PCTW.FSBT.Temp.RichRod.Price PCTW.Core.Temporary run tellraw @s ["","\n",{"text":"  スコアが足りません!","color":"red"},"    ","必須スコア ",{"nbt":"Price.FishingRod.RichRod","storage":"pctw:fishing_battle/shop_price","bold":true,"color":"green"},{"text":"pt","bold":true,"color":"green"},"\n"]
                 ##### 効果音
-                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameState matches 2 if score @s PCTW.FSBT.Score < $PCTW.FSBT.Temp.RichRod.Price PCTW.Temporary run playsound ui.button.click voice @s ~ ~ ~ 1.0 1.8
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameState matches 2 if score @s PCTW.FSBT.Score < $PCTW.FSBT.Temp.RichRod.Price PCTW.Core.Temporary run playsound ui.button.click voice @s ~ ~ ~ 1.0 1.8
         ### 成功
             #### アイテムを付与
-                execute if score $PCTW.FSBT.System PCTW.FSBT.GameState matches 2 if score @s PCTW.FSBT.Score >= $PCTW.FSBT.Temp.RichRod.Price PCTW.Temporary run function fishing_battle:give/fishing_rod/rich_rod
+                execute if score $PCTW.FSBT.System PCTW.FSBT.GameState matches 2 if score @s PCTW.FSBT.Score >= $PCTW.FSBT.Temp.RichRod.Price PCTW.Core.Temporary run function fishing_battle:give/fishing_rod/rich_rod
             #### 通知
                 ##### 表示
-                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameState matches 2 if score @s PCTW.FSBT.Score >= $PCTW.FSBT.Temp.RichRod.Price PCTW.Temporary run tellraw @s ["","\n","  『",{"text":"リッチ釣竿","italic":true,"color":"aqua"},"』 を交換しました!","\n"]
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameState matches 2 if score @s PCTW.FSBT.Score >= $PCTW.FSBT.Temp.RichRod.Price PCTW.Core.Temporary run tellraw @s ["","\n","  『",{"text":"リッチ釣竿","italic":true,"color":"aqua"},"』 を交換しました!","\n"]
                 ##### 効果音
-                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameState matches 2 if score @s PCTW.FSBT.Score >= $PCTW.FSBT.Temp.RichRod.Price PCTW.Temporary run playsound entity.player.levelup voice @s ~ ~ ~ 1.0 2.0
+                    execute if score $PCTW.FSBT.System PCTW.FSBT.GameState matches 2 if score @s PCTW.FSBT.Score >= $PCTW.FSBT.Temp.RichRod.Price PCTW.Core.Temporary run playsound entity.player.levelup voice @s ~ ~ ~ 1.0 2.0
             #### スコア減少
-                execute if score $PCTW.FSBT.System PCTW.FSBT.GameState matches 2 if score @s PCTW.FSBT.Score >= $PCTW.FSBT.Temp.RichRod.Price PCTW.Temporary run scoreboard players operation @s PCTW.FSBT.Score -= $PCTW.FSBT.Temp.RichRod.Price PCTW.Temporary
+                execute if score $PCTW.FSBT.System PCTW.FSBT.GameState matches 2 if score @s PCTW.FSBT.Score >= $PCTW.FSBT.Temp.RichRod.Price PCTW.Core.Temporary run scoreboard players operation @s PCTW.FSBT.Score -= $PCTW.FSBT.Temp.RichRod.Price PCTW.Core.Temporary
 
 # scoreboard削除
-    scoreboard players reset $PCTW.FSBT.Temp.RichRod.Price PCTW.Temporary
+    scoreboard players reset $PCTW.FSBT.Temp.RichRod.Price PCTW.Core.Temporary
 
 #endregion

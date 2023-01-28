@@ -10,9 +10,9 @@
 
 # アイテム処理
         ### アイテム検知
-            execute store result score @s PCTW.Temporary run clear @s cod{FSBTNotPickedUpHookedItem:1b} 0
+            execute store result score @s PCTW.Core.Temporary run clear @s cod{FSBTNotPickedUpHookedItem:1b} 0
         ### 元アイテム削除
-            #execute if score @s PCTW.Temporary matches 1.. run
+            #execute if score @s PCTW.Core.Temporary matches 1.. run
         ### 観賞用アイテム付与
             #give 
 

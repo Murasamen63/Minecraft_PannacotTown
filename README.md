@@ -25,7 +25,7 @@ Minecraft JavaEdition - ver1.19.3
 
 例) 
 ```
-・PCTW.Const  全体で使用する整数用のscoreboard
+・PCTW.Core.Const  全体で使用する整数用のscoreboard
 ・PCTW.FSBT.GameTimer  釣り大会用のタイマー      etc...
 ```
 

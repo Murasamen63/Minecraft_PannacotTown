@@ -11,7 +11,7 @@
 # ゲームモード変更
     data modify storage pctw:core GameMode set value FishingBattle
 
-# reload.mcfunctionを実行
+# reloadを実行
     function fishing_battle:main/_reload
 
 

@@ -8,7 +8,6 @@
 
 #region 内容
 
-
 # ゲームモード変更
     data modify storage pctw:core GameMode set value null
 
@@ -26,6 +25,5 @@
 
 # アイテム削除
     clear @a #fishing_battle:pctw_fsbt_items{PCTWFSBTItems:1b}
-
 
 #endregion

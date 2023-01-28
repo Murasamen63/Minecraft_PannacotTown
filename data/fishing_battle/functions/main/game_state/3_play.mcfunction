@@ -12,11 +12,11 @@
     ## scoreboard計算
         ### 分を計算
             execute store result score $PCTW.FSBT.System PCTW.FSBT.ShowTimer.Minute run scoreboard players get $PCTW.FSBT.System PCTW.FSBT.GameTimer
-            scoreboard players operation $PCTW.FSBT.System PCTW.FSBT.ShowTimer.Minute /= #1200 PCTW.Const
+            scoreboard players operation $PCTW.FSBT.System PCTW.FSBT.ShowTimer.Minute /= #1200 PCTW.Core.Const
         ### 秒を計算
             execute store result score $PCTW.FSBT.System PCTW.FSBT.ShowTimer.Second run scoreboard players get $PCTW.FSBT.System PCTW.FSBT.GameTimer
-            scoreboard players operation $PCTW.FSBT.System PCTW.FSBT.ShowTimer.Second %= #1200 PCTW.Const
-            scoreboard players operation $PCTW.FSBT.System PCTW.FSBT.ShowTimer.Second /= #20 PCTW.Const
+            scoreboard players operation $PCTW.FSBT.System PCTW.FSBT.ShowTimer.Second %= #1200 PCTW.Core.Const
+            scoreboard players operation $PCTW.FSBT.System PCTW.FSBT.ShowTimer.Second /= #20 PCTW.Core.Const
     ## 情報表示
         ### bossbar反映
             #### 現在値

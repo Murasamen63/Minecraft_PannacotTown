@@ -45,6 +45,8 @@
         scoreboard objectives add PCTW.Core.Use.WFoaS used:warped_fungus_on_a_stick
     ## Talk_Villager
         scoreboard objectives add PCTW.Core.Talk_Villager custom:talked_to_villager
+    ## ChestGUI.Page
+        scoreboard objectives add PCTW.Core.ChestGUI.Pages dummy
 
 # scoreboard設定
     ## CoaS

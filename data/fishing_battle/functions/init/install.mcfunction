@@ -2,7 +2,7 @@
 #
 # fishing_battle：釣り大会の設定をインストールするfunction
 #
-# @private
+# @within function _core:pctw_master_gui/gui/switch_function/select_gamemode/change_fsbt
 
 
 #region 内容

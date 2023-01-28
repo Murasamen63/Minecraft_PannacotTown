@@ -1,11 +1,11 @@
-#> _core:pctw_master_stick/delete
+#> _core:pctw_master_gui/delete
 #
 # _core：『設定』を使用 EnderChestGUIを削除
 #
 # @within function
 #   _core:main/_main
-#   _core:pctw_master_stick/have/mainhand
-#   _core:pctw_master_stick/have/offhand
+#   _core:pctw_master_gui/have/mainhand
+#   _core:pctw_master_gui/have/offhand
 
 
 
@@ -16,6 +16,8 @@
 
 # 削除
     ## EnderChest
+        ### ページリセット
+            function _core:pctw_master_gui/gui/pages/reset
         ### EnderChest
             execute if score @s PCTW.Core.Player_ID = @e[type=area_effect_cloud,tag=PCTW.AEC.MasterGUI.EnderChest,sort=nearest,limit=1] PCTW.Core.Player_ID as @e[type=area_effect_cloud,tag=PCTW.AEC.MasterGUI.EnderChest,sort=nearest,limit=1] at @s run setblock ~ ~ ~ air replace
         ### AEC

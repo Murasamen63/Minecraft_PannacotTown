@@ -1,8 +1,8 @@
-#> _core:pctw_master_stick/summon_master_gui
+#> _core:pctw_master_gui/summon_master_gui
 #
 # _core：『設定』を使用 EnderChestGUIを召喚
 #
-# @within function _core:pctw_master_stick/have/offhand
+# @within function _core:pctw_master_gui/have/offhand
 
 #region 宣言
 
@@ -11,7 +11,7 @@
     #define score_holder $PCTW.Temp.UUID
 
 #> Tag
-# @within function _core:pctw_master_stick/**
+# @within function _core:pctw_master_gui/**
     #define tag PCTW.Player.Use.MasterGUI
 
 #endregion
@@ -37,6 +37,11 @@
                 execute anchored eyes positioned ^ ^ ^2 align xyz if entity @s[y_rotation=135..180] run setblock ~ ~ ~ ender_chest[facing=south] replace
             #### 南
                 execute anchored eyes positioned ^ ^ ^2 align xyz if entity @s[y_rotation=-45..44.9] run setblock ~ ~ ~ ender_chest[facing=north] replace
+            #### ページ反映
+                ##### 無し
+                    execute if data storage pctw:core {GameMode:null} run function _core:pctw_master_gui/gui/pages/select_gamemode
+                ##### 釣り大会
+                    execute if data storage pctw:core {GameMode:FishingBattle} run function _core:pctw_master_gui/gui/pages/fishing_battle/top
         ### 効果音
             execute as @a at @s run playsound minecraft:block.stone.break voice @s ~ ~ ~ 1.0 0.75
     ## SummonedPlaceAEC

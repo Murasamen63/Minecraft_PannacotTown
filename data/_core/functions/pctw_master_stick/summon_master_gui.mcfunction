@@ -38,7 +38,7 @@
             #### 南
                 execute anchored eyes positioned ^ ^ ^2 align xyz if entity @s[y_rotation=-45..44.9] run setblock ~ ~ ~ ender_chest[facing=north] replace
         ### 効果音
-            execute as @a at @s run playsound block.stone.place voice @s ~ ~ ~ 1.0 1.0
+            execute as @a at @s run playsound minecraft:block.stone.break voice @s ~ ~ ~ 1.0 0.75
     ## SummonedPlaceAEC
         summon area_effect_cloud ~ ~ ~ {Duration:8888,Tags:["PCTW.AEC.AlwaysAlive","PCTW.AEC.MasterGUI","PCTW.AEC.MasterGUI.Summoned_Place"]}
 

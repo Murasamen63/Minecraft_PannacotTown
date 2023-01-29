@@ -22,6 +22,8 @@
 # 常時実行
     ## 経験値オーブを消す
         execute as @e[type=experience_orb] at @s run kill @s
+    ## 店員と会話
+        execute as @a at @s if predicate fishing_battle:talk_to_shop_staff/shop_staff if score @s PCTW.Core.Talk_Villager matches 1.. run function fishing_battle:shop/talk_to_shop_staff
 
 
 #endregion

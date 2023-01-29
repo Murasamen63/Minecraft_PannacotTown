@@ -25,10 +25,9 @@
     ## 2行目
         item replace entity @s enderchest.9 with air
         item replace entity @s enderchest.10 with air
+        item replace entity @s enderchest.11 with air
         ### 制限時間設定
-            item replace entity @s enderchest.11 with clock{display:{Name:'{"text":"制限時間（分）","italic":false}'},PCTWItems:1b,PCTWMasterGUISwitches:1b,PCTWMasterGUIGameTimerFSBTMinute:1b} 64
-        ### 取り引き値段変更
-            item replace entity @s enderchest.12 with emerald{display:{Name:'{"text":"取引値段","italic":false}'},PCTWItems:1b,PCTWMasterGUISwitches:1b,PCTWMasterGUIChangeSetTradePriceFSBTPage:1b} 1
+            item replace entity @s enderchest.12 with clock{display:{Name:'{"text":"制限時間（分）","italic":false}'},PCTWItems:1b,PCTWMasterGUISwitches:1b,PCTWMasterGUIGameTimerFSBTMinute:1b} 64
         item replace entity @s enderchest.13 with air
         item replace entity @s enderchest.14 with air
         ### ゲームスタート

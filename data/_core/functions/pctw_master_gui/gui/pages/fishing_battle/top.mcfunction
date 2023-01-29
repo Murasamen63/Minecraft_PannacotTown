@@ -24,11 +24,14 @@
     ## 2行目
         item replace entity @s enderchest.9 with air
         item replace entity @s enderchest.10 with air
-        item replace entity @s enderchest.11 with air
-        item replace entity @s enderchest.12 with air
+        ### 制限時間設定
+            item replace entity @s enderchest.11 with clock{display:{Name:'{"text":"制限時間","italic":false}'},PCTWItems:1b,PCTWMasterGUISwitches:1b,PCTWMasterGUIChangeSetGameTimerPage:1b} 1
+        ### 取り引き値段変更
+            item replace entity @s enderchest.12 with emerald{display:{Name:'{"text":"取引値段","italic":false}'},PCTWItems:1b,PCTWMasterGUISwitches:1b,PCTWMasterGUIChangeSetTradePricePage:1b} 1
         item replace entity @s enderchest.13 with air
         item replace entity @s enderchest.14 with air
-        item replace entity @s enderchest.15 with air
+        ### ゲームスタート
+            item replace entity @s enderchest.15 with command_block{display:{Name:'{"text":"ゲームスタート","color":"aqua","italic":false}'},PCTWItems:1b,PCTWMasterGUISwitches:1b,PCTWMasterGUIGameStartFSBT:1b} 1
         item replace entity @s enderchest.16 with air
         item replace entity @s enderchest.17 with air
     ## 3行目
@@ -40,6 +43,7 @@
         item replace entity @s enderchest.23 with air
         item replace entity @s enderchest.24 with air
         item replace entity @s enderchest.25 with air
-        item replace entity @s enderchest.26 with oak_sign{display:{Name:'{"text":"ゲームモード選択に戻る","italic":false}'},PCTWItems:1b,PCTWMasterGUISwitches:1b,PCTWMasterGUIBackToSelectGameMode:1b} 1
+        ### ゲームモード選択に戻る
+            item replace entity @s enderchest.26 with oak_sign{display:{Name:'{"text":"ゲームモード選択に戻る","italic":false}',Lore:['{"text":" "}','[{"text":"現在のモード：『"},{"text":"釣り大会","color":"aqua"},{"text":"』"}]']},PCTWItems:1b,PCTWMasterGUISwitches:1b,PCTWMasterGUIBackToSelectGameMode:1b} 1
 
 #endregion

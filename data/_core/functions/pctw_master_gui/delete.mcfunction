@@ -6,6 +6,7 @@
 #   _core:main/_main
 #   _core:pctw_master_gui/have/mainhand
 #   _core:pctw_master_gui/have/offhand
+#   _core:pctw_master_gui/gui/switch_function/fishing_battle/game_start
 
 
 

@@ -13,6 +13,8 @@
         function fishing_battle:init/install
 
 # GUI操作
+    ## 効果音
+        playsound ui.button.click voice @s ~ ~ ~ 1.0 1.0
     ## アイテム削除
         clear @s fishing_rod{PCTWMasterGUIChangeFSBT:1b}
     ## ページ更新

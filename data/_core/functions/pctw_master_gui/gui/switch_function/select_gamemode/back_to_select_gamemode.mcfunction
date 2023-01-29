@@ -14,6 +14,8 @@
             function fishing_battle:init/uninstall
 
 # GUI操作
+    ## 効果音
+        playsound ui.button.click voice @s ~ ~ ~ 1.0 1.0
     ## アイテム削除
         clear @s oak_sign{PCTWMasterGUIBackToSelectGameMode:1b}
     ## ページ更新

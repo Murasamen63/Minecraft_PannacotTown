@@ -50,11 +50,11 @@
 
 # scoreboard設定
     ## CoaS
-        scoreboard players reset @a PCTW.Core.Use.Coas
+        scoreboard players reset * PCTW.Core.Use.Coas
     ## WFoaS
-        scoreboard players reset @a PCTW.Core.Use.WFoaS
+        scoreboard players reset * PCTW.Core.Use.WFoaS
     ## Talk_Villager
-        scoreboard players reset @a PCTW.Core.Talk_Villager
+        scoreboard players reset * PCTW.Core.Talk_Villager
 
 
 # storage作成

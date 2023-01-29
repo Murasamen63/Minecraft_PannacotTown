@@ -16,9 +16,9 @@
 
 # 初期化
     ## 通知
-        execute unless score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches -2147483648.. run tellraw @a ["","\n",{"text":"  "},{"text":"結果発表","bold":true,"underlined":true},"\n"]
+        execute unless score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer = $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer run tellraw @a ["","\n",{"text":"  "},{"text":"結果発表","bold":true,"underlined":true},"\n"]
     ## scoreboard初期化
-        execute unless score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches -2147483648.. run scoreboard players set $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer 0
+        execute unless score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer = $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer run scoreboard players set $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer 0
     
 # リザルト処理
     ## ランキング作成

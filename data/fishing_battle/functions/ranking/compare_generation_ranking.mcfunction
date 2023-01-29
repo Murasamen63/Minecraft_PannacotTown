@@ -27,19 +27,19 @@
     
 # 初期化
     ## Storage
-        execute unless score $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary matches -2147483648.. run data modify storage pctw:temp/save Save set value {Name:[null],Score:0}
+        execute unless score $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary = $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary run data modify storage pctw:temp/save Save set value {Name:[null],Score:0}
     ## player_head
         ### 1st
-            execute unless score $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary matches -2147483648.. as @a[tag=PCTW.FSBT.Player,tag=PCTW.FSBT.Temp.Score.1st] at @s run item replace entity @s enderchest.0 with player_head 1
-            execute unless score $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary matches -2147483648.. as @a[tag=PCTW.FSBT.Player,tag=PCTW.FSBT.Temp.Score.1st] at @s run item modify entity @s enderchest.0 fishing_battle:fill_player_head
+            execute unless score $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary = $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary as @a[tag=PCTW.FSBT.Player,tag=PCTW.FSBT.Temp.Score.1st] at @s run item replace entity @s enderchest.0 with player_head 1
+            execute unless score $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary = $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary as @a[tag=PCTW.FSBT.Player,tag=PCTW.FSBT.Temp.Score.1st] at @s run item modify entity @s enderchest.0 fishing_battle:fill_player_head
         ### 2nd
-            execute unless score $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary matches -2147483648.. as @a[tag=PCTW.FSBT.Player,tag=PCTW.FSBT.Temp.Score.2nd] at @s run item replace entity @s enderchest.0 with player_head 1
-            execute unless score $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary matches -2147483648.. as @a[tag=PCTW.FSBT.Player,tag=PCTW.FSBT.Temp.Score.2nd] at @s run item modify entity @s enderchest.0 fishing_battle:fill_player_head
+            execute unless score $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary = $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary as @a[tag=PCTW.FSBT.Player,tag=PCTW.FSBT.Temp.Score.2nd] at @s run item replace entity @s enderchest.0 with player_head 1
+            execute unless score $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary = $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary as @a[tag=PCTW.FSBT.Player,tag=PCTW.FSBT.Temp.Score.2nd] at @s run item modify entity @s enderchest.0 fishing_battle:fill_player_head
         ### 3rd
-            execute unless score $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary matches -2147483648.. as @a[tag=PCTW.FSBT.Player,tag=PCTW.FSBT.Temp.Score.3rd] at @s run item replace entity @s enderchest.0 with player_head 1
-            execute unless score $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary matches -2147483648.. as @a[tag=PCTW.FSBT.Player,tag=PCTW.FSBT.Temp.Score.3rd] at @s run item modify entity @s enderchest.0 fishing_battle:fill_player_head
+            execute unless score $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary = $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary as @a[tag=PCTW.FSBT.Player,tag=PCTW.FSBT.Temp.Score.3rd] at @s run item replace entity @s enderchest.0 with player_head 1
+            execute unless score $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary = $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary as @a[tag=PCTW.FSBT.Player,tag=PCTW.FSBT.Temp.Score.3rd] at @s run item modify entity @s enderchest.0 fishing_battle:fill_player_head
     ## scoreboard
-        execute unless score $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary matches -2147483648.. run scoreboard players set $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary 1
+        execute unless score $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary = $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary run scoreboard players set $PCTW.FSBT.Temp.Compare.Count PCTW.Core.Temporary 1
 
 # 比較
     ## 現ランキングを保存

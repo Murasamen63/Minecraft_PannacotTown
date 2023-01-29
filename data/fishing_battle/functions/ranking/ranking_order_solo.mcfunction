@@ -29,7 +29,7 @@
 #region 内容
 
 # 初期化
-    execute unless score $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temporary matches -2147483648.. run scoreboard players set $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temporary 1
+    execute unless score $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temporary = $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temporary run scoreboard players set $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temporary 1
 
 # 比較
     ## 各自スコアを一時保管

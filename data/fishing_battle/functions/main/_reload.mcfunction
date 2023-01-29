@@ -89,9 +89,9 @@
             bossbar set pctw:fishing_battle/timer value 1
 
 # xpbar
-        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. as @a[tag=PCTW.FSBT.Player] at @s run xp set @s 129 levels
-        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. as @a[tag=PCTW.FSBT.Player] at @s run xp set @s 1000 points
-        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. as @a[tag=PCTW.FSBT.Player] at @s run xp set @s 0 levels
+        execute as @a at @s run xp set @s 129 levels
+        execute as @a at @s run xp set @s 1000 points
+        execute as @a at @s run xp set @s 0 levels
     
 
 # 通知

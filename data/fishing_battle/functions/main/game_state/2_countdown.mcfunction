@@ -18,20 +18,20 @@
 # 初期値設定
     ## bossbar
         ### 最大値
-            execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. run execute store result bossbar pctw:fishing_battle/timer max run data get storage pctw:fishing_battle/system Timer
+            execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer run execute store result bossbar pctw:fishing_battle/timer max run data get storage pctw:fishing_battle/system Timer
         ### 現在値
-            execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. run execute store result bossbar pctw:fishing_battle/timer value run data get storage pctw:fishing_battle/system Timer
+            execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer run execute store result bossbar pctw:fishing_battle/timer value run data get storage pctw:fishing_battle/system Timer
     ## title
-        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. run title @a times 0 21 0
+        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer run title @a times 0 21 0
     ## sidebar
-        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. as @a at @s run scoreboard objectives setdisplay sidebar
-        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. as @a at @s run scoreboard players reset @s PCTW.FSBT.Info
+        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer as @a at @s run scoreboard objectives setdisplay sidebar
+        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer as @a at @s run scoreboard players reset @s PCTW.FSBT.Info
     ## xpbar
-        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. as @a[tag=PCTW.FSBT.Player] at @s run xp set @s 129 levels
-        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. as @a[tag=PCTW.FSBT.Player] at @s run xp set @s 1000 points
-        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. as @a[tag=PCTW.FSBT.Player] at @s run xp set @s 0 levels
+        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer as @a[tag=PCTW.FSBT.Player] at @s run xp set @s 129 levels
+        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer as @a[tag=PCTW.FSBT.Player] at @s run xp set @s 1000 points
+        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer as @a[tag=PCTW.FSBT.Player] at @s run xp set @s 0 levels
     ## scoreboard
-        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches -2147483648.. run scoreboard players set $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer 120
+        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer run scoreboard players set $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer 120
 
 # カウントダウン処理
     ## 5秒前

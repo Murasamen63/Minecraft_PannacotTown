@@ -10,7 +10,7 @@
 				"items": [
 					{
 						"items": [
-							"barrier"
+							"oak_sign"
 						],
 						"nbt": "{PCTWMasterGUIBackToSelectGameMode:1b}"
 					}

@@ -15,7 +15,7 @@
 
 # GUI操作
     ## アイテム削除
-        clear @s barrier{PCTWMasterGUIBackToSelectGameMode:1b}
+        clear @s oak_sign{PCTWMasterGUIBackToSelectGameMode:1b}
     ## ページ更新
         function _core:pctw_master_gui/gui/pages/select_gamemode
 

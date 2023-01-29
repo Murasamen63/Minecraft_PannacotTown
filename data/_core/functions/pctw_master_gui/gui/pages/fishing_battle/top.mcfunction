@@ -40,6 +40,6 @@
         item replace entity @s enderchest.23 with air
         item replace entity @s enderchest.24 with air
         item replace entity @s enderchest.25 with air
-        item replace entity @s enderchest.26 with barrier 1
+        item replace entity @s enderchest.26 with barrier{display:{Name:'{"text":"ゲームモード選択に戻る","italic":false}'},PCTWItems:1b,PCTWMasterGUISwitches:1b,PCTWMasterGUIBackToSelectGameMode:1b} 1
 
 #endregion

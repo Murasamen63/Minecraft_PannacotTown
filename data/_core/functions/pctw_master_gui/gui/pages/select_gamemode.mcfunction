@@ -2,7 +2,9 @@
 #
 # _core：MasterGUIのページ「ゲームモード選択」
 #
-# @within function _core:pctw_master_gui/summon_master_gui
+# @within function 
+#   _core:pctw_master_gui/summon_master_gui
+#   _core:pctw_master_gui/gui/switch_function/select_gamemode/back_to_select_gamemode
 
 
 

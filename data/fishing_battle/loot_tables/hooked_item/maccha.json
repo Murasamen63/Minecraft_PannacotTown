@@ -1,0 +1,88 @@
+{
+	"type": "minecraft:fishing",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+                {
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "minecraft:bread",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": "抹茶アイス"
+						},
+						{
+							"function": "minecraft:set_lore",
+							"entity": "this",
+							"lore": [
+								{
+									"text": " "
+								},
+								{
+									"text": "京都産宇治抹茶多分使用",
+									"color": "white",
+									"italic": false
+								},
+								{
+									"text": "280pt",
+									"color": "red",
+									"bold": true,
+									"italic": false
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{CustomModelData:106,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTMaccha_ice:1b}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "minecraft:bread",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": "抹茶アイス"
+						},
+						{
+							"function": "minecraft:set_lore",
+							"entity": "this",
+							"lore": [
+								{
+									"text": " "
+								},
+								{
+									"text": "モリ味",
+									"color": "white",
+									"italic": false
+								},
+								{
+									"text": "280pt",
+									"color": "red",
+									"bold": true,
+									"italic": false
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{CustomModelData:109,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTMaccha_moririn:1b}"
+						}
+					],
+					"conditions": [
+						{
+							"condition": "minecraft:random_chance",
+							"chance": 0.3
+						} 
+					]
+				}
+			]
+		}
+	]
+}

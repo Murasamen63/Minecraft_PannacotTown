@@ -1,0 +1,118 @@
+{
+	"type": "minecraft:fishing",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "fishing_battle:vanilla",
+					"conditions": [
+						{
+							"condition": "minecraft:inverted",
+							"term": {
+								"condition": "minecraft:match_tool",
+								"predicate": {
+									"items": [
+										"minecraft:fishing_rod"
+									],
+									"nbt": "{FSBTFishingRod:1b}"
+								}
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "fishing_battle:hooked_item/normal_rod",
+					"conditions": [
+						{
+							"condition": "minecraft:match_tool",
+							"predicate": {
+								"items": [
+									"minecraft:fishing_rod"
+								],
+								"nbt": "{FSBTNormalFishingRod:1b}"
+							}
+						}
+					]
+				},
+                {
+                    "type": "minecraft:loot_table",
+					"name": "fishing_battle:hooked_item/double_rod",
+					"conditions": [
+						{
+							"condition": "minecraft:match_tool",
+							"predicate": {
+								"items": [
+									"minecraft:fishing_rod"
+								],
+								"nbt": "{FSBTDoubleFishingRod:1b}"
+							}
+						}
+					]
+                },
+                {
+                    "type": "minecraft:loot_table",
+					"name": "fishing_battle:hooked_item/lure_rod",
+					"conditions": [
+						{
+							"condition": "minecraft:match_tool",
+							"predicate": {
+								"items": [
+									"minecraft:fishing_rod"
+								],
+								"nbt": "{FSBTLureFishingRod:1b}"
+							}
+						}
+					]
+                },
+                {
+                    "type": "minecraft:loot_table",
+					"name": "fishing_battle:hooked_item/rich_rod",
+					"conditions": [
+						{
+							"condition": "minecraft:match_tool",
+							"predicate": {
+								"items": [
+									"minecraft:fishing_rod"
+								],
+								"nbt": "{FSBTRichFishingRod:1b}"
+							}
+						}
+					]
+                },
+                {
+                    "type": "minecraft:loot_table",
+					"name": "fishing_battle:hooked_item/gambling_rod",
+					"conditions": [
+						{
+							"condition": "minecraft:match_tool",
+							"predicate": {
+								"items": [
+									"minecraft:fishing_rod"
+								],
+								"nbt": "{FSBTGamblingFishingRod:1b}"
+							}
+						}
+					]
+                },
+                {
+                    "type": "minecraft:loot_table",
+					"name": "fishing_battle:hooked_item/slot_rod",
+					"conditions": [
+						{
+							"condition": "minecraft:match_tool",
+							"predicate": {
+								"items": [
+									"minecraft:fishing_rod"
+								],
+								"nbt": "{FSBTSlotFishingRod:1b}"
+							}
+						}
+					]
+                }
+			]
+		}
+	]
+}

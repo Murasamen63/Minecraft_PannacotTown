@@ -72,8 +72,8 @@
             function fishing_battle:init/uninstall
 
 # アイテム削除
-    ## temp_Setting
-        clear @a written_book{PCTWTempSettingBook:1b}
+    ## DebugItems
+        clear @a #_core:debug_items{PCTWDebugItems:1b}
 
 # 通知
     ## 全体通知

@@ -11,13 +11,13 @@
 
 # GameState
     ## GameState = 0
-        execute if score $PCTW.FSBT.System PCTW.FSBT.GameState = $PCTW.FSBT.GameState.Ready PCTW.FSBT.GameState run function fishing_battle:main/game_state/1_ready
+        execute if predicate fishing_battle:game_state/ready run function fishing_battle:main/game_state/1_ready
     ## GameState = 1
-        execute if score $PCTW.FSBT.System PCTW.FSBT.GameState = $PCTW.FSBT.GameState.CountDown PCTW.FSBT.GameState run function fishing_battle:main/game_state/2_countdown
+        execute if predicate fishing_battle:game_state/countdown run function fishing_battle:main/game_state/2_countdown
     ## GameState = 2
-        execute if score $PCTW.FSBT.System PCTW.FSBT.GameState = $PCTW.FSBT.GameState.Play PCTW.FSBT.GameState run function fishing_battle:main/game_state/3_play
+        execute if predicate fishing_battle:game_state/play run function fishing_battle:main/game_state/3_play
     ## GameState = 3
-        execute if score $PCTW.FSBT.System PCTW.FSBT.GameState = $PCTW.FSBT.GameState.End PCTW.FSBT.GameState run function fishing_battle:main/game_state/4_end
+        execute if predicate fishing_battle:game_state/result run function fishing_battle:main/game_state/4_result
 
 # 常時実行
     ## 経験値オーブを消す

@@ -4,7 +4,7 @@
 #
 # @within
 #   function fishing_battle:ranking/**
-#   function fishing_battle:main/game_state/4_end
+#   function fishing_battle:main/game_state/4_result
 
 
 #region 宣言
@@ -17,7 +17,7 @@
 
 #> Tag
 # @within
-#   function fishing_battle:main/game_state/4_end
+#   function fishing_battle:main/game_state/4_result
 #   function fishing_battle:ranking/**
     #define tag PCTW.FSBT.Temp.Score.1st
     #define tag PCTW.FSBT.Temp.Score.2nd

@@ -64,10 +64,6 @@
     ## 設定
         ### GameState
             scoreboard players set $PCTW.FSBT.System PCTW.FSBT.GameState 0
-            scoreboard players set $PCTW.FSBT.GameState.Ready PCTW.FSBT.GameState 0
-            scoreboard players set $PCTW.FSBT.GameState.CountDown PCTW.FSBT.GameState 1
-            scoreboard players set $PCTW.FSBT.GameState.Play PCTW.FSBT.GameState 2
-            scoreboard players set $PCTW.FSBT.GameState.End PCTW.FSBT.GameState 3
 
 # team
     ## 作成

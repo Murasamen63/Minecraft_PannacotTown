@@ -4,7 +4,7 @@
 #
 # @within
 #   function fishing_battle:ranking/compare_generation_ranking
-#   function fishing_battle:main/game_state/4_end
+#   function fishing_battle:main/game_state/4_result
 
 #region 宣言
 

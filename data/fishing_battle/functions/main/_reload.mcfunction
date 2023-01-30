@@ -17,6 +17,12 @@
     #define score_holder $PCTW.FSBT.GameState.Play
     #define score_holder $PCTW.FSBT.GameState.End
 
+#> Storage
+# @within　* fishing_battle:**
+    #define storage pctw:fishing_battle/system
+    #define storage pctw:fishing_battle/ranking
+    #define storage pctw:fishing_battle/shop_price
+
 #> bossbar
 # @within function fishing_battle:**
     #define bossbar pctw:fishing_battle/timer
@@ -81,6 +87,13 @@
             team modify FSBTPlayerTeamGreen color green
 
 # storage
+    ## 作成
+        ### Ranking
+            execute unless data storage pctw:fishing_battle/ranking Ranking run data modify storage pctw:fishing_battle/ranking Ranking set value {1:{Name:[null],Score:0},2:{Name:[null],Score:0},3:{Name:[null],Score:0}}
+        ### System
+            data modify storage pctw:fishing_battle/system Timer set value 0
+        ### Shop_Price
+            execute unless data storage pctw:fishing_battle/shop_price Price run data modify storage pctw:fishing_battle/shop_price Price set value {FishingRod:{DoubleRod:0,LureRod:0,RichRod:0,GamblingRod:0,SlotRod:0}}
     ## 設定
         data modify storage pctw:fishing_battle/system Timer set value 0
 

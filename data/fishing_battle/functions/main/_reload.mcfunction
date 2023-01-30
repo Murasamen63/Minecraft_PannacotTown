@@ -25,7 +25,16 @@
 # @within function fishing_battle:**
     #define tag PCTW.FSBT.Player
 
+#> PCTW.FSBT Item Tag
+    # tag PCTWFSBTItems:1b
+    # tag FSBTFishingRod:1b
+    # tag FSBTShopTradeSign:1b
+    # tag FSBTHookedItem:1b
+    # tag FSBTNotPickedUpHookedItem:1b
+
 #endregion
+
+
 
 #region 内容
 

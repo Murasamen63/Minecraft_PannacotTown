@@ -23,6 +23,17 @@
     #define tag PCTW.AEC.AlwaysAlive
     #define tag PCTW.Player.Staff
 
+#> tag/items
+# @public
+    #define tag/item _core:pctw_items
+    #define tag/item _core:debug_items
+    #define tag/item _core:master_gui_switches
+
+#> PCTW Item Tag
+    # tag PCTWItems:1b
+    # tag PCTWDebugItems:1b
+    # tag PCTWMasterGUISwitches:1b
+
 #endregion
 
 

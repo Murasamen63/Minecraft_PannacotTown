@@ -6,6 +6,84 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
+					"weight": 20,
+					"name": "minecraft:paper",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": "ゴミ"
+						},
+						{
+							"function": "minecraft:set_lore",
+							"entity": "this",
+							"lore": [
+								{
+									"text": " "
+								},
+								{
+									"text": "リサイクル可能なゴミ状のゴミ",
+									"color": "white",
+									"italic": false
+								},
+								{
+									"text": "1pt",
+									"color": "gray",
+									"bold": true,
+									"italic": false
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{CustomModelData:101,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTGomi:1b}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"name": "minecraft:paper",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": "ゴミたん"
+						},
+						{
+							"function": "minecraft:set_lore",
+							"entity": "this",
+							"lore": [
+								{
+									"text": " "
+								},
+								{
+									"text": "真夏のゴミボリー",
+									"color": "white",
+									"italic": false
+								},
+								{
+									"text": "かもん横浜びっぐうぇい",
+									"color": "white",
+									"italic": false
+								}
+								,
+								{
+									"text": "1pt",
+									"color": "gray",
+									"bold": true,
+									"italic": false
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{CustomModelData:102,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTGomitan:1b}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
 					"weight": 25,
 					"name": "minecraft:cod",
 					"functions": [
@@ -282,9 +360,7 @@
 									"text": "30pt",
 									"color": "yellow",
 									"bold": true,
-									"italic":false,
-									"bold": true,
-									"italic": false
+									"italic":false
 								}
 							]
 						},
@@ -655,41 +731,10 @@
 					]
 				},
 				{
-					"type": "minecraft:item",
-					"weight": 2,
-					"name": "minecraft:bread",
-					"functions": [
-						{
-							"function": "minecraft:set_name",
-							"entity": "this",
-							"name": "抹茶アイス"
-						},
-						{
-							"function": "minecraft:set_lore",
-							"entity": "this",
-							"lore": [
-								{
-									"text": " "
-								},
-								{
-									"text": "モリ味",
-									"color": "white",
-									"italic": false
-								},
-								{
-									"text": "280pt",
-									"color": "red",
-									"bold": true,
-									"italic": false
-								}
-							]
-						},
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:109,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTMaccha_moririn:1b}"
-						}
-					]
-				},
+                    "type": "minecraft:loot_table",
+					"weight" :2,
+					"name": "fishing_battle:hooked_item/maccha"
+                },
 				{
 					"type": "minecraft:item",
 					"weight": 1,

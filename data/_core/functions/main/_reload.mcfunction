@@ -3,6 +3,7 @@
 # core：初めに読み込むfunction
 #
 # @within tag/function minecraft:load
+#   function _core:main/_main
 
 #region 宣言
 

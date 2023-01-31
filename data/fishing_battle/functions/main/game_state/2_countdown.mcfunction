@@ -31,7 +31,8 @@
         execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer as @a[tag=PCTW.FSBT.Player] at @s run xp set @s 1000 points
         execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer as @a[tag=PCTW.FSBT.Player] at @s run xp set @s 0 levels
     ## アイテム
-        clear @a clock{PCTWMasterGUIGameTimerFSBTMinute:1b}
+        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer run clear @a clock{PCTWMasterGUIGameTimerFSBTMinute:1b}
+        execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer run clear @a #fishing_battle:hooked_item{FSBTHookedItem:1b}
     ## scoreboard
         execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer run scoreboard players set $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer 120
 

@@ -103,6 +103,7 @@
     ## 終了
         ### 釣竿の削除
             execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 20 run clear @a fishing_rod{FSBTFishingRod:1b}
+            execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 20 run kill @e[type=item,nbt={Item:{id:"minecraft:fishing_rod",tag:{FSBTFishingRod:1b}}}]
         ### 通知
             execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 20 run title @a title {"text":"Finish!!","bold":true,"underlined":true,"color":"gold"}
         ### 効果音

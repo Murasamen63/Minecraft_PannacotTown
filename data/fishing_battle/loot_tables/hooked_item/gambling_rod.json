@@ -186,6 +186,7 @@
 				},
 				{
                     "type": "minecraft:loot_table",
+					"weight" :15,
 					"name": "fishing_battle:hooked_item/maccha"
                 },
 				{
@@ -478,7 +479,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:101,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTGomitan:1b}"
+							"tag": "{CustomModelData:102,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTGomitan:1b}"
 						}
 					]
 				}

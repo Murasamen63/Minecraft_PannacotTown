@@ -66,9 +66,7 @@
 									"text": "30pt",
 									"color": "yellow",
 									"bold": true,
-									"italic":false,
-									"bold": true,
-									"italic": false
+									"italic":false
 								}
 							]
 						},
@@ -440,6 +438,7 @@
 				},
 				{
                     "type": "minecraft:loot_table",
+					"weight": 10,
 					"name": "fishing_battle:hooked_item/maccha"
                 },
 				{

@@ -72,6 +72,10 @@
         ### 釣り大会
             function fishing_battle:init/uninstall
 
+# data変更
+    ## 釣り大会の店員
+        execute as @e[type=villager,tag=PCTW.FSBT.Villager.Talk] at @s run data modify entity @s Offers set value {}
+
 # アイテム削除
     ## DebugItems
         clear @a #_core:debug_items{PCTWDebugItems:1b}

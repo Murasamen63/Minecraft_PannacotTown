@@ -1,4 +1,4 @@
-#> fishing_battle:give/hooked_item/cod
+#> fishing_battle:give/hooked_item/normal/cod
 #
 # fishing_battle：アイテムを付与『タラ』
 #

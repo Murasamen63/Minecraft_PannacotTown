@@ -1,0 +1,43 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"type": "minecraft:player",
+					"nbt": "{Tags:[\"PCTW.FSBT.Player\"]}"
+				},
+				"items": [
+					{
+						"items": [
+							"minecraft:cod"
+						],
+						"nbt": "{FSBTNotPickedUpHookedItem:1b,FSBTKarei:1b}"
+					}
+				]
+			}
+		},
+		"game_state": {
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:value_check",
+						"value": {
+							"type": "minecraft:score",
+							"target": {
+								"type": "minecraft:fixed",
+								"name": "$PCTW.FSBT.System"
+							},
+							"score": "PCTW.FSBT.GameState"
+						},
+						"range": 2
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "fishing_battle:advancements/picked_up/normal/karei"
+	}
+}

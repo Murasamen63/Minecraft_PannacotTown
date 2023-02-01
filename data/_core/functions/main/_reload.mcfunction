@@ -33,14 +33,14 @@
 
 #region 内容
 
-# PCTW.Core.Temporaryのリセット
-    scoreboard objectives remove PCTW.Core.Temporary
+# PCTW.Core.Tempのリセット
+    scoreboard objectives remove PCTW.Core.Temp
 
 # scoreboard作成
     ## Const
         scoreboard objectives add PCTW.Core.Const dummy
     ## Temporary
-        scoreboard objectives add PCTW.Core.Temporary dummy
+        scoreboard objectives add PCTW.Core.Temp dummy
     ## playerID
         scoreboard objectives add PCTW.Core.Player_ID dummy
     ## CoaS

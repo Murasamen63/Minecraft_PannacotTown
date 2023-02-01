@@ -79,6 +79,7 @@
 # アイテム削除
     ## DebugItems
         clear @a #_core:debug_items{PCTWDebugItems:1b}
+        clear @a #fishing_battle:hooked_item{FSBTHookedItem:1b}
 
 # 通知
     ## 全体通知

@@ -1,21 +1,23 @@
 {
 	"criteria": {
 		"requirement": {
-			"trigger": "minecraft:fishing_rod_hooked",
+			"trigger": "minecraft:inventory_changed",
 			"conditions": {
 				"player": {
+					"type": "minecraft:player",
 					"nbt": "{Tags:[\"PCTW.FSBT.Player\"]}"
 				},
-				"item": {
-					"items": [
-						"minecraft:cod"
-					],
-					"tag": "fishing_battle:hooked_item",
-					"nbt": "{}"
-				}
+				"items": [
+					{
+						"items": [
+							"minecraft:cod"
+						],
+						"nbt": "{FSBTNotPickedUpHookedItem:1b,FSBTCod:1b}"
+					}
+				]
 			}
 		},
-		"GameState": {
+		"game_state": {
 			"trigger": "minecraft:tick",
 			"conditions": {
 				"player": [
@@ -36,6 +38,6 @@
 		}
 	},
 	"rewards": {
-		"function": "minecraft:a"
+		"function": "fishing_battle:advancements/picked_up/normal/cod"
 	}
 }

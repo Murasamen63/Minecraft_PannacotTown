@@ -59,8 +59,6 @@
             scoreboard objectives add PCTW.FSBT.Score dummy
         ### Info
             scoreboard objectives add PCTW.FSBT.Info dummy
-        ### 釣った回数
-            scoreboard objectives add PCTW.FSBT.Fishing.Count dummy
     ## 設定
         ### GameState
             scoreboard players set $PCTW.FSBT.System PCTW.FSBT.GameState 0

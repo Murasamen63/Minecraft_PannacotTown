@@ -1,8 +1,8 @@
-#> fishing_battle:give/hooked_item/normal/aji
+#> fishing_battle:give/hooked_item/normal/sanma
 #
 # fishing_battle：アイテムを付与『アジ』
 #
-# @within function fishing_battle:advancements/picked_up/normal/aji
+# @within function fishing_battle:advancements/picked_up/normal/sanma
 
 
 

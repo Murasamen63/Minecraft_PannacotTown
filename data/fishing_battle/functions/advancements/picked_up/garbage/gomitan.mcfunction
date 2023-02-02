@@ -1,8 +1,8 @@
-#> fishing_battle:advancements/picked_up/garbage/gomi
+#> fishing_battle:advancements/picked_up/garbage/gomitan
 #
-# fishing_battle：『ゴミ』を拾った時のadvancementのリワードfunction
+# fishing_battle：『ゴミたん』を拾った時のadvancementのリワードfunction
 #
-# @within advancement fishing_battle:picked_up/garbage/gomi
+# @within advancement fishing_battle:picked_up/garbage/gomitan
 
 
 

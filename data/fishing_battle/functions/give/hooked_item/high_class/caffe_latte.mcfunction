@@ -1,8 +1,8 @@
-#> fishing_battle:give/hooked_item/garbage/gomi
+#> fishing_battle:give/hooked_item/high_class/caffe_latte
 #
-# fishing_battle：アイテムを付与『ゴミ』
+# fishing_battle：アイテムを付与『カフェラテ』
 #
-# @within function fishing_battle:advancements/picked_up/garbage/gomi
+# @within function fishing_battle:advancements/picked_up/high_class/caffe_latte
 
 
 

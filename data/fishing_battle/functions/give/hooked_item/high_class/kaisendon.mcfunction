@@ -9,6 +9,6 @@
 #region 内容
 
 # give
-    give @p bread{display:{Name:'{"text":"海鮮丼"}',Lore:['{"text":" "}','{"text":"釣れたてぴちぴち鮮度抜群！","color":"white","italic":false}','{"text":"350pt","color":"red","bold":true,"italic":false}']},CustomModelData:103,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTKaisendon:1b} 1
+    give @s bread{display:{Name:'{"text":"海鮮丼"}',Lore:['{"text":" "}','{"text":"釣れたてぴちぴち鮮度抜群！","color":"white","italic":false}','{"text":"350pt","color":"red","bold":true,"italic":false}']},CustomModelData:103,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTKaisendon:1b} 1
 
 #endregion

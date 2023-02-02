@@ -9,6 +9,6 @@
 #region 内容
 
 # give
-    give @p bread{display:{Name:'{"text":"抹茶アイス"}',Lore:['{"text":" "}','{"text":"モリ味","color":"white","italic":false}','{"text":"280pt","color":"red","bold":true,"italic":false}']},CustomModelData:109,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTMaccha_moririn:1b} 1
+    give @s bread{display:{Name:'{"text":"抹茶アイス"}',Lore:['{"text":" "}','{"text":"モリ味","color":"white","italic":false}','{"text":"280pt","color":"red","bold":true,"italic":false}']},CustomModelData:109,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTMaccha_moririn:1b} 1
 
 #endregion

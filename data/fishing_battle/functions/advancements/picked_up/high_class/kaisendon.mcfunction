@@ -1,8 +1,8 @@
-#> fishing_battle:advancements/picked_up/high_class/maccha_ice
+#> fishing_battle:advancements/picked_up/high_class/kaisendon
 #
-# fishing_battle：『抹茶アイス(通常)』を拾った時のadvancementのリワードfunction
+# fishing_battle：『海鮮丼』を拾った時のadvancementのリワードfunction
 #
-# @within advancement fishing_battle:picked_up/high_class/maccha_ice
+# @within advancement fishing_battle:picked_up/high_class/kaisendon
 
 
 

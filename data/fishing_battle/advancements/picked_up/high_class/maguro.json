@@ -1,0 +1,24 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"type": "minecraft:player",
+					"nbt": "{Tags:[\"PCTW.FSBT.Player\"]}"
+				},
+				"items": [
+					{
+						"items": [
+							"minecraft:cod"
+						],
+						"nbt": "{FSBTNotPickedUpHookedItem:1b,FSBTMaguro:1b}"
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "fishing_battle:advancements/picked_up/high_class/marugo"
+	}
+}

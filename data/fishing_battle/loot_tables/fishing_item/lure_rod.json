@@ -553,7 +553,7 @@
 				{
 					"type": "minecraft:item",
 					"weight": 3,
-					"name": "minecraft:potion",
+					"name": "minecraft:milk_bucket",
 					"functions": [
 						{
 							"function": "minecraft:set_name",
@@ -733,7 +733,7 @@
 				{
                     "type": "minecraft:loot_table",
 					"weight" :2,
-					"name": "fishing_battle:hooked_item/maccha"
+					"name": "fishing_battle:fishing_item//maccha"
                 },
 				{
 					"type": "minecraft:item",

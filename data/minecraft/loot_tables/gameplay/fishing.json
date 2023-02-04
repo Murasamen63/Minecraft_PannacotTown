@@ -24,7 +24,7 @@
 				},
 				{
 					"type": "minecraft:loot_table",
-					"name": "fishing_battle:hooked_item/normal_rod",
+					"name": "fishing_battle:fishing_item/",
 					"conditions": [
 						{
 							"condition": "minecraft:match_tool",
@@ -39,7 +39,7 @@
 				},
                 {
                     "type": "minecraft:loot_table",
-					"name": "fishing_battle:hooked_item/double_rod",
+					"name": "fishing_battle:fishing_item/double_rod",
 					"conditions": [
 						{
 							"condition": "minecraft:match_tool",
@@ -54,7 +54,7 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-					"name": "fishing_battle:hooked_item/lure_rod",
+					"name": "fishing_battle:fishing_item/lure_rod",
 					"conditions": [
 						{
 							"condition": "minecraft:match_tool",
@@ -69,7 +69,7 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-					"name": "fishing_battle:hooked_item/rich_rod",
+					"name": "fishing_battle:fishing_item/rich_rod",
 					"conditions": [
 						{
 							"condition": "minecraft:match_tool",
@@ -84,7 +84,7 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-					"name": "fishing_battle:hooked_item/gambling_rod",
+					"name": "fishing_battle:fishing_item/gambling_rod",
 					"conditions": [
 						{
 							"condition": "minecraft:match_tool",
@@ -99,7 +99,7 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-					"name": "fishing_battle:hooked_item/slot_rod",
+					"name": "fishing_battle:fishing_item/slot_rod",
 					"conditions": [
 						{
 							"condition": "minecraft:match_tool",

@@ -6,301 +6,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"weight": 1,
-					"name": "minecraft:cod",
-					"functions": [
-						{
-							"function": "minecraft:set_name",
-							"entity": "this",
-							"name": "タラ"
-						},
-						{
-							"function": "minecraft:set_lore",
-							"entity": "this",
-							"lore": [
-								{
-									"text": " "
-								},
-								{
-									"text": "鱈",
-									"color": "white",
-									"italic": false
-								},
-								{
-									"text": "2pt",
-									"color": "green",
-									"bold": true,
-									"italic": false
-								}
-							]
-						},
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:101,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTCod:1b}"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"weight": 1,
-					"name": "minecraft:cod",
-					"functions": [
-						{
-							"function": "minecraft:set_name",
-							"entity": "this",
-							"name": "アジ"
-						},
-						{
-							"function": "minecraft:set_lore",
-							"entity": "this",
-							"lore": [
-								{
-									"text": " "
-								},
-								{
-									"text": "鯵",
-									"color": "white",
-									"italic": false
-								},
-								{
-									"text": "3pt",
-									"color": "green",
-									"bold": true,
-									"italic": false
-								}
-							]
-						},
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:109,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTAji:1b}"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"weight": 1,
-					"name": "minecraft:cod",
-					"functions": [
-						{
-							"function": "minecraft:set_name",
-							"entity": "this",
-							"name": "カレイ"
-						},
-						{
-							"function": "minecraft:set_lore",
-							"entity": "this",
-							"lore": [
-								{
-									"text": " "
-								},
-								{
-									"text": "鰈",
-									"color": "white",
-									"italic": false
-								},
-								{
-									"text": "5pt",
-									"color": "green",
-									"bold": true,
-									"italic": false
-								}
-							]
-						},
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:106,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTKarei:1b}"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"weight": 1,
-					"name": "minecraft:cod",
-					"functions": [
-						{
-							"function": "minecraft:set_name",
-							"entity": "this",
-							"name": "サケ"
-						},
-						{
-							"function": "minecraft:set_lore",
-							"entity": "this",
-							"lore": [
-								{
-									"text": " "
-								},
-								{
-									"text": "鮭",
-									"color": "white",
-									"italic": false
-								},
-								{
-									"text": "8pt",
-									"color": "green",
-									"bold": true,
-									"italic": false
-								}
-							]
-						},
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:102,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTSalmon:1b}"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"weight": 1,
-					"name": "minecraft:cod",
-					"functions": [
-						{
-							"function": "minecraft:set_name",
-							"entity": "this",
-							"name": "イカ"
-						},
-						{
-							"function": "minecraft:set_lore",
-							"entity": "this",
-							"lore": [
-								{
-									"text": " "
-								},
-								{
-									"text": "烏賊",
-									"color": "white",
-									"italic": false
-								},
-								{
-									"text": "8pt",
-									"color": "green",
-									"bold": true,
-									"italic": false
-								}
-							]
-						},
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:111,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTIka:1b}"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"weight": 1,
-					"name": "minecraft:cod",
-					"functions": [
-						{
-							"function": "minecraft:set_name",
-							"entity": "this",
-							"name": "サンマ"
-						},
-						{
-							"function": "minecraft:set_lore",
-							"entity": "this",
-							"lore": [
-								{
-									"text": " "
-								},
-								{
-									"text": "秋刀魚",
-									"color": "white",
-									"italic": false
-								},
-								{
-									"text": "10pt",
-									"color": "green",
-									"bold": true,
-									"italic": false
-								}
-							]
-						},
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:108,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTSanma:1b}"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"weight": 1,
-					"name": "minecraft:paper",
-					"functions": [
-						{
-							"function": "minecraft:set_name",
-							"entity": "this",
-							"name": "ゴミ"
-						},
-						{
-							"function": "minecraft:set_lore",
-							"entity": "this",
-							"lore": [
-								{
-									"text": " "
-								},
-								{
-									"text": "リサイクル可能なゴミ状のゴミ",
-									"color": "white",
-									"italic": false
-								},
-								{
-									"text": "1pt",
-									"color": "gray",
-									"bold": true,
-									"italic": false
-								}
-							]
-						},
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:101,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTGomi:1b}"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"weight": 1,
-					"name": "minecraft:paper",
-					"functions": [
-						{
-							"function": "minecraft:set_name",
-							"entity": "this",
-							"name": "ゴミたん"
-						},
-						{
-							"function": "minecraft:set_lore",
-							"entity": "this",
-							"lore": [
-								{
-									"text": " "
-								},
-								{
-									"text": "真夏のゴミボリー",
-									"color": "white",
-									"italic": false
-								},
-								{
-									"text": "かもん横浜びっぐうぇい",
-									"color": "white",
-									"italic": false
-								}
-								,
-								{
-									"text": "1pt",
-									"color": "gray",
-									"bold": true,
-									"italic": false
-								}
-							]
-						},
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:102,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTGomitan:1b}"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"weight": 1,
+					"weight": 30,
 					"name": "minecraft:cod",
 					"functions": [
 						{
@@ -336,7 +42,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 1,
+					"weight": 30,
 					"name": "minecraft:cod",
 					"functions": [
 						{
@@ -360,9 +66,7 @@
 									"text": "30pt",
 									"color": "yellow",
 									"bold": true,
-									"italic":false,
-									"bold": true,
-									"italic": false
+									"italic":false
 								}
 							]
 						},
@@ -374,7 +78,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 1,
+					"weight": 25,
 					"name": "minecraft:cod",
 					"functions": [
 						{
@@ -410,7 +114,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 1,
+					"weight": 25,
 					"name": "minecraft:cod",
 					"functions": [
 						{
@@ -446,7 +150,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 1,
+					"weight": 25,
 					"name": "minecraft:cod",
 					"functions": [
 						{
@@ -482,7 +186,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 1,
+					"weight": 22,
 					"name": "minecraft:cod",
 					"functions": [
 						{
@@ -518,7 +222,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 1,
+					"weight": 20,
 					"name": "minecraft:cod",
 					"functions": [
 						{
@@ -554,7 +258,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 1,
+					"weight": 17,
 					"name": "minecraft:milk_bucket",
 					"functions": [
 						{
@@ -590,7 +294,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 1,
+					"weight": 15,
 					"name": "minecraft:bread",
 					"functions": [
 						{
@@ -626,7 +330,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 1,
+					"weight": 15,
 					"name": "minecraft:bread",
 					"functions": [
 						{
@@ -662,7 +366,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 1,
+					"weight": 12,
 					"name": "minecraft:bread",
 					"functions": [
 						{
@@ -698,7 +402,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 1,
+					"weight": 10,
 					"name": "minecraft:bread",
 					"functions": [
 						{
@@ -734,11 +438,12 @@
 				},
 				{
                     "type": "minecraft:loot_table",
-					"name": "fishing_battle:hooked_item/maccha"
+					"weight": 10,
+					"name": "fishing_battle:fishing_item//maccha"
                 },
 				{
 					"type": "minecraft:item",
-					"weight": 1,
+					"weight": 7,
 					"name": "minecraft:bread",
 					"functions": [
 						{
@@ -774,7 +479,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 1,
+					"weight": 5,
 					"name": "minecraft:bread",
 					"functions": [
 						{
@@ -810,7 +515,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 1,
+					"weight": 5,
 					"name": "minecraft:bread",
 					"functions": [
 						{

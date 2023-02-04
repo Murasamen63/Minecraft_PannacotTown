@@ -187,7 +187,7 @@
 				{
                     "type": "minecraft:loot_table",
 					"weight" :15,
-					"name": "fishing_battle:hooked_item/maccha"
+					"name": "fishing_battle:fishing_item//maccha"
                 },
 				{
 					"type": "minecraft:item",

@@ -10,14 +10,14 @@
 
 # アイテム処理
         ### 元アイテム削除
-            execute if predicate fishing_battle:game_state/play run clear @s milk_bucket{FSBTNotPickedUpHookedItem:1b,FSBTCaffe_latte:1b}
+            execute if predicate fishing_battle:game_state/play run clear @s milk_bucket{FSBTNotPickedUpHookedItem:1b,FSBTHotate:1b}
         ### スコア増加
             execute if predicate fishing_battle:game_state/play run scoreboard players add @s PCTW.FSBT.Score 20
         ### 観賞用アイテム付与
             execute if predicate fishing_battle:game_state/play run function fishing_battle:give/hooked_item/high_class/hotate
         ### 通知
             ### 通知
-                execute if predicate fishing_battle:game_state/play run tellraw @s ["",{"text":"  *GET* ","bold":true,"color":"gold"},"    "," 『",{"text":"カフェラテ","italic":true},"』    ","+",{"text":"150pt","bold":true,"color":"red"}]
+                execute if predicate fishing_battle:game_state/play run tellraw @s ["",{"text":"  *GET* ","bold":true,"color":"gold"},"    "," 『",{"text":"ホタテ","italic":true},"』    ","+",{"text":"20pt","bold":true,"color":"yellow"}]
             ### 効果音
                 execute if predicate fishing_battle:game_state/play run playsound entity.experience_orb.pickup voice @s ~ ~ ~ 1.0 2.0
 

@@ -12,13 +12,13 @@
 						"items": [
 							"minecraft:cod"
 						],
-						"nbt": "{FSBTNotPickedUpHookedItem:1b,FSBTHotate:1b}"
+						"nbt": "{FSBTNotPickedUpHookedItem:1b,FSBTPufferfish:1b}"
 					}
 				]
 			}
 		}
 	},
 	"rewards": {
-		"function": "fishing_battle:advancements/picked_up/high_class/hotate"
+		"function": "fishing_battle:advancements/picked_up/high_class/puffer_fish"
 	}
 }

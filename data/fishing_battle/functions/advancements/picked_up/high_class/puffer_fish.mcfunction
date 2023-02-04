@@ -10,9 +10,9 @@
 
 # アイテム処理
         ### 元アイテム削除
-            execute if predicate fishing_battle:game_state/play run clear @s milk_bucket{FSBTNotPickedUpHookedItem:1b,FSBTPufferfish:1b}
+            execute if predicate fishing_battle:game_state/play run clear @s cod{FSBTNotPickedUpHookedItem:1b,FSBTPufferfish:1b}
         ### スコア増加
-            execute if predicate fishing_battle:game_state/play run scoreboard players add @s PCTW.FSBT.Score 20
+            execute if predicate fishing_battle:game_state/play run scoreboard players add @s PCTW.FSBT.Score 30
         ### 観賞用アイテム付与
             execute if predicate fishing_battle:game_state/play run function fishing_battle:give/hooked_item/high_class/hotate
         ### 通知

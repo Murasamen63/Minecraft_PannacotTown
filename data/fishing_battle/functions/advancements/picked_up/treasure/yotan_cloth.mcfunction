@@ -1,8 +1,8 @@
-#> fishing_battle:advancements/picked_up/treasure/asuneli
+#> fishing_battle:advancements/picked_up/treasure/yotan_cloth
 #
 # fishing_battle：『アスネリ』を拾った時のadvancementのリワードfunction
 #
-# @within advancement fishing_battle:picked_up/treasure/asuneli
+# @within advancement fishing_battle:picked_up/treasure/yotan_cloth
 
 
 

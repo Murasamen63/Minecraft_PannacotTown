@@ -3,8 +3,8 @@
 # fishing_battle：釣り大会の設定をアンインストールするfunction
 #
 # @within function
-#   _core:main/_reload
-#   _core:pctw_master_gui/gui/switch_function/select_gamemode/back_to_select_gamemode
+#   _core.pctw:main/_reload
+#   _core.pctw:pctw_master_gui/gui/switch_function/select_gamemode/back_to_select_gamemode
 
 
 

@@ -2,7 +2,7 @@
 #
 # fishing_battle：アイテムを付与『Debug_FSBT』
 #
-# @within function _core:give/debug_book
+# @within function _core.pctw:give/debug_book
 
 
 

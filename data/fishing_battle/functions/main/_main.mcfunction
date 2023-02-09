@@ -2,7 +2,7 @@
 #
 # fishing_battle：常時起動するfunction
 #
-# @within function _core:main/_main
+# @within function _core.pctw:main/_main
 
 
 

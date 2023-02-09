@@ -1,0 +1,24 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"type": "minecraft:player",
+					"nbt": "{Tags:[\"PCTW.Player.Use.MasterGUI\"]}"
+				},
+				"items": [
+					{
+						"items": [
+							"ender_eye"
+						],
+						"nbt": "{PCTWMasterGUIRefreshFSBTtop:1b}"
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "_core.pctw:pctw_master_gui/gui/switch_function/fishing_battle/refresh_top_page"
+	}
+}

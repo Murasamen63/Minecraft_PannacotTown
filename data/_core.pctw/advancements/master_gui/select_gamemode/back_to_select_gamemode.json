@@ -1,0 +1,24 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"type": "minecraft:player",
+					"nbt": "{Tags:[\"PCTW.Player.Use.MasterGUI\"]}"
+				},
+				"items": [
+					{
+						"items": [
+							"oak_sign"
+						],
+						"nbt": "{PCTWMasterGUIBackToSelectGameMode:1b}"
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "_core.pctw:pctw_master_gui/gui/switch_function/select_gamemode/back_to_select_gamemode"
+	}
+}

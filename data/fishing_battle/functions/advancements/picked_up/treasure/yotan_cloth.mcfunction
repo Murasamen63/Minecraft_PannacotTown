@@ -1,6 +1,6 @@
 #> fishing_battle:advancements/picked_up/treasure/yotan_cloth
 #
-# fishing_battle：『アスネリ』を拾った時のadvancementのリワードfunction
+# fishing_battle：『よたん(本体)』を拾った時のadvancementのリワードfunction
 #
 # @within advancement fishing_battle:picked_up/treasure/yotan_cloth
 

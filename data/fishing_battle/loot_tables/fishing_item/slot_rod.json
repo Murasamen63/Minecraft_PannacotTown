@@ -985,7 +985,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:104,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTYotan_cloth:1b}"
+							"tag": "{CustomModelData:104,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTShark_Peel:1b}"
 						}
 					]
 				}

@@ -947,6 +947,47 @@
 							"tag": "{CustomModelData:103,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTYotan_cloth:1b}"
 						}
 					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 3,
+					"name": "minecraft:warped_fungus_on_a_stick",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": "サメの皮"
+						},
+						{
+							"function": "minecraft:set_lore",
+							"entity": "this",
+							"lore": [
+								{
+									"text": " "
+								},
+								{
+									"text": "ネズミザメ目ムラサメ科ホホジロザメ属",
+									"color": "white",
+									"italic": false
+								},
+								{
+									"text": "Carcharodon Mvrasame",
+									"color": "white",
+									"italic": true
+								},
+								{
+									"text": "1000pt",
+									"color": "aqua",
+									"bold": true,
+									"italic": false
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{CustomModelData:104,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTYotan_cloth:1b}"
+						}
+					]
 				}
 			]
 		}

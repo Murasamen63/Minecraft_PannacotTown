@@ -24,7 +24,7 @@
 				},
 				{
 					"type": "minecraft:loot_table",
-					"name": "fishing_battle:fishing_item/",
+					"name": "fishing_battle:fishing_item/normal_rod",
 					"conditions": [
 						{
 							"condition": "minecraft:match_tool",

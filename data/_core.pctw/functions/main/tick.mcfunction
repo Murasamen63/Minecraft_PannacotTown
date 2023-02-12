@@ -1,6 +1,6 @@
 #> _core.pctw:main/tick
 #
-# _core.pctw：モードなしの状態で常時実行させるfunction
+# core：モードなしの状態で常時実行させるfunction
 #
 # @within function _core.pctw:main/_main
 

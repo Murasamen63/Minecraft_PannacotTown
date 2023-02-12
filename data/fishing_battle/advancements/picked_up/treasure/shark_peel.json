@@ -12,7 +12,7 @@
 						"items": [
 							"minecraft:warped_fungus_on_a_stick"
 						],
-						"nbt": "{FSBTNotPickedUpHookedItem:1b,FSBTShark_Peel:1b}"
+						"nbt": "{FSBTNotPickedUpHookedItem:1b,FSBTShark_peel:1b}"
 					}
 				]
 			}

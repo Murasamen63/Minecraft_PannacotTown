@@ -10,7 +10,7 @@
 
 # アイテム処理
         ### 元アイテム削除
-            execute if predicate fishing_battle:game_state/play run clear @s warped_fungus_on_a_stick{FSBTNotPickedUpHookedItem:1b,FSBTShark_Peel:1b}
+            execute if predicate fishing_battle:game_state/play run clear @s warped_fungus_on_a_stick{FSBTNotPickedUpHookedItem:1b,FSBTShark_peel:1b}
         ### スコア増加
             execute if predicate fishing_battle:game_state/play run scoreboard players add @s PCTW.FSBT.Score 1000
         ### 観賞用アイテム付与

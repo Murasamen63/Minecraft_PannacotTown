@@ -9,6 +9,6 @@
 #region 内容
 
 # give
-    give @s warped_fungus_on_a_stick{display:{Name:'{"text":"よたん(本体)"}',Lore:['{"text":" "}','{"text":"んべろ","color":"white","italic":false}','{"text":"1000pt","color":"aqua","bold":true,"italic":false}']},CustomModelData:103,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTYotan_cloth:1b} 1
+    give @s warped_fungus_on_a_stick{display:{Name:'{"text":"よたん(本体)"}',Lore:['{"text":" "}','{"text":"んぺろ","color":"white","italic":false}','{"text":"1000pt","color":"aqua","bold":true,"italic":false}']},CustomModelData:103,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTYotan_cloth:1b} 1
 
 #endregion

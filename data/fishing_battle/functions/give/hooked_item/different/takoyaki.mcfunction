@@ -9,6 +9,6 @@
 #region 内容
 
 # give
-    give @s bread{display:{Name:'{"text":"タコ焼き"}',Lore:['{"text":" "}','{"text":"ノンフライ。","color":"white","italic":false}','{"text":"200pt","color":"red","bold":true,"italic":false}']},CustomModelData:107,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTTakoyaki:1b} 1
+    give @s bread{display:{Name:'{"text":"タコ焼き"}',Lore:['{"text":" "}','{"text":"ノンフライ。","color":"white","italic":false}','{"text":"280pt","color":"red","bold":true,"italic":false}']},CustomModelData:107,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTTakoyaki:1b} 1
 
 #endregion

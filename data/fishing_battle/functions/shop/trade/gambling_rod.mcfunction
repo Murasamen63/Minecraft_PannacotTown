@@ -19,10 +19,6 @@
 # 初期化
     execute store result score $PCTW.FSBT.Temp.GamblingRod.Price PCTW.Core.Temp run data get storage pctw:fishing_battle/shop_price Price.FishingRod.GamblingRod
 
-# GameState = 0
-    ## 説明
-        execute if score $PCTW.FSBT.System PCTW.FSBT.GameState matches 0 run tellraw @s "hello"
-
 # GameState = 2
     ## トレード処理
         ### 失敗

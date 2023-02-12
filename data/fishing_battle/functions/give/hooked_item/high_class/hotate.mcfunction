@@ -8,6 +8,6 @@
 #region 内容
 
 # give
-    give @s milk_bucket{display:{Name:'{"text":"ホタテ"}',Lore:['{"text":" "}','{"text":"帆立","color":"white","italic":false}','{"text":"20pt","color":"yellow","bold":true,"italic":false}']},CustomModelData:113,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTHotate:1b} 1
+    give @s cod{display:{Name:'{"text":"ホタテ"}',Lore:['{"text":" "}','{"text":"帆立","color":"white","italic":false}','{"text":"20pt","color":"yellow","bold":true,"italic":false}']},CustomModelData:113,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTHotate:1b} 1
 
 #endregion

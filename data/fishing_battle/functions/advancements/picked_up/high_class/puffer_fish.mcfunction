@@ -14,7 +14,7 @@
         ### スコア増加
             execute if predicate fishing_battle:game_state/play run scoreboard players add @s PCTW.FSBT.Score 30
         ### 観賞用アイテム付与
-            execute if predicate fishing_battle:game_state/play run function fishing_battle:give/hooked_item/high_class/hotate
+            execute if predicate fishing_battle:game_state/play run function fishing_battle:give/hooked_item/high_class/puffer_fish
         ### 通知
             ### 通知
                 execute if predicate fishing_battle:game_state/play run tellraw @s ["",{"text":"  *GET* ","bold":true,"color":"gold"},"    "," 『",{"text":"フグ","italic":true},"』    ","+",{"text":"30pt","bold":true,"color":"yellow"}]

@@ -730,7 +730,7 @@
 				},
 				{
                     "type": "minecraft:loot_table",
-					"name": "fishing_battle:fishing_item//maccha"
+					"name": "fishing_battle:fishing_item/maccha"
                 },
 				{
 					"type": "minecraft:item",

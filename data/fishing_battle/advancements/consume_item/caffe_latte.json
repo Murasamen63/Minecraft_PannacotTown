@@ -1,0 +1,21 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"player": {
+					"type": "minecraft:player"
+				},
+				"item": {
+					"items": [
+						"minecraft:milk_bucket"
+					],
+					"nbt": "{FSBTCaffe_latte:1b}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "minecraft:a"
+	}
+}

@@ -16,6 +16,6 @@
 		}
 	},
 	"rewards": {
-		"function": "minecraft:a"
+		"function": "fishing_battle:advancements/comsume_item/caffe_latte"
 	}
 }

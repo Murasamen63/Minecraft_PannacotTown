@@ -56,7 +56,13 @@
             #### 時間表記(秒)
                 scoreboard objectives add PCTW.FSBT.ShowTimer.Second dummy
         ### Score
-            scoreboard objectives add PCTW.FSBT.Score dummy
+            #### 得点
+                scoreboard objectives add PCTW.FSBT.Score dummy
+            #### チーム内表示用
+                scoreboard objectives add PCTW.FSBT.Score.ShowRed dummy
+                scoreboard objectives add PCTW.FSBT.Score.ShowBlue dummy
+                scoreboard objectives add PCTW.FSBT.Score.ShowYellow dummy
+                scoreboard objectives add PCTW.FSBT.Score.ShowGreen dummy
         ### Info
             scoreboard objectives add PCTW.FSBT.Info dummy
     ## 設定
@@ -85,7 +91,7 @@
         ### Ranking
             execute unless data storage pctw:fishing_battle/ranking Ranking run data modify storage pctw:fishing_battle/ranking Ranking set value {1:{Name:[null],Score:0},2:{Name:[null],Score:0},3:{Name:[null],Score:0}}
         ### System
-            data modify storage pctw:fishing_battle/system System set value {Timer:0,VSTeam:0b}
+            data modify storage pctw:fishing_battle/system System set value {Timer:0,Team:{Enable:1b,Count:0}}
         ### Shop_Price
             execute unless data storage pctw:fishing_battle/shop_price Price run data modify storage pctw:fishing_battle/shop_price Price set value {FishingRod:{DoubleRod:0,LureRod:0,RichRod:0,GamblingRod:0,SlotRod:0}}
     ## 設定

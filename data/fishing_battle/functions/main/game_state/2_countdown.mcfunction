@@ -18,9 +18,9 @@
 # 初期値設定
     ## bossbar
         ### 最大値
-            execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer run execute store result bossbar pctw:fishing_battle/timer max run data get storage pctw:fishing_battle/system Timer
+            execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer run execute store result bossbar pctw:fishing_battle/timer max run data get storage pctw:fishing_battle/system System.Timer
         ### 現在値
-            execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer run execute store result bossbar pctw:fishing_battle/timer value run data get storage pctw:fishing_battle/system Timer
+            execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer run execute store result bossbar pctw:fishing_battle/timer value run data get storage pctw:fishing_battle/system System.Timer
     ## title
         execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer run title @a times 0 21 0
     ## sidebar

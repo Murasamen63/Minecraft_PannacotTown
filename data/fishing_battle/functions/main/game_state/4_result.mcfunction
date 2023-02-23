@@ -86,7 +86,7 @@
         ### Score
             execute if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 620 as @a at @s run scoreboard players reset @s PCTW.FSBT.Score
         ### GameTimer
-            execute if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 620 as @a at @s run execute store result score $PCTW.FSBT.System PCTW.FSBT.GameTimer run data get storage pctw:fishing_battle/system Timer
+            execute if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 620 as @a at @s run execute store result score $PCTW.FSBT.System PCTW.FSBT.GameTimer run data get storage pctw:fishing_battle/system System.Timer
     ## tag削除
         ### 順位タグ
             execute if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 620 as @a at @s run tag @s remove PCTW.FSBT.Temp.Score.1st

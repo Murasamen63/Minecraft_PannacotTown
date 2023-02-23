@@ -11,6 +11,9 @@
 # アイテム処理
     ## 削除
         clear @s bucket 1
+    
+    ## タグ削除
+        tag @s remove PCTW.FSBT.Drink.Caffe_latte
 
 # advancement削除
     advancement revoke @s only fishing_battle:picked_up/bucket

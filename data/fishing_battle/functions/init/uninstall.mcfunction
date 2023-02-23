@@ -26,6 +26,12 @@
     scoreboard objectives remove PCTW.FSBT.Info.ShowYellowScore
     scoreboard objectives remove PCTW.FSBT.Info.ShowGreenScore
 
+# team削除
+    team remove FSBTPlayerTeamRed
+    team remove FSBTPlayerTeamBlue
+    team remove FSBTPlayerTeamYellow
+    team remove FSBTPlayerTeamGreen
+
 # bossbar削除
     bossbar remove pctw:fishing_battle/timer
 

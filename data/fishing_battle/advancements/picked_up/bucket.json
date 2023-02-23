@@ -1,0 +1,23 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"type": "minecraft:player",
+					"nbt": "{Tags:[\"PCTW.FSBT.Drink.Caffe_latte\"]}"
+				},
+				"items": [
+					{
+						"items": [
+							"minecraft:bucket"
+						]
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "fishing_battle:advancements/picked_up/bucket"
+	}
+}

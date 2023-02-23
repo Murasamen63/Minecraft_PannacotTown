@@ -3,9 +3,35 @@
 		"requirement": {
 			"trigger": "minecraft:consume_item",
 			"conditions": {
-				"player": {
-					"type": "minecraft:player"
-				},
+				"player": [
+					{
+						"condition": "minecraft:alternative",
+						"terms": [
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"type": "minecraft:player",
+									"type_specific": {
+										"type": "player",
+										"gamemode": "survival"
+									}
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"type": "minecraft:player",
+									"type_specific": {
+										"type": "player",
+										"gamemode": "adventure"
+									}
+								}
+							}
+						]
+					}
+				],
 				"item": {
 					"items": [
 						"minecraft:milk_bucket"
@@ -16,6 +42,6 @@
 		}
 	},
 	"rewards": {
-		"function": "fishing_battle:advancements/comsume_item/caffe_latte"
+		"function": "fishing_battle:advancements/consume_item/caffe_latte"
 	}
 }

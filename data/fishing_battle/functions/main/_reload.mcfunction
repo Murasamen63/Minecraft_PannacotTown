@@ -59,10 +59,10 @@
             #### 得点
                 scoreboard objectives add PCTW.FSBT.Score dummy
             #### チーム内表示用
-                scoreboard objectives add PCTW.FSBT.Score.ShowRed dummy "赤チーム"
-                scoreboard objectives add PCTW.FSBT.Score.ShowBlue dummy "青チーム"
-                scoreboard objectives add PCTW.FSBT.Score.ShowYellow dummy "黄チーム"
-                scoreboard objectives add PCTW.FSBT.Score.ShowGreen dummy "緑チーム"
+                scoreboard objectives add PCTW.FSBT.Info.ShowRedScore dummy "赤チーム"
+                scoreboard objectives add PCTW.FSBT.Info.ShowBlueScore dummy "青チーム"
+                scoreboard objectives add PCTW.FSBT.Info.ShowYellowScore dummy "黄チーム"
+                scoreboard objectives add PCTW.FSBT.Info.ShowGreenScore dummy "緑チーム"
         ### Info
             scoreboard objectives add PCTW.FSBT.Info dummy
     ## 設定

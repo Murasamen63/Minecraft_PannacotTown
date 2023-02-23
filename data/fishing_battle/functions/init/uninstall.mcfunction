@@ -21,10 +21,10 @@
     scoreboard objectives remove PCTW.FSBT.Score
     scoreboard objectives remove PCTW.FSBT.ShowTimer.Minute
     scoreboard objectives remove PCTW.FSBT.ShowTimer.Second
-    scoreboard objectives remove PCTW.FSBT.Score.ShowRed
-    scoreboard objectives remove PCTW.FSBT.Score.ShowBlue
-    scoreboard objectives remove PCTW.FSBT.Score.ShowYellow
-    scoreboard objectives remove PCTW.FSBT.Score.ShowGreen
+    scoreboard objectives remove PCTW.FSBT.Info.ShowRedScore
+    scoreboard objectives remove PCTW.FSBT.Info.ShowBlueScore
+    scoreboard objectives remove PCTW.FSBT.Info.ShowYellowScore
+    scoreboard objectives remove PCTW.FSBT.Info.ShowGreenScore
 
 # bossbar削除
     bossbar remove pctw:fishing_battle/timer

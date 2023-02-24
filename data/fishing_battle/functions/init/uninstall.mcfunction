@@ -21,10 +21,10 @@
     scoreboard objectives remove PCTW.FSBT.Score
     scoreboard objectives remove PCTW.FSBT.ShowTimer.Minute
     scoreboard objectives remove PCTW.FSBT.ShowTimer.Second
-    scoreboard objectives remove PCTW.FSBT.Info.ShowRedScore
-    scoreboard objectives remove PCTW.FSBT.Info.ShowBlueScore
-    scoreboard objectives remove PCTW.FSBT.Info.ShowYellowScore
-    scoreboard objectives remove PCTW.FSBT.Info.ShowGreenScore
+    scoreboard objectives remove PCTW.FSBT.Score.Red
+    scoreboard objectives remove PCTW.FSBT.Score.Blue
+    scoreboard objectives remove PCTW.FSBT.Score.Yellow
+    scoreboard objectives remove PCTW.FSBT.Score.Green
 
 # team削除
     team remove FSBTPlayerTeamRed

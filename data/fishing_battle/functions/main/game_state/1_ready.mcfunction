@@ -8,6 +8,10 @@
 
 #region 内容
 
+# gamemode設定
+    ## サバイバルをアドベンチャーに変更
+        execute as @a[gamemode=survival] run gamemode adventure @s
+
 # Playerタグ管理
     ## advantureにタグ付与
         execute as @a[gamemode=adventure] at @s run tag @s add PCTW.FSBT.Player

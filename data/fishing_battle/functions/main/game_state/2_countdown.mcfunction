@@ -33,6 +33,20 @@
     ## アイテム
         execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer run clear @a clock{PCTWMasterGUIGameTimerFSBTMinute:1b}
         execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer run clear @a #fishing_battle:hooked_item{FSBTHookedItem:1b}
+    ## Team関連
+        ### 振り分け
+            execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} run function fishing_battle:main/team/selection
+        ### tellraw表示
+            #### 赤チーム
+                execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} run tellraw @a[team=FSBTPlayerTeamRed] ["","\n","  あなたは ",{"text":"赤チーム","bold":true,"color":"red"}," です","\n","\n","・チームメンバー","\n",{"selector":"@a[team=FSBTPlayerTeamRed]"},"\n"]
+            #### 青チーム
+                execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} run tellraw @a[team=FSBTPlayerTeamBlue] ["","\n","  あなたは ",{"text":"青チーム","bold":true,"color":"blue"}," です","\n","\n","・チームメンバー","\n",{"selector":"@a[team=FSBTPlayerTeamBlue]"},"\n"]
+            #### 黃チーム
+                execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} run tellraw @a[team=FSBTPlayerTeamYellow] ["","\n","  あなたは ",{"text":"黃チーム","bold":true,"color":"yellow"}," です","\n","\n","・チームメンバー","\n",{"selector":"@a[team=FSBTPlayerTeamYellow]"},"\n"]
+            #### 青チーム
+                execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} run tellraw @a[team=FSBTPlayerTeamGreen] ["","\n","  あなたは ",{"text":"緑チーム","bold":true,"color":"green"}," です","\n","\n","・チームメンバー","\n",{"selector":"@a[team=FSBTPlayerTeamGreen]"},"\n"]
+        ### 発光
+            execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} run effect give @a[tag=PCTW.FSBT.Player] glowing 6 0 true
     ## scoreboard
         execute unless score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer run scoreboard players set $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer 120
 
@@ -75,6 +89,15 @@
             execute if score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches 0 as @a at @s run playsound entity.player.levelup voice @s ~ ~ ~ 1.0 0.5
     ## アイテム付与
         execute if score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches 0 as @a[tag=PCTW.FSBT.Player] at @s run function fishing_battle:give/fishing_rod/normal_rod
+    ## Team情報表示
+        ### 赤チーム
+            execute if score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches 0 if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} run scoreboard objectives setdisplay sidebar.team.red PCTW.FSBT.Info.ShowRedScore
+        ### 青チーム
+            execute if score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches 0 if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} run scoreboard objectives setdisplay sidebar.team.blue PCTW.FSBT.Info.ShowBlueScore
+        ### 黄チーム
+            execute if score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches 0 if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} run scoreboard objectives setdisplay sidebar.team.yellow PCTW.FSBT.Info.ShowYellowScore
+        ### 緑チーム
+            execute if score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches 0 if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} run scoreboard objectives setdisplay sidebar.team.green PCTW.FSBT.Info.ShowGreenScore
     ## GameState移行
         execute if score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches 0 run scoreboard players set $PCTW.FSBT.System PCTW.FSBT.GameState 2
     ## scoreboard削除

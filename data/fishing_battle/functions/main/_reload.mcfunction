@@ -91,7 +91,7 @@
         ### Ranking
             execute unless data storage pctw:fishing_battle/ranking Ranking run data modify storage pctw:fishing_battle/ranking Ranking set value {1:{Name:[null],Score:0},2:{Name:[null],Score:0},3:{Name:[null],Score:0}}
         ### System
-            data modify storage pctw:fishing_battle/system System set value {Timer:0,Team:{Enable:0b,Count:0}}
+            data modify storage pctw:fishing_battle/system System set value {Timer:0,Team:{Enable:0b,Count:2}}
         ### Shop_Price
             execute unless data storage pctw:fishing_battle/shop_price Price run data modify storage pctw:fishing_battle/shop_price Price set value {FishingRod:{DoubleRod:0,LureRod:0,RichRod:0,GamblingRod:0,SlotRod:0}}
 

@@ -1,6 +1,6 @@
-#> fishing_battle:item/equipment/asuneli
+#> fishing_battle:item/equipment/shark_peel
 #
-# fishing_battle：『アスネリ』を装備するfunction
+# fishing_battle：『サメの皮』を装備するfunction
 #
 # @within function fishing_battle:item/function
 

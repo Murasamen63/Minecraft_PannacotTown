@@ -4,6 +4,14 @@
 #
 # @within function fishing_battle:main/_main
 
+#region
+
+#> Score Holder
+# @within function fishing_battle:main/game_state/4_result
+    #define score_holder 合計
+
+#endregion
+
 
 
 #region 内容
@@ -44,6 +52,32 @@
                     execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 1201..3600 run bossbar set pctw:fishing_battle/timer color yellow
                 ##### 1分以下
                     execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches ..1200 run bossbar set pctw:fishing_battle/timer color red
+        ### チーム関連
+            #### scoreboard
+                ##### 赤チーム
+                    ###### 個人スコア
+                        execute if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} as @a[team=FSBTPlayerTeamRed] run scoreboard players operation @s PCTW.FSBT.Info.ShowRedScore = @s PCTW.FSBT.Score
+                    ###### 合計
+                        execute if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} if entity @a[team=FSBTPlayerTeamRed] run scoreboard players set 合計 PCTW.FSBT.Info.ShowRedScore 0
+                        execute if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} as @a[team=FSBTPlayerTeamRed] run scoreboard players operation 合計 PCTW.FSBT.Info.ShowRedScore += @s PCTW.FSBT.Score
+                ##### 青チーム
+                    ###### 個人スコア
+                        execute if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} as @a[team=FSBTPlayerTeamBrue] run scoreboard players operation @s PCTW.FSBT.Info.ShowBlueScore = @s PCTW.FSBT.Score
+                    ###### 合計
+                        execute if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} if entity @a[team=FSBTPlayerTeamBlue] run scoreboard players set 合計 PCTW.FSBT.Info.ShowBlueScore 0
+                        execute if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} as @a[team=FSBTPlayerTeamBlue] run scoreboard players operation 合計 PCTW.FSBT.Info.ShowBlueScore += @s PCTW.FSBT.Score
+                ##### 黃チーム
+                    ###### 個人スコア
+                        execute if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} as @a[team=FSBTPlayerTeamYellow] run scoreboard players operation @s PCTW.FSBT.Info.ShowYellowScore = @s PCTW.FSBT.Score
+                    ###### 合計
+                        execute if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} if entity @a[team=FSBTPlayerTeamYellow] run scoreboard players set 合計 PCTW.FSBT.Info.ShowYellowScore 0
+                        execute if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} as @a[team=FSBTPlayerTeamYellow] run scoreboard players operation 合計 PCTW.FSBT.Info.ShowYellowScore += @s PCTW.FSBT.Score
+                ##### 緑チーム
+                    ###### 個人スコア
+                        execute if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} as @a[team=FSBTPlayerTeamGreen] run scoreboard players operation @s PCTW.FSBT.Info.ShowGreenScore = @s PCTW.FSBT.Score
+                    ###### 合計
+                        execute if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} if entity @a[team=FSBTPlayerTeamGreen] run scoreboard players set 合計 PCTW.FSBT.Info.ShowRedScore 0
+                        execute if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} as @a[team=FSBTPlayerTeamGreen] run scoreboard players operation 合計 PCTW.FSBT.Info.ShowGreenScore += @s PCTW.FSBT.Score
         ### actionbar表示
             #### プレイヤー自身のスコア表示
                 execute as @a[tag=PCTW.FSBT.Player] at @s run function fishing_battle:score/ctrl_xpbar

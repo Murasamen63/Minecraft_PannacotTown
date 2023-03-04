@@ -89,15 +89,6 @@
             execute if score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches 0 as @a at @s run playsound entity.player.levelup voice @s ~ ~ ~ 1.0 0.5
     ## アイテム付与
         execute if score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches 0 as @a[tag=PCTW.FSBT.Player] at @s run function fishing_battle:give/fishing_rod/normal_rod
-    ## Team情報表示
-        ### 赤チーム
-            execute if score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches 0 if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} run scoreboard objectives setdisplay sidebar.team.red PCTW.FSBT.Info.ShowRedScore
-        ### 青チーム
-            execute if score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches 0 if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} run scoreboard objectives setdisplay sidebar.team.blue PCTW.FSBT.Info.ShowBlueScore
-        ### 黄チーム
-            execute if score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches 0 if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} run scoreboard objectives setdisplay sidebar.team.yellow PCTW.FSBT.Info.ShowYellowScore
-        ### 緑チーム
-            execute if score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches 0 if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} run scoreboard objectives setdisplay sidebar.team.green PCTW.FSBT.Info.ShowGreenScore
     ## GameState移行
         execute if score $PTCW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer matches 0 run scoreboard players set $PCTW.FSBT.System PCTW.FSBT.GameState 2
     ## scoreboard削除

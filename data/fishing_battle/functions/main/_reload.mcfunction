@@ -58,7 +58,7 @@
         ### Score
             #### 得点
                 scoreboard objectives add PCTW.FSBT.Score dummy
-            #### チーム内表示用
+            #### チームの合計得点
                 scoreboard objectives add PCTW.FSBT.Score.Red dummy
                 scoreboard objectives add PCTW.FSBT.Score.Blue dummy
                 scoreboard objectives add PCTW.FSBT.Score.Yellow dummy

@@ -83,7 +83,17 @@
                 execute as @a[tag=PCTW.FSBT.Player] at @s run function fishing_battle:score/ctrl_xpbar
             ### プレイヤー以外は近づいたらそのプレイヤーのスコアが表示
                 #### 3マス以内にいる場合
-                    execute as @a[tag=!PCTW.FSBT.Player] at @s if entity @p[tag=PCTW.FSBT.Player,distance=..3] run title @s actionbar ["",{"selector":"@p[tag=PCTW.FSBT.Player,distance=..3]","italic":true},"のスコア  ",{"score":{"name":"@p[tag=PCTW.FSBT.Player,distance=..3]","objective":"PCTW.FSBT.Score"},"bold":true,"color":"green"},{"text":"pt","bold":true,"color":"green"}]
+                    ##### 個人戦
+                        execute if data storage pctw:fishing_battle/system System{Team:{Enable:0b}} as @a[tag=!PCTW.FSBT.Player] at @s if entity @p[tag=PCTW.FSBT.Player,distance=..3] run title @s actionbar ["",{"selector":"@p[tag=PCTW.FSBT.Player,distance=..3]","italic":true},"のスコア  ",{"score":{"name":"@p[tag=PCTW.FSBT.Player,distance=..3]","objective":"PCTW.FSBT.Score"},"bold":true,"color":"green"},{"text":"pt","bold":true,"color":"green"}]
+                    ##### チーム戦
+                        ###### 赤チーム
+                            execute if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} as @a[tag=!PCTW.FSBT.Player] at @s if entity @p[team=FSBTPlayerTeamRed,tag=PCTW.FSBT.Player,distance=..3] run title @s actionbar ["",{"selector":"@p[tag=PCTW.FSBT.Player,distance=..3]","italic":true,"color":"red"},"のチームスコア  ",{"score":{"name":"@p[tag=PCTW.FSBT.Player,distance=..3]","objective":"PCTW.FSBT.Score"},"bold":true,"color":"green"},{"text":"pt","bold":true,"color":"green"}]
+                        ###### 青チーム
+                            execute if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} as @a[tag=!PCTW.FSBT.Player] at @s if entity @p[team=FSBTPlayerTeamBlue,tag=PCTW.FSBT.Player,distance=..3] run title @s actionbar ["",{"selector":"@p[tag=PCTW.FSBT.Player,distance=..3]","italic":true,"color":"blue"},"のチームスコア  ",{"score":{"name":"@p[tag=PCTW.FSBT.Player,distance=..3]","objective":"PCTW.FSBT.Score"},"bold":true,"color":"green"},{"text":"pt","bold":true,"color":"green"}]
+                        ###### 黃チーム
+                            execute if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} as @a[tag=!PCTW.FSBT.Player] at @s if entity @p[team=FSBTPlayerTeamYellow,tag=PCTW.FSBT.Player,distance=..3] run title @s actionbar ["",{"selector":"@p[tag=PCTW.FSBT.Player,distance=..3]","italic":true,"color":"yellow"},"のチームスコア  ",{"score":{"name":"@p[tag=PCTW.FSBT.Player,distance=..3]","objective":"PCTW.FSBT.Score"},"bold":true,"color":"green"},{"text":"pt","bold":true,"color":"green"}]
+                        ###### 緑チーム
+                            execute if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} as @a[tag=!PCTW.FSBT.Player] at @s if entity @p[team=FSBTPlayerTeamGreen,tag=PCTW.FSBT.Player,distance=..3] run title @s actionbar ["",{"selector":"@p[tag=PCTW.FSBT.Player,distance=..3]","italic":true,"color":"dark_green"},"のチームスコア  ",{"score":{"name":"@p[tag=PCTW.FSBT.Player,distance=..3]","objective":"PCTW.FSBT.Score"},"bold":true,"color":"green"},{"text":"pt","bold":true,"color":"green"}]
                 #### いない場合
                     execute as @a[tag=!PCTW.FSBT.Player] at @s unless entity @p[tag=PCTW.FSBT.Player,distance=..3] run title @s actionbar ""
         ### 時間通知

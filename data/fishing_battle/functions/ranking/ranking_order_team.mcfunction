@@ -31,13 +31,13 @@
 # 初期化
     ## AEC召喚
         ### 赤チーム
-            execute unless score $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temp = $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temp if entity @a[team=FSBTPlayerTeamRed] run summon marker ~ ~ ~ {Tags:["PCTW.FSBT.Marker","PCTW.FSBT.Marker.Temp","PCTW.FSBT.Marker.Save_Score","PCTW.FSBT.Marker.Save_Score.Red"]}
+            execute unless score $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temp = $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temp at @r[team=FSBTPlayerTeamRed] run summon marker ~ ~ ~ {Tags:["PCTW.FSBT.Marker","PCTW.FSBT.Marker.Temp","PCTW.FSBT.Marker.Save_Score","PCTW.FSBT.Marker.Save_Score.Red"]}
         ### 青チーム
-            execute unless score $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temp = $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temp if entity @a[team=FSBTPlayerTeamBlue] run summon marker ~ ~ ~ {Tags:["PCTW.FSBT.Marker","PCTW.FSBT.Marker.Temp","PCTW.FSBT.Marker.Save_Score","PCTW.FSBT.Marker.Save_Score.Blue"]}
+            execute unless score $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temp = $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temp at @r[team=FSBTPlayerTeamBlue] run summon marker ~ ~ ~ {Tags:["PCTW.FSBT.Marker","PCTW.FSBT.Marker.Temp","PCTW.FSBT.Marker.Save_Score","PCTW.FSBT.Marker.Save_Score.Blue"]}
         ### 黃チーム
-            execute unless score $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temp = $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temp if entity @a[team=FSBTPlayerTeamYellow] run summon marker ~ ~ ~ {Tags:["PCTW.FSBT.Marker","PCTW.FSBT.Marker.Temp","PCTW.FSBT.Marker.Save_Score","PCTW.FSBT.Marker.Save_Score.Yellow"]}
+            execute unless score $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temp = $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temp at @r[team=FSBTPlayerTeamYellow] run summon marker ~ ~ ~ {Tags:["PCTW.FSBT.Marker","PCTW.FSBT.Marker.Temp","PCTW.FSBT.Marker.Save_Score","PCTW.FSBT.Marker.Save_Score.Yellow"]}
         ### 緑チーム
-            execute unless score $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temp = $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temp if entity @a[team=FSBTPlayerTeamGreen] run summon marker ~ ~ ~ {Tags:["PCTW.FSBT.Marker","PCTW.FSBT.Marker.Temp","PCTW.FSBT.Marker.Save_Score","PCTW.FSBT.Marker.Save_Score.Green"]}
+            execute unless score $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temp = $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temp at @r[team=FSBTPlayerTeamGreen] run summon marker ~ ~ ~ {Tags:["PCTW.FSBT.Marker","PCTW.FSBT.Marker.Temp","PCTW.FSBT.Marker.Save_Score","PCTW.FSBT.Marker.Save_Score.Green"]}
     ## スコア反映
         ### 赤チーム
             execute unless score $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temp = $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temp if entity @a[team=FSBTPlayerTeamRed] run scoreboard players operation @e[type=marker,tag=PCTW.FSBT.Marker.Save_Score.Red] PCTW.FSBT.Score = $PCTW.FSBT.System PCTW.FSBT.Score.Red

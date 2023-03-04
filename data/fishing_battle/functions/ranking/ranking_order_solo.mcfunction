@@ -1,6 +1,6 @@
 #> fishing_battle:ranking/ranking_order_solo
 #
-# fishing_battle：順位を決めるfunction
+# fishing_battle：順位を決めるfunction（個人戦）
 #
 # @within
 #   function fishing_battle:ranking/**

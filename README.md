@@ -35,7 +35,6 @@ Minecraft JavaEdition - ver1.19.3
 
 例)
 ```
-・PCTW.AEC.AlwaysAlive  全体で使用するAreaEffectCloudを永続させるタグ
 ・PCTW.FSBT.Player 釣り大会に参加するプレイヤーに付けるタグ      etc...
 ```
 

@@ -9,6 +9,6 @@
 #region 内容
 
 # give
-    give @s fishing_rod{display:{Name:'{"text":"入れ食い釣竿"}',Lore:['{"text":" "}','{"text":"食いつき率が高い釣竿","color":"white","italic":false}']},Enchantments:[{id:"minecraft:lure",lvl:5s}],PCTWItems:1b,PCTWFSBTItems:1b,FSBTFishingRod:1b,FSBTLureFishingRod:1b} 1
+    give @s fishing_rod{display:{Name:'{"text":"入れ食い釣竿"}',Lore:['{"text":" "}','{"text":"食いつき率が高い釣竿","color":"white","italic":false}']},Enchantments:[{id:"minecraft:lure",lvl:4s}],PCTWItems:1b,PCTWFSBTItems:1b,FSBTFishingRod:1b,FSBTLureFishingRod:1b} 1
 
 #endregion

@@ -20,7 +20,7 @@
 
 # 合計から全員のスコアに反映
     ## 赤チーム
-        execute if entity @s[team=FSBTPlayerTeamRed] run scoreboard players operation @a[team=FSBTPlayerTeamRed] PCTW.FSBT.Score = $PCTW.FSBT.System PCTW.FSBT.Info.ShowRedScore
+        execute if entity @s[team=FSBTPlayerTeamRed] run scoreboard players operation @a[team=FSBTPlayerTeamRed] PCTW.FSBT.Score = $PCTW.FSBT.System PCTW.FSBT.Score.Red
     ## 青チーム
         execute if entity @s[team=FSBTPlayerTeamBlue] run scoreboard players operation @a[team=FSBTPlayerTeamBlue] PCTW.FSBT.Score = $PCTW.FSBT.System PCTW.FSBT.Score.Blue
     ## 黃チーム

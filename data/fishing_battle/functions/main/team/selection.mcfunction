@@ -18,6 +18,10 @@
 
 #region 内容
 
+# 初期化
+    ## team初期化
+        execute unless score $PCTW.FSBT.Temp.Num_of_Team PCTW.Core.Temp = $PCTW.FSBT.Temp.Num_of_Team PCTW.Core.Temp run team leave @a
+
 # チーム数入力
     execute unless score $PCTW.FSBT.Temp.Num_of_Team PCTW.Core.Temp = $PCTW.FSBT.Temp.Num_of_Team PCTW.Core.Temp store result score $PCTW.FSBT.Temp.Num_of_Team PCTW.Core.Temp run data get storage pctw:fishing_battle/system System.Team.Count 1
 

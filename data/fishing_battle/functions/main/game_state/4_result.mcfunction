@@ -26,9 +26,9 @@
     ## ランキング作成
         ### 比較
             #### 個人戦
-                execute if data storage pctw:fishing_battle/system System{Team:{Enable:0b}} if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 0 run function fishing_battle:ranking/ranking_order_solo
+                execute if data storage pctw:fishing_battle/system System{Team:{Enable:0b}} if data storage pctw:fishing_battle/system System{Timer:6000} if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 0 run function fishing_battle:ranking/ranking_order_solo
             #### チーム戦
-                execute if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 0 run function fishing_battle:ranking/ranking_order_team
+                execute if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} if data storage pctw:fishing_battle/system System{Timer:6000} if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 0 run function fishing_battle:ranking/ranking_order_team
     ## 3位
         ### 順位
             #### 表示

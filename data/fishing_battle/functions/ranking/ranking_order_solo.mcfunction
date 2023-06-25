@@ -53,7 +53,7 @@
 # 再帰処理
     ## 回数を1上げる
         execute if score $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temp matches 1..3 run scoreboard players add $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temp 1
-    ## scoreboard初期化 
+    ## scoreboard初期化
         execute if score $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temp matches 1..3 run scoreboard players reset $PCTW.FSBT.Temp.largest.Score PCTW.FSBT.Score
     ## 3位まで繰り返す
         execute if score $PCTW.FSBT.Temp.WIP.Comparison.Rank PCTW.Core.Temp matches 1..3 run function fishing_battle:ranking/ranking_order_solo

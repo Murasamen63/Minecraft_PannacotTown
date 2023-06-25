@@ -26,9 +26,9 @@
     ## ランキング作成
         ### 比較
             #### 個人戦
-                execute if data storage pctw:fishing_battle/system System{Team:{Enable:0b}} if data storage pctw:fishing_battle/system System{Timer:6000} if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 0 run function fishing_battle:ranking/ranking_order_solo
+                execute if data storage pctw:fishing_battle/system System{Team:{Enable:0b}} if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 0 run function fishing_battle:ranking/ranking_order_solo
             #### チーム戦
-                execute if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} if data storage pctw:fishing_battle/system System{Timer:6000} if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 0 run function fishing_battle:ranking/ranking_order_team
+                execute if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 0 run function fishing_battle:ranking/ranking_order_team
     ## 3位
         ### 順位
             #### 表示
@@ -146,7 +146,7 @@
 
 # 終了処理
     ## 個人戦のみ歴代ランキングと比較
-        execute if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 620 if data storage pctw:fishing_battle/system System{Team:{Enable:0b}} run function fishing_battle:ranking/compare_generation_ranking
+        execute if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 620 if data storage pctw:fishing_battle/system System{Team:{Enable:0b}} if data storage pctw:fishing_battle/system System{Timer:6000} run function fishing_battle:ranking/compare_generation_ranking
     ## チーム戦のmarkerを削除
         execute if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 620 if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} run kill @e[type=marker,tag=PCTW.FSBT.Marker.Save_Score]
     ## 情報表示

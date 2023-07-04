@@ -10,6 +10,7 @@
 
 # gamemode設定
     ## サバイバルをアドベンチャーに変更
+        execute as @a[gamemode=survival] run tellraw @s {"text":" ※サバイバルモードを選択した為、自動的にアドベンチャーモードに変更しました。","color":"yellow"}
         execute as @a[gamemode=survival] run gamemode adventure @s
 
 # Playerタグ管理

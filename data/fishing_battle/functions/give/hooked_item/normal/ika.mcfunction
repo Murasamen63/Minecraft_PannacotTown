@@ -9,6 +9,6 @@
 #region 内容
 
 # give
-    give @s cod{display:{Name:'{"text":"イカ"}',Lore:['{"text":" "}','{"text":"烏賊","color":"white","italic":false}','{"text":"8pt","color":"green","bold":true,"italic":false}']},CustomModelData:111,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTIka:1b} 1
+    give @s cod{display:{Name:'{"text":"イカ"}',Lore:['{"text":" "}','{"text":"烏賊","color":"white","italic":false}','{"text":"8pt","color":"green","bold":true,"italic":false}']},CustomModelData:111,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTIka:1b} 1
 
 #endregion

@@ -8,6 +8,6 @@
 #region 内容
 
 # give
-    give @s cod{display:{Name:'{"text":"フグ"}',Lore:['{"text":" "}','{"text":"河豚","color":"white","italic":false}','{"text":"30pt","color":"yellow","bold":true,"italic":false}']},CustomModelData:103,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTPufferfish:1b} 1
+    give @s cod{display:{Name:'{"text":"フグ"}',Lore:['{"text":" "}','{"text":"河豚","color":"white","italic":false}','{"text":"30pt","color":"yellow","bold":true,"italic":false}']},CustomModelData:103,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTPufferfish:1b} 1
 
 #endregion

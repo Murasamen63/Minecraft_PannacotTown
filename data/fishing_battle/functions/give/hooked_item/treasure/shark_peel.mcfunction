@@ -9,6 +9,6 @@
 #region 内容
 
 # give
-    give @s warped_fungus_on_a_stick{display:{Name:'{"text":"サメの皮"}',Lore:['{"text":" "}','{"text":"ネズミザメ目ムラサメ科ホホジロザメ属","color":"white","italic":false}','{"text":"Carcharodon Mvrasame","color":"white","italic":true}','{"text":"1000pt","color":"aqua","bold":true,"italic":false}']},CustomModelData:104,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTShark_peel:1b} 1
+    give @s warped_fungus_on_a_stick{display:{Name:'{"text":"サメの皮"}',Lore:['{"text":" "}','{"text":"ネズミザメ目ムラサメ科ホホジロザメ属","color":"white","italic":false}','{"text":"Carcharodon Mvrasame","color":"white","italic":true}','{"text":"1000pt","color":"aqua","bold":true,"italic":false}']},CustomModelData:104,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTShark_peel:1b} 1
 
 #endregion

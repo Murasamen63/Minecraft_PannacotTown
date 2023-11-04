@@ -9,6 +9,6 @@
 #region 内容
 
 # give
-    give @s bread{display:{Name:'{"text":"ハンバーグ寿司"}',Lore:['{"text":" "}','{"text":"圧倒的ボリュームの一皿。","color":"white","italic":false}','{"text":"150pt","color":"red","bold":true,"italic":false}']},CustomModelData:101,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTHamburg_sushi:1b} 1
+    give @s bread{display:{Name:'{"text":"ハンバーグ寿司"}',Lore:['{"text":" "}','{"text":"圧倒的ボリュームの一皿。","color":"white","italic":false}','{"text":"150pt","color":"red","bold":true,"italic":false}']},CustomModelData:101,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTHamburg_sushi:1b} 1
 
 #endregion

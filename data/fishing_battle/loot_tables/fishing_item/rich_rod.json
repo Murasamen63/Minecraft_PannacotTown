@@ -36,7 +36,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:113,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTHotate:1b}"
+							"tag": "{CustomModelData:113,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTHotate:1b}"
 						}
 					]
 				},
@@ -72,7 +72,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:103,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTPufferfish:1b}"
+							"tag": "{CustomModelData:103,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTPufferfish:1b}"
 						}
 					]
 				},
@@ -108,7 +108,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:105,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTHirame:1b}"
+							"tag": "{CustomModelData:105,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTHirame:1b}"
 						}
 					]
 				},
@@ -144,7 +144,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:107,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTSazae:1b}"
+							"tag": "{CustomModelData:107,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTSazae:1b}"
 						}
 					]
 				},
@@ -180,7 +180,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:104,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTUnagi:1b}"
+							"tag": "{CustomModelData:104,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTUnagi:1b}"
 						}
 					]
 				},
@@ -216,7 +216,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:112,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTUni:1b}"
+							"tag": "{CustomModelData:112,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTUni:1b}"
 						}
 					]
 				},
@@ -252,7 +252,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:110,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTMaguro:1b}"
+							"tag": "{CustomModelData:110,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTMaguro:1b}"
 						}
 					]
 				},
@@ -288,7 +288,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:101,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTCaffe_latte:1b}"
+							"tag": "{CustomModelData:101,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTCaffe_latte:1b}"
 						}
 					]
 				},
@@ -324,7 +324,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:104,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTMitarashi:1b}"
+							"tag": "{CustomModelData:104,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTMitarashi:1b}"
 						}
 					]
 				},
@@ -360,7 +360,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:101,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTHamburg_sushi:1b}"
+							"tag": "{CustomModelData:101,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTHamburg_sushi:1b}"
 						}
 					]
 				},
@@ -396,7 +396,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:105,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTShioramyon:1b}"
+							"tag": "{CustomModelData:105,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTShioramyon:1b}"
 						}
 					]
 				},
@@ -432,7 +432,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:107,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTTakoyaki:1b}"
+							"tag": "{CustomModelData:107,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTTakoyaki:1b}"
 						}
 					]
 				},
@@ -473,7 +473,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:103,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTKaisendon:1b}"
+							"tag": "{CustomModelData:103,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTKaisendon:1b}"
 						}
 					]
 				},
@@ -509,7 +509,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:102,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTYotachiki:1b}"
+							"tag": "{CustomModelData:102,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTYotachiki:1b}"
 						}
 					]
 				},
@@ -545,7 +545,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:108,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTKoi:1b}"
+							"tag": "{CustomModelData:108,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTKoi:1b}"
 						}
 					]
 				},
@@ -581,7 +581,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:101,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTGreen_note:1b}"
+							"tag": "{CustomModelData:101,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTGreen_note:1b}"
 						}
 					]
 				},
@@ -617,7 +617,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:102,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTAsuneli:1b}"
+							"tag": "{CustomModelData:102,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTAsuneli:1b}"
 						}
 					]
 				},
@@ -653,7 +653,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:103,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTYotan_cloth:1b}"
+							"tag": "{CustomModelData:103,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTYotan_cloth:1b}"
 						}
 					]
 				},{
@@ -693,7 +693,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:104,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTShark_peel:1b}"
+							"tag": "{CustomModelData:104,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTShark_peel:1b}"
 						}
 					]
 				}

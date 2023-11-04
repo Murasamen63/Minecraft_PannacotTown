@@ -9,6 +9,6 @@
 #region 内容
 
 # give
-    give @s bread{display:{Name:'{"text":"塩らみょん"}',Lore:['{"text":" "}','{"text":"季節のお野菜いかがです？","color":"white","italic":false}','{"text":"230pt","color":"red","bold":true,"italic":false}']},CustomModelData:105,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTShioramyon:1b} 1
+    give @s bread{display:{Name:'{"text":"塩らみょん"}',Lore:['{"text":" "}','{"text":"季節のお野菜いかがです？","color":"white","italic":false}','{"text":"230pt","color":"red","bold":true,"italic":false}']},CustomModelData:105,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTShioramyon:1b} 1
 
 #endregion

@@ -36,7 +36,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:101,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTCod:1b}"
+							"tag": "{CustomModelData:101,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTCod:1b}"
 						}
 					]
 				},
@@ -72,7 +72,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:109,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTAji:1b}"
+							"tag": "{CustomModelData:109,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTAji:1b}"
 						}
 					]
 				},
@@ -108,7 +108,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:106,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTKarei:1b}"
+							"tag": "{CustomModelData:106,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTKarei:1b}"
 						}
 					]
 				},
@@ -144,7 +144,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:102,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTSalmon:1b}"
+							"tag": "{CustomModelData:102,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTSalmon:1b}"
 						}
 					]
 				},
@@ -180,7 +180,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:111,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTIka:1b}"
+							"tag": "{CustomModelData:111,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTIka:1b}"
 						}
 					]
 				},
@@ -216,7 +216,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:108,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTSanma:1b}"
+							"tag": "{CustomModelData:108,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTSanma:1b}"
 						}
 					]
 				},
@@ -252,7 +252,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:101,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTGomi:1b}"
+							"tag": "{CustomModelData:101,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTGomi:1b}"
 						}
 					]
 				},
@@ -294,7 +294,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:102,PCTWItems:1b,PTCWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTGomitan:1b}"
+							"tag": "{CustomModelData:102,PCTWItems:1b,PCTWFSBTItems:1b,FSBTHookedItem:1b,FSBTNotPickedUpHookedItem:1b,FSBTGomitan:1b}"
 						}
 					]
 				}

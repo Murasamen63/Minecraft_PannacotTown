@@ -33,6 +33,7 @@
     ## アイテム
         execute unless score $PCTW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PCTW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer run clear @a clock{PCTWMasterGUIGameTimerFSBTMinute:1b}
         execute unless score $PCTW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PCTW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer run clear @a #fishing_battle:hooked_item{FSBTHookedItem:1b}
+        execute unless score $PCTW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PCTW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer run kill @e[type=item,nbt={Item:{tag:{PCTWFSBTItems:1b}}}]
     ## Team関連
         ### 振り分け
             execute unless score $PCTW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer = $PCTW.FSBT.Temp.Countdown PCTW.FSBT.GameTimer if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} run function fishing_battle:main/team/selection

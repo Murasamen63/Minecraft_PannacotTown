@@ -1,6 +1,6 @@
 #> _core.pctw:main/_reload
 #
-# core：初めに読み込むfunction
+# core : ゲームのリロード時に実行される一連のコマンドを定義します
 #
 # @within tag/function minecraft:load
 #   function _core.pctw:main/_main
@@ -49,8 +49,10 @@
         scoreboard objectives add PCTW.Core.Use.WFoaS used:warped_fungus_on_a_stick
     ## Talk_Villager
         scoreboard objectives add PCTW.Core.Talk_Villager custom:talked_to_villager
-    ## ChestGUI.Page
-        scoreboard objectives add PCTW.Core.ChestGUI.Pages dummy
+    ## Chest_GUI.Page
+        scoreboard objectives add PCTW.Core.Chest_GUI.Page dummy
+    ## Chest_GUI.Index
+        scoreboard objectives add PCTW.Core.Chest_GUI.Index dummy
 
 # scoreboard設定
     ## CoaS

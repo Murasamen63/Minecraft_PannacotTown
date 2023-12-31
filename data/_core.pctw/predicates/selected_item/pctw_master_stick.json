@@ -6,27 +6,29 @@
 			"entity": "this",
 			"predicate": {
 				"type": "minecraft:player",
+				"nbt": "{Tags:[\"PCTW.Player.Staff\"]}",
 				"equipment": {
 					"mainhand": {
 						"items": [
-							"minecraft:warped_fungus_on_a_stick"
+							"minecraft:music_disc_otherside"
 						],
-						"nbt": "{PCTWMasterStickWFoaS:1b}"
+						"nbt": "{PCTWMasterStick:1b}"
 					}
 				}
 			}
 		},
-		{
+        {
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
 				"type": "minecraft:player",
+				"nbt": "{Tags:[\"PCTW.Player.Staff\"]}",
 				"equipment": {
 					"offhand": {
 						"items": [
-							"minecraft:warped_fungus_on_a_stick"
+							"minecraft:music_disc_otherside"
 						],
-						"nbt": "{PCTWMasterStickWFoaS:1b}"
+						"nbt": "{PCTWMasterStick:1b}"
 					}
 				}
 			}

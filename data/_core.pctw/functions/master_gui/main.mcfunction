@@ -23,7 +23,10 @@
 # scoreboard設定
     execute if entity @s[tag=!PCTW.Player.Use_MasterGUI] unless score @s PCTW.Core.Player_ID = @e[type=chest_minecart,tag=PCTW.Minecart.MasterGUI.Summon,sort=nearest,limit=1] PCTW.Core.Player_ID run scoreboard players operation @e[type=chest_minecart,tag=PCTW.Minecart.MasterGUI.Summon,sort=nearest,limit=1] PCTW.Core.Player_ID = @s PCTW.Core.Player_ID
     execute if entity @s[tag=!PCTW.Player.Use_MasterGUI] run scoreboard players set @e[type=chest_minecart,tag=PCTW.Minecart.MasterGUI.Summon] PCTW.Core.Chest_GUI.Page 1
-    execute if entity @s[tag=!PCTW.Player.Use_MasterGUI] run scoreboard players set @e[type=chest_minecart,tag=PCTW.Minecart.MasterGUI.Summon] PCTW.Core.Chest_GUI.Index 1
+    ## core
+        execute if entity @s[tag=!PCTW.Player.Use_MasterGUI] if data storage pctw:core {GameMode:null} run scoreboard players set @e[type=chest_minecart,tag=PCTW.Minecart.MasterGUI.Summon] PCTW.Core.Chest_GUI.GameMode 0
+    ## Gamemode
+        execute if entity @s[tag=!PCTW.Player.Use_MasterGUI] if data storage pctw:core {GameMode:FishingBattle} run scoreboard players set @e[type=chest_minecart,tag=PCTW.Minecart.MasterGUI.Summon] PCTW.Core.Chest_GUI.GameMode 1
 
 # tag操作
     ## ChestGUIタグ
@@ -33,5 +36,8 @@
 
 # tp
     execute if entity @s[tag=PCTW.Player.Use_MasterGUI] anchored eyes positioned ^ ^-0.2 ^ run tp @e[type=chest_minecart,tag=PCTW.Minecart.MasterGUI,tag=!PCTW.Minecart.MasterGUI.Summon,sort=nearest,limit=1] ~ ~ ~
+
+# page
+    execute if entity @s[tag=PCTW.Player.Use_MasterGUI] anchored eyes if score @s PCTW.Core.Player_ID = @e[type=chest_minecart,tag=PCTW.Minecart.MasterGUI,tag=!PCTW.Minecart.MasterGUI.Summon,sort=nearest,limit=1] PCTW.Core.Player_ID as @e[type=chest_minecart,tag=PCTW.Minecart.MasterGUI,tag=!PCTW.Minecart.MasterGUI.Summon,sort=nearest,limit=1] at @s run function _core.pctw:master_gui/content/page/main
 
 #endregion

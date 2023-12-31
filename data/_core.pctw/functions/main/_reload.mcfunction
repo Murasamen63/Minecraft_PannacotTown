@@ -20,7 +20,6 @@
 # @public
     #define tag/item _core.pctw:pctw_items
     #define tag/item _core.pctw:debug_items
-    #define tag/item _core.pctw:master_gui_switches
 
 #> PCTW Item Tag
     # tag PCTWItems:1b
@@ -51,8 +50,8 @@
         scoreboard objectives add PCTW.Core.Talk_Villager custom:talked_to_villager
     ## Chest_GUI.Page
         scoreboard objectives add PCTW.Core.Chest_GUI.Page dummy
-    ## Chest_GUI.Index
-        scoreboard objectives add PCTW.Core.Chest_GUI.Index dummy
+    ## Chest_GUI.GameMode
+        scoreboard objectives add PCTW.Core.Chest_GUI.GameMode dummy
 
 # scoreboard設定
     ## CoaS

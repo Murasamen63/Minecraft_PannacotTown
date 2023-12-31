@@ -50,8 +50,6 @@
         scoreboard objectives add PCTW.Core.Talk_Villager custom:talked_to_villager
     ## Chest_GUI.Page
         scoreboard objectives add PCTW.Core.Chest_GUI.Page dummy
-    ## Chest_GUI.GameMode
-        scoreboard objectives add PCTW.Core.Chest_GUI.GameMode dummy
 
 # scoreboard設定
     ## CoaS

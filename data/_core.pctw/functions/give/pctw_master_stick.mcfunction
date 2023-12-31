@@ -9,6 +9,6 @@
 #region 内容
 
 # give
-    give @s warped_fungus_on_a_stick{display:{Name:'{"text":"スタロー","bold":true,"italic":false,"color":"green"}',Lore:['{"text":" "}','{"text":"オフハンド+右クリック...メニュー用EnderChest召喚 ","color":"white","italic":false}']},HideFlags:4,Unbreakable:1b,PCTWItems:1b,PCTWMasterStickWFoaS:1b,Enchantments:[{}],CustomModelData:1} 1
+    give @s music_disc_otherside{display:{Name:'{"text":"スタロー","bold":true,"italic":false,"color":"green"}',Lore:['{"text":" "}']},HideFlags:4,Unbreakable:1b,PCTWItems:1b,PCTWMasterStick:1b,Enchantments:[{}],CustomModelData:1} 1
 
 #endregion

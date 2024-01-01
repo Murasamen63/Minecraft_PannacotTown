@@ -2,7 +2,9 @@
 #
 # core : MasterGUIをリセットするためのものです
 #
-# @within function _core.pctw:main/_main
+# @within function
+#   _core.pctw:main/_main
+#   fishing_battle:master_gui/function/1
 
 
 

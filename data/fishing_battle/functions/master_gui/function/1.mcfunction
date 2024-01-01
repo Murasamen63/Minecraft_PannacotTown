@@ -10,6 +10,7 @@
 #region 内容
 
 # Item検知
+    execute unless data entity @s {Items:[{Slot:16b}]} run scoreboard players set @s PCTW.Core.Temp 4
     execute unless data entity @s {Items:[{Slot:26b}]} run scoreboard players set @s PCTW.Core.Temp 5
 
 # 使用プレイヤー以外は触れない
@@ -24,6 +25,9 @@
     ## チーム設定
     ## 特殊ルール
     ## ゲームスタート
+        execute if score @s PCTW.Core.Temp matches 4 run scoreboard players set $PCTW.FSBT.System PCTW.FSBT.GameState 1
+        execute if score @s PCTW.Core.Temp matches 4 run clear @p[tag=PCTW.Player.Use_MasterGUI] command_block{FSBTMasterGUIGameStart:1b}
+        execute if score @s PCTW.Core.Temp matches 4 as @p[tag=PCTW.Player.Use_MasterGUI] run function _core.pctw:master_gui/reset
     ## ゲームモード選択に戻る
         execute if score @s PCTW.Core.Temp matches 5 run function fishing_battle:init/uninstall
         execute if score @s PCTW.Core.Temp matches 5 run clear @p[tag=PCTW.Player.Use_MasterGUI] book{FSBTMasterGUIBackToGameSelect:1b}

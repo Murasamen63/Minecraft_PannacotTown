@@ -20,6 +20,8 @@
 # @public
     #define tag/item _core.pctw:pctw_items
     #define tag/item _core.pctw:debug_items
+    #define tag/item _core.pctw:master_gui/core/button_items
+    #define tag/item _core.pctw:master_gui/fishing_battle/button_items
 
 #> PCTW Item Tag
     # tag PCTWItems:1b

@@ -1,4 +1,4 @@
-#> _core.pctw:master_gui/content/function/main
+#> _core.pctw:master_gui/function/main
 #
 # core : MasterGUIのページを制御します
 #
@@ -10,7 +10,7 @@
 
 # GameMode
     ## core
-        execute if data storage pctw:core {GameMode:null} if score @s PCTW.Core.Chest_GUI.Page matches 1 run function _core.pctw:master_gui/content/function/1
+        execute if data storage pctw:core {GameMode:null} if score @s PCTW.Core.Chest_GUI.Page matches 1 run function _core.pctw:master_gui/function/1
     ## fishing_battle
         execute if data storage pctw:core {GameMode:FishingBattle} run function fishing_battle:master_gui/function/main
 

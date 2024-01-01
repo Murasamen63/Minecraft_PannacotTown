@@ -1,9 +1,9 @@
-#> _core.pctw:master_gui/content/function/1
+#> _core.pctw:master_gui/function/1
 #
 # core : 
 #
 # @within function
-#   _core.pctw:master_gui/content/page/main
+#   _core.pctw:master_gui/page/main
 
 
 
@@ -26,8 +26,8 @@
         execute if score @s PCTW.Core.Temp matches 1 run function fishing_battle:master_gui/page/1
 
 # -1はリセット
-    execute if score @s PCTW.Core.Temp matches -1 run clear @a #_core.pctw:master_gui/core/button_items{PCTWMasterGUIGameMode1:1b}
-    execute if score @s PCTW.Core.Temp matches -1 run function _core.pctw:master_gui/content/page/1
+    execute if score @s PCTW.Core.Temp matches -1 run clear @a #_core.pctw:master_gui/button_items{PCTWMasterGUIGameMode1:1b}
+    execute if score @s PCTW.Core.Temp matches -1 run function _core.pctw:master_gui/page/1
 
 # 初期化
     execute if score @s PCTW.Core.Temp = @s PCTW.Core.Temp run scoreboard players reset @s PCTW.Core.Temp

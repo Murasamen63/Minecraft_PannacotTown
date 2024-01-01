@@ -1,10 +1,10 @@
-#> _core.pctw:master_gui/content/page/1
+#> _core.pctw:master_gui/page/1
 #
 # core : MasterGUIのページ1の内容を制御します
 #
 # @within function
 #   _core.pctw:master_gui/main
-#   _core.pctw:master_gui/content/function/1
+#   _core.pctw:master_gui/function/1
 #   fishing_battle:master_gui/function/1
 
 

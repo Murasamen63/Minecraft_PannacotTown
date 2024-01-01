@@ -2,7 +2,7 @@
 #
 # fishing_battle：釣り大会の設定をインストールするfunction
 #
-# @within function _core.pctw:master_gui/content/function/1
+# @within function _core.pctw:master_gui/function/1
 
 
 #region 内容

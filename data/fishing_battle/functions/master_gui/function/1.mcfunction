@@ -1,6 +1,6 @@
 #> fishing_battle:master_gui/function/1
 #
-# core : 
+# core : MasterGUIの釣り大会用の
 #
 # @within function
 #   fishing_battle:master_gui/function/main
@@ -31,7 +31,7 @@
     ## ゲームモード選択に戻る
         execute if score @s PCTW.Core.Temp matches 5 run function fishing_battle:init/uninstall
         execute if score @s PCTW.Core.Temp matches 5 run clear @p[tag=PCTW.Player.Use_MasterGUI] book{FSBTMasterGUIBackToGameSelect:1b}
-        execute if score @s PCTW.Core.Temp matches 5 run function _core.pctw:master_gui/content/page/1
+        execute if score @s PCTW.Core.Temp matches 5 run function _core.pctw:master_gui/page/1
 
 # -1はリセット
     execute if score @s PCTW.Core.Temp matches -1 run clear @a #_core.pctw:master_gui/button_items{PCTWMasterGUIGameMode1:1b}

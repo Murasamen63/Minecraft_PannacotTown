@@ -2,7 +2,7 @@
 #
 # core : MasterGUIのページを制御します
 #
-# @within function _core.pctw:master_gui/content/function/main
+# @within function _core.pctw:master_gui/function/main
 
 
 

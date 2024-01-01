@@ -4,7 +4,7 @@
 #
 # @within function
 #   _core.pctw:master_gui/main
-#   _core.pctw:master_gui/content/function/1
+#   _core.pctw:master_gui/function/1
 #   fishing_battle:master_gui/function/1
 
 
@@ -26,7 +26,7 @@
         item replace entity @s container.9 with air
         item replace entity @s container.10 with clock{display:{Name:'{"text":"制限時間設定","color":"gold","bold":true,"italic":false}'},PCTWItems:1b,PCTWMasterGUIButton:1b,FSBTMasterGUITimerSet:1b} 1
         item replace entity @s container.11 with leather_helmet{display:{Name:'{"text":"チーム設定","color":"light_purple","bold":true,"italic":false}',color:16711680},Enchantments:[{}],HideFlags:66,PCTWItems:1b,PCTWMasterGUIButton:1b,FSBTMasterGUITeamSetting:1b} 1
-        item replace entity @s container.12 with target{display:{Name:'{"text":"特殊ルール","color":"green","bold":true,"italic":false}'}} 1
+        item replace entity @s container.12 with target{display:{Name:'{"text":"特殊ルール","color":"green","bold":true,"italic":false}'},PCTWItems:1b,PCTWMasterGUIButton:1b,FSBTMasterGUISpecialRule:1b} 1
         item replace entity @s container.13 with air
         item replace entity @s container.14 with air
         item replace entity @s container.15 with air

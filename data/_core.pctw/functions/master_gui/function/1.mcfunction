@@ -26,7 +26,7 @@
         execute if score @s PCTW.Core.Temp matches 1 run function fishing_battle:master_gui/page/1
 
 # -1はリセット
-    execute if score @s PCTW.Core.Temp matches -1 run clear @a #_core.pctw:master_gui/button_items{PCTWMasterGUIGameMode1:1b}
+    execute if score @s PCTW.Core.Temp matches -1 run clear @a #_core.pctw:master_gui/button_items{PCTWMasterGUIButton:1b}
     execute if score @s PCTW.Core.Temp matches -1 run function _core.pctw:master_gui/page/1
 
 # 初期化

@@ -10,6 +10,7 @@
 #region 内容
 
 # Item検知
+    execute unless data entity @s {Items:[{Slot:10b}]} run scoreboard players set @s PCTW.Core.Temp 1
     execute unless data entity @s {Items:[{Slot:16b}]} run scoreboard players set @s PCTW.Core.Temp 4
     execute unless data entity @s {Items:[{Slot:26b}]} run scoreboard players set @s PCTW.Core.Temp 5
 
@@ -22,6 +23,9 @@
 
 # function
     ## 制限時間設定
+        execute if score @s PCTW.Core.Temp matches 1 run scoreboard players set @s PCTW.Core.Chest_GUI.Page 2
+        execute if score @s PCTW.Core.Temp matches 1 run clear @p[tag=PCTW.Player.Use_MasterGUI] clock{FSBTMasterGUITimerSet:1b}
+        execute if score @s PCTW.Core.Temp matches 1 run function fishing_battle:master_gui/page/2
     ## チーム設定
     ## 特殊ルール
     ## ゲームスタート
@@ -34,7 +38,7 @@
         execute if score @s PCTW.Core.Temp matches 5 run function _core.pctw:master_gui/page/1
 
 # -1はリセット
-    execute if score @s PCTW.Core.Temp matches -1 run clear @a #_core.pctw:master_gui/button_items{PCTWMasterGUIGameMode1:1b}
+    execute if score @s PCTW.Core.Temp matches -1 run clear @a #_core.pctw:master_gui/button_items{PCTWMasterGUIButton:1b}
     execute if score @s PCTW.Core.Temp matches -1 run function fishing_battle:master_gui/page/1
 
 # 初期化

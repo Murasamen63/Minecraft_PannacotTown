@@ -1,11 +1,12 @@
 #> fishing_battle:master_gui/page/1
 #
-# core : MasterGUIのページ1の内容を制御します
+# fishing_battle : MasterGUIのページ1の内容を制御します
 #
 # @within function
 #   _core.pctw:master_gui/main
 #   _core.pctw:master_gui/function/1
 #   fishing_battle:master_gui/function/1
+#   fishing_battle:master_gui/function/2
 
 
 

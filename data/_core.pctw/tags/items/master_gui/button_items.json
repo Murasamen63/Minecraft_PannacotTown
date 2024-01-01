@@ -5,6 +5,10 @@
         "leather_helmet",
         "target",
         "command_block",
-        "book"
+        "book",
+        "blue_stained_glass",
+        "light_blue_stained_glass",
+        "orange_stained_glass",
+        "red_stained_glass"
     ]
 }

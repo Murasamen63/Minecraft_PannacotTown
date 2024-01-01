@@ -68,6 +68,8 @@
     ## 設定
         ### GameState
             scoreboard players set $PCTW.FSBT.System PCTW.FSBT.GameState 0
+        ### GameTimer
+            scoreboard players set $PCTW.FSBT.System PCTW.FSBT.GameTimer 0
 
 # team
     ## 作成

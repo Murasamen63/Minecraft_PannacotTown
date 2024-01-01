@@ -35,8 +35,8 @@
 
 # Timer
     ## アイテムからTimerに反映
-        execute store result score $PCTW.FSBT.System PCTW.FSBT.GameTimer run clear @a clock{PCTWMasterGUIGameTimerFSBTMinute:1b} 0
-        scoreboard players operation $PCTW.FSBT.System PCTW.FSBT.GameTimer *= #1200 PCTW.Core.Const
+        #execute store result score $PCTW.FSBT.System PCTW.FSBT.GameTimer run clear @a clock{PCTWMasterGUIGameTimerFSBTMinute:1b} 0
+        #scoreboard players operation $PCTW.FSBT.System PCTW.FSBT.GameTimer *= #1200 PCTW.Core.Const
         execute store result storage pctw:fishing_battle/system System.Timer int 1 run scoreboard players get $PCTW.FSBT.System PCTW.FSBT.GameTimer
     ## 分を計算
         execute store result score $PCTW.FSBT.System PCTW.FSBT.ShowTimer.Minute run data get storage pctw:fishing_battle/system System.Timer

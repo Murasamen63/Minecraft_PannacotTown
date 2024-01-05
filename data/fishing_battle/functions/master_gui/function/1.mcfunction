@@ -11,6 +11,8 @@
 
 # Item検知
     execute unless data entity @s {Items:[{Slot:10b}]} run scoreboard players set @s PCTW.Core.Temp 1
+    execute unless data entity @s {Items:[{Slot:11b}]} run scoreboard players set @s PCTW.Core.Temp 2
+    execute unless data entity @s {Items:[{Slot:12b}]} run scoreboard players set @s PCTW.Core.Temp 3
     execute unless data entity @s {Items:[{Slot:16b}]} run scoreboard players set @s PCTW.Core.Temp 4
     execute unless data entity @s {Items:[{Slot:26b}]} run scoreboard players set @s PCTW.Core.Temp 5
 
@@ -27,6 +29,9 @@
         execute if score @s PCTW.Core.Temp matches 1 run clear @p[tag=PCTW.Player.Use_MasterGUI] clock{FSBTMasterGUITimerSet:1b}
         execute if score @s PCTW.Core.Temp matches 1 run function fishing_battle:master_gui/page/2
     ## チーム設定
+        execute if score @s PCTW.Core.Temp matches 2 run scoreboard players set @s PCTW.Core.Chest_GUI.Page 3
+        execute if score @s PCTW.Core.Temp matches 2 run clear @p[tag=PCTW.Player.Use_MasterGUI] leather_helmet{FSBTMasterGUITeamSetting:1b}
+        execute if score @s PCTW.Core.Temp matches 2 run function fishing_battle:master_gui/page/3
     ## 特殊ルール
     ## ゲームスタート
         execute if score @s PCTW.Core.Temp matches 4 run scoreboard players set $PCTW.FSBT.System PCTW.FSBT.GameState 1

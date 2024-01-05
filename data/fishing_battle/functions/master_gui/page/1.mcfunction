@@ -7,6 +7,7 @@
 #   _core.pctw:master_gui/function/1
 #   fishing_battle:master_gui/function/1
 #   fishing_battle:master_gui/function/2
+#   fishing_battle:master_gui/function/3
 
 
 

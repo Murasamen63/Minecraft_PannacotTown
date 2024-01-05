@@ -14,7 +14,7 @@
     ## 制限時間設定
         execute if score @s PCTW.Core.Chest_GUI.Page matches 2 run function fishing_battle:master_gui/function/2
     ## チーム設定
-        execute if score @s PCTW.Core.Chest_GUI.Page matches 3
+        execute if score @s PCTW.Core.Chest_GUI.Page matches 3 run function fishing_battle:master_gui/function/3
     ## 特殊ルール
         execute if score @s PCTW.Core.Chest_GUI.Page matches 4
 

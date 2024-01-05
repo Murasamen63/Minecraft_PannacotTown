@@ -93,9 +93,9 @@
         ### Ranking
             execute unless data storage pctw:fishing_battle/ranking Ranking run data modify storage pctw:fishing_battle/ranking Ranking set value {1:{Name:[null],Score:0},2:{Name:[null],Score:0},3:{Name:[null],Score:0}}
         ### System
-            data modify storage pctw:fishing_battle/system System set value {Timer:0,Team:{Enable:0b,Count:2}}
+            data modify storage pctw:fishing_battle/system System set value {Timer:0,Team:{Enable:0b,Count:2},Ranking:1b}
         ### Shop_Price
-            execute unless data storage pctw:fishing_battle/shop_price Price run data modify storage pctw:fishing_battle/shop_price Price set value {FishingRod:{DoubleRod:0,LureRod:0,RichRod:0,GamblingRod:0,SlotRod:0}}
+            execute unless data storage pctw:fishing_battle/shop_price Price run data modify storage pctw:fishing_battle/shop_price Price set value {FishingRod:{DoubleRod:15,LureRod:70,RichRod:160,GamblingRod:180,SlotRod:230}}
 
 # bossbar
     ## 作成

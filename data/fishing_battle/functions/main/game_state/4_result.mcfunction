@@ -145,8 +145,8 @@
                 execute if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 620 as @a at @s run playsound ui.toast.challenge_complete voice @s ~ ~ ~ 1.0 1.0
 
 # 終了処理
-    ## 個人戦のみ歴代ランキングと比較
-        execute if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 620 if data storage pctw:fishing_battle/system System{Team:{Enable:0b}} if data storage pctw:fishing_battle/system System{Timer:6000} run function fishing_battle:ranking/compare_generation_ranking
+    ## ランク戦時、歴代ランキングと比較
+        execute if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 620 if data storage pctw:fishing_battle/system System{Ranking:1b} run function fishing_battle:ranking/compare_generation_ranking
     ## チーム戦のmarkerを削除
         execute if score $PCTW.FSBT.Temp.ResultTimer PCTW.FSBT.GameTimer matches 620 if data storage pctw:fishing_battle/system System{Team:{Enable:1b}} run kill @e[type=marker,tag=PCTW.FSBT.Marker.Save_Score]
     ## 情報表示

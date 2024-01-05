@@ -16,6 +16,6 @@
     ## チーム設定
         execute if score @s PCTW.Core.Chest_GUI.Page matches 3 run function fishing_battle:master_gui/function/3
     ## 特殊ルール
-        execute if score @s PCTW.Core.Chest_GUI.Page matches 4
+        execute if score @s PCTW.Core.Chest_GUI.Page matches 4 run function fishing_battle:master_gui/function/4
 
 #endregion

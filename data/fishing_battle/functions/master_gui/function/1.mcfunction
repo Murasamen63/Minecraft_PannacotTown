@@ -33,6 +33,9 @@
         execute if score @s PCTW.Core.Temp matches 2 run clear @p[tag=PCTW.Player.Use_MasterGUI] leather_helmet{FSBTMasterGUITeamSetting:1b}
         execute if score @s PCTW.Core.Temp matches 2 run function fishing_battle:master_gui/page/3
     ## 特殊ルール
+        execute if score @s PCTW.Core.Temp matches 3 run scoreboard players set @s PCTW.Core.Chest_GUI.Page 4
+        execute if score @s PCTW.Core.Temp matches 3 run clear @p[tag=PCTW.Player.Use_MasterGUI] target{FSBTMasterGUISpecialRule:1b}
+        execute if score @s PCTW.Core.Temp matches 3 run function fishing_battle:master_gui/page/4
     ## ゲームスタート
         execute if score @s PCTW.Core.Temp matches 4 run scoreboard players set $PCTW.FSBT.System PCTW.FSBT.GameState 1
         execute if score @s PCTW.Core.Temp matches 4 run clear @p[tag=PCTW.Player.Use_MasterGUI] command_block{FSBTMasterGUIGameStart:1b}

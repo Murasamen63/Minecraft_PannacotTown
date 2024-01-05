@@ -120,7 +120,7 @@
                         ####### 秒数が9以下(1桁)
                             execute if data storage pctw:fishing_battle/system System{Team:{Enable:1b,Count:4}} if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches ..1200 run execute if score $PCTW.FSBT.System PCTW.FSBT.ShowTimer.Second matches ..9 run bossbar set pctw:fishing_battle/timer name ["","チーム戦  ",{"text":"4Team  ","color":"green","bold": true},{"score":{"name":"$PCTW.FSBT.System","objective":"PCTW.FSBT.ShowTimer.Minute"},"color":"red"}," : ",{"text":"0","color":"red"},{"score":{"name":"$PCTW.FSBT.System","objective":"PCTW.FSBT.ShowTimer.Second"},"color":"red"}]
             #### ランク戦
-                execute if data storage pctw:fishing_battle/system System{Ranking:1b} run execute if score $PCTW.FSBT.System PCTW.FSBT.ShowTimer.Second matches 10.. run bossbar set pctw:fishing_battle/timer name ["","ランク戦  ",{"text":"5","color":"green"}," : ",{"text":"00","color":"green"}]
+                execute if data storage pctw:fishing_battle/system System{Ranking:1b} run bossbar set pctw:fishing_battle/timer name ["","ランク戦  ",{"text":"5","color":"green"}," : ",{"text":"00","color":"green"}]
         ### 色
             #### 3分以上
                 execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches 3601.. run bossbar set pctw:fishing_battle/timer color green

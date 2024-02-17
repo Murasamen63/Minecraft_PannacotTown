@@ -83,7 +83,7 @@
 
 # 通知
     ## 全体通知
-        tellraw @a ["","\n","  ",{"text":"Welcome to PannacotTown !!","bold":true,"underlined":true,"color":"gold"},"  -  ","v1.0","\n"]
+        tellraw @a ["","\n","  ",{"text":"Welcome to PannacotTown !!","bold":true,"underlined":true,"color":"gold"},"  -  ","v1.1","\n"]
 
 
 # gamerule設定

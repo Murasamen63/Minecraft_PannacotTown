@@ -1,6 +1,6 @@
 #> _core.pctw:const
 #
-# core：定数を宣言するfunction 
+# core：定数を設定
 #
 # @within function _core.pctw:main/_reload
 

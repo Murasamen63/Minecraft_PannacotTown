@@ -1,6 +1,6 @@
 #> _core.pctw:invisible_minecart
 #
-# core : 
+# core : minecart表示設定を適用
 #
 # @within function _core.pctw:main/_main
 

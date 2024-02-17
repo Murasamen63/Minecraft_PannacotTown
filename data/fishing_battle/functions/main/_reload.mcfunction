@@ -18,7 +18,7 @@
     #define score_holder $PCTW.FSBT.GameState.End
 
 #> Storage
-# @within　* fishing_battle:**
+# @within * fishing_battle:**
     #define storage pctw:fishing_battle/system
     #define storage pctw:fishing_battle/ranking
     #define storage pctw:fishing_battle/shop_price
@@ -30,13 +30,6 @@
 #> Entity Tag
 # @within function fishing_battle:**
     #define tag PCTW.FSBT.Player
-
-#> PCTW.FSBT Item Tag
-    # tag PCTWFSBTItems:1b
-    # tag FSBTFishingRod:1b
-    # tag FSBTShopTradeSign:1b
-    # tag FSBTHookedItem:1b
-    # tag FSBTNotPickedUpHookedItem:1b
 
 #endregion
 

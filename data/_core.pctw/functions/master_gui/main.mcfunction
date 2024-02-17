@@ -19,7 +19,7 @@
 #region 内容
 
 # トロッコ召喚
-    execute if entity @s[tag=!PCTW.Player.Use_MasterGUI] anchored eyes positioned ^ ^-0.2 ^ run summon minecraft:chest_minecart ~ ~ ~ {CustomName:'{"text":"メニュー"}',Tags:["PCTW.Minecart.MasterGUI","PCTW.Minecart.MasterGUI.Summon","PCTW.Minecart.Set.Done"],Silent:1b,CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"},NoGravity:1b}
+    execute if entity @s[tag=!PCTW.Player.Use_MasterGUI] anchored eyes positioned ^ ^-0.2 ^ run summon minecraft:chest_minecart ~ ~ ~ {CustomName:'{"text":"メニュー"}',Tags:["PCTW.Minecart.MasterGUI","PCTW.Minecart.MasterGUI.Summon","PCTW.Minecart.Set.Done"],Silent:1b,CustomDisplayTile:1b,Invulnerable:1b,DisplayState:{Name:"minecraft:air"},NoGravity:1b}
 
 # scoreboard設定
     execute if entity @s[tag=!PCTW.Player.Use_MasterGUI] unless score @s PCTW.Core.Player_ID = @e[type=chest_minecart,tag=PCTW.Minecart.MasterGUI.Summon,sort=nearest,limit=1] PCTW.Core.Player_ID run scoreboard players operation @e[type=chest_minecart,tag=PCTW.Minecart.MasterGUI.Summon,sort=nearest,limit=1] PCTW.Core.Player_ID = @s PCTW.Core.Player_ID

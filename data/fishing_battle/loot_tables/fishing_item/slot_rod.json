@@ -950,7 +950,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 3,
+					"weight": 1,
 					"name": "minecraft:warped_fungus_on_a_stick",
 					"functions": [
 						{

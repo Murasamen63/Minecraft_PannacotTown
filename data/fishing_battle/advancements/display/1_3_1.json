@@ -1,0 +1,38 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:warped_fungus_on_a_stick",
+			"nbt": "{Enchantments:[{}],CustomModelData:101}"
+		},
+		"title": "4種の宝(仮)",
+		"description": [
+            {
+				"text": "Hard",
+				"color": "red"
+			},
+			{
+				"text": " : ",
+				"color": "white"
+			},
+			{
+				"text": "1ゲーム中に宝を4種入手する",
+                "color": "white"
+			},
+			"\n\n",
+			{
+				"text": " ",
+				"color": "dark_gray"
+			}
+		],
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "fishing_battle:display/1_3",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

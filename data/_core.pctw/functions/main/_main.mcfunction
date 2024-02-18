@@ -36,6 +36,10 @@
     ## fishing_battle
         function fishing_battle:item/tick
 
+# 進捗
+    ## 初期設定
+        advancement grant @a only fishing_battle:display/0
+
 # リログ検知
     execute unless entity @a run function _core.pctw:main/_reload
 

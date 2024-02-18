@@ -1,0 +1,38 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:cod",
+			"nbt": "{CustomModelData:110}"
+		},
+		"title": "3回訪れる(仮)",
+		"description": [
+            {
+				"text": "Easy",
+				"color": "green"
+			},
+			{
+				"text": " : ",
+				"color": "white"
+			},
+			{
+				"text": "3回参加する",
+                "color": "white"
+			},
+			"\n\n",
+			{
+				"text": " ",
+				"color": "dark_gray"
+			}
+		],
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"parent": "fishing_battle:display/1",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

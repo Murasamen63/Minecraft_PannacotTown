@@ -1,0 +1,55 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:fishing_rod",
+			"nbt": "{}"
+		},
+		"title": [
+			{
+				"text": "全進捗『",
+				"color": "white"
+			},
+			{
+				"text": "Treasure Pond Fishing",
+				"color": "aqua"
+			},
+			{
+				"text": "』",
+				"color": "white"
+			}
+		],
+		"description": [
+            {
+				"text": "Extreme",
+				"color": "light_purple"
+			},
+			{
+				"text": " : ",
+				"color": "white"
+			},
+			{
+				"text": "Treasure Pond Fishing",
+				"color": "aqua"
+			},
+			{
+				"text": "の全進捗を解除する",
+                "color": "white"
+			},
+			"\n\n",
+			{
+				"text": " ",
+				"color": "dark_gray"
+			}
+		],
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": true
+	},
+	"parent": "fishing_battle:display/0",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

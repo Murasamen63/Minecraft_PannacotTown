@@ -1,0 +1,38 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:cod",
+			"nbt": "{CustomModelData:101}"
+		},
+		"title": "初回訪れる(仮)",
+		"description": [
+            {
+				"text": "Easy",
+				"color": "green"
+			},
+			{
+				"text": " : ",
+				"color": "white"
+			},
+			{
+				"text": "1回参加する",
+                "color": "white"
+			},
+			"\n\n",
+			{
+				"text": "『Treasure Pond Fishing』へようこそ！",
+				"color": "dark_gray"
+			}
+		],
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"parent": "fishing_battle:display/0",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

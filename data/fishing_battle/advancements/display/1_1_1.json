@@ -1,0 +1,38 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:bread",
+			"nbt": "{CustomModelData:107}"
+		},
+		"title": "5回訪れる(仮)",
+		"description": [
+            {
+				"text": "Normal",
+				"color": "yellow"
+			},
+			{
+				"text": " : ",
+				"color": "white"
+			},
+			{
+				"text": "5回参加する",
+                "color": "white"
+			},
+			"\n\n",
+			{
+				"text": " ",
+				"color": "dark_gray"
+			}
+		],
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "fishing_battle:display/1_1",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

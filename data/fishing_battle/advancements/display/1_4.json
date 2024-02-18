@@ -1,0 +1,38 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:bread",
+			"nbt": "{Enchantments:[{}],CustomModelData:109}"
+		},
+		"title": "シークレットを入手(仮)",
+		"description": [
+            {
+				"text": "Hard",
+				"color": "red"
+			},
+			{
+				"text": " : ",
+				"color": "white"
+			},
+			{
+				"text": "モリ味の抹茶アイスを入手する",
+                "color": "white"
+			},
+			"\n\n",
+			{
+				"text": " ",
+				"color": "dark_gray"
+			}
+		],
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": true
+	},
+	"parent": "fishing_battle:display/1",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

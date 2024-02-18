@@ -1,0 +1,38 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:cod",
+			"nbt": "{CustomModelData:103}"
+		},
+		"title": "1000Pt以上フィニッシュ(仮)",
+		"description": [
+            {
+				"text": "Normal",
+				"color": "yellow"
+			},
+			{
+				"text": " : ",
+				"color": "white"
+			},
+			{
+				"text": "ゲーム終了時、1000Pt以上獲得する",
+                "color": "white"
+			},
+			"\n\n",
+			{
+				"text": " ",
+				"color": "dark_gray"
+			}
+		],
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "fishing_battle:display/1",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

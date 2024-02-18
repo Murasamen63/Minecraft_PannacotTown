@@ -132,4 +132,7 @@
             #### 1分以下
                 execute if score $PCTW.FSBT.System PCTW.FSBT.GameTimer matches ..1200 run bossbar set pctw:fishing_battle/timer color red
 
+# 進捗
+    advancement grant @a only fishing_battle:display/1 
+
 #endregion

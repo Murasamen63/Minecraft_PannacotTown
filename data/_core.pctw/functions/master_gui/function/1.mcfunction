@@ -11,6 +11,7 @@
 
 # Item検知
     execute unless data entity @s {Items:[{Slot:0b}]} run scoreboard players set @s PCTW.Core.Temp 1
+    execute unless data entity @s {Items:[{Slot:1b}]} run scoreboard players set @s PCTW.Core.Temp 2
 
 # 使用プレイヤー以外は触れない
     execute if entity @a[tag=!PCTW.Player.Use_MasterGUI,nbt={Inventory:[{tag:{PCTWMasterGUIButton:1b}}]}] run scoreboard players set @s PCTW.Core.Temp -1
@@ -24,6 +25,10 @@
         execute if score @s PCTW.Core.Temp matches 1 run function fishing_battle:init/install
         execute if score @s PCTW.Core.Temp matches 1 run clear @p[tag=PCTW.Player.Use_MasterGUI] fishing_rod{PCTWMasterGUIGameMode1:1b}
         execute if score @s PCTW.Core.Temp matches 1 run function fishing_battle:master_gui/page/1
+    ## Gamemode:werewolf
+        execute if score @s PCTW.Core.Temp matches 2 run function werewolf:init/install
+        execute if score @s PCTW.Core.Temp matches 2 run clear @p[tag=PCTW.Player.Use_MasterGUI] wolf_spawn_egg{PCTWMasterGUIGameMode2:1b}
+        execute if score @s PCTW.Core.Temp matches 2 run function werewolf:master_gui/page/1
 
 # -1はリセット
     execute if score @s PCTW.Core.Temp matches -1 run clear @a #_core.pctw:master_gui/button_items{PCTWMasterGUIButton:1b}

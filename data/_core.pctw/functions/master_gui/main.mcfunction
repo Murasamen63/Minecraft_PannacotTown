@@ -30,6 +30,8 @@
         execute if entity @s[tag=!PCTW.Player.Use_MasterGUI] if data storage pctw:core {GameMode:null} as @e[type=chest_minecart,tag=PCTW.Minecart.MasterGUI.Summon,sort=nearest,limit=1] at @s run function _core.pctw:master_gui/page/1
     ## fishing_battle
         execute if entity @s[tag=!PCTW.Player.Use_MasterGUI] if data storage pctw:core {GameMode:FishingBattle} as @e[type=chest_minecart,tag=PCTW.Minecart.MasterGUI.Summon,sort=nearest,limit=1] at @s run function fishing_battle:master_gui/page/1
+    ## werewolf
+        execute if entity @s[tag=!PCTW.Player.Use_MasterGUI] if data storage pctw:core {GameMode:Werewolf} as @e[type=chest_minecart,tag=PCTW.Minecart.MasterGUI.Summon,sort=nearest,limit=1] at @s run function werewolf:master_gui/page/1
 
 # tag操作
     ## ChestGUIタグ

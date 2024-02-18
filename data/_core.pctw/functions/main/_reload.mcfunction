@@ -66,6 +66,8 @@
     ## アンインストール
         ### 釣り大会
             function fishing_battle:init/uninstall
+        ### 人狼
+            function werewolf:init/uninstall
 
 # data変更
     ## 釣り大会の店員
@@ -78,7 +80,7 @@
 
 # 通知
     ## 全体通知
-        tellraw @a ["","\n","  ",{"text":"Welcome to PannacotTown !!","bold":true,"underlined":true,"color":"gold"},"  -  ","v1.1","\n"]
+        tellraw @a ["","\n","  ",{"text":"Welcome to PannacotTown !!","bold":true,"underlined":true,"color":"gold"},"  -  ","v1.1.3","\n"]
 
 
 # gamerule設定

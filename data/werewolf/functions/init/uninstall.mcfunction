@@ -25,7 +25,6 @@
 # bossbar削除
     bossbar remove pctw:werewolf/timer
 
-
 # アイテム削除
     clear @a #fishing_battle:pctw_fsbt_items{PCTWFSBTItems:1b}
 

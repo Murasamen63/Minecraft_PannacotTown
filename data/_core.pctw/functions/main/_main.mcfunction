@@ -13,6 +13,8 @@
         execute if data storage pctw:core {GameMode:null} run function _core.pctw:main/tick
     ## 釣り大会
         execute if data storage pctw:core {GameMode:FishingBattle} run function fishing_battle:main/_main
+    ## 人狼
+        execute if data storage pctw:core {GameMode:Werewolf} run function werewolf:main/_main
 
 # scoreboard設定
     ## Player_ID

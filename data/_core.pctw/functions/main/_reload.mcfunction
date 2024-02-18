@@ -22,11 +22,6 @@
     #define tag/item _core.pctw:debug_items
     #define tag/item _core.pctw:master_gui/button_items
 
-#> PCTW Item Tag
-    # tag PCTWItems:1b
-    # tag PCTWDebugItems:1b
-    # tag PCTWMasterGUISwitches:1b
-
 #endregion
 
 

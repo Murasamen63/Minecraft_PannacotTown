@@ -53,6 +53,9 @@
 
 # 情報表示
     ## bossbar反映
+        ### 数値初期化
+            bossbar set pctw:fishing_battle/timer max 1
+            bossbar set pctw:fishing_battle/timer value 1
         ### 名称
             #### 個人戦
                 ##### 3分以上

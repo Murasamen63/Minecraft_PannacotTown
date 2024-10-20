@@ -1,0 +1,53 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:music_disc_otherside",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"target": "custom_name",
+							"name": {
+								"text": "スタロー",
+								"color": "green",
+								"bold": true
+							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"entity": "this",
+							"lore": [
+								{
+									"text": " "
+								},
+								{
+									"text": "右クリックでメニューを表示",
+									"color": "white",
+									"italic": false
+								}
+							],
+							"mode": "replace_all"
+						},
+						{
+							"function": "minecraft:set_custom_data",
+							"tag": "{HideFlags:36,Unbreakable:1b,PCTWItems:1b,PCTWMasterStick:1b,Enchantments:[{}]}"
+						},
+						{
+							"function": "minecraft:set_custom_model_data",
+							"value": 1
+						},
+						{
+							"function": "minecraft:enchanted_count_increase",
+							"enchantment": "minecraft:unbreaking",
+							"count": 0
+						}
+					]
+				}
+			]
+		}
+	]
+}
